@@ -17,13 +17,15 @@ namespace DATA___LAYER
             {
                 using (SqlConnection Obj_SqlConnection = new SqlConnection(Class_Data_Connection.Connection_String))
                 {
-                    //string SQL_Server_Query_String = "SELECT ID_Insumo, TCI.ID_Categoria_Insumo, TCI.Nombre_Categoria_Insumo, TPI.ID_Proveedor_Insumo, TPI.Nombre_Proveedor_Insumo, Nombre_Insumo, Descripcion_Insumo, Unidad_Medida_Insumo, Precio_Insumo, Stock_Insumo, Estado_Insumo, Fecha_Vencimiento_Insumo, Ruta_Imagen_Insumo, Nombre_Imagen_Insumo	FROM Tabla_Insumo TI INNER JOIN Tabla_Categoria_Insumo TCI ON TI.ID_Categoria_Insumo = TCI.ID_Categoria_Insumo INNER JOIN Tabla_Proveedor_Insumo TPI ON TI.ID_Proveedor_Insumo = TPI.ID_Proveedor_Insumo;";
+                    //string SQL_Server_Query_String = "SELECT TI.ID_Insumo, TCI.ID_Categoria_Insumo, TCI.Nombre_Categoria_Insumo, TPI.ID_Proveedor_Insumo, TPI.Nombre_Proveedor_Insumo, TI.Nombre_Insumo, TI.Descripcion_Insumo, TI.Unidad_Medida_Insumo, TI.Precio_Insumo, TI.Stock_Insumo, TI.Estado_Insumo, TI.Fecha_Vencimiento_Insumo, TI.Ruta_Imagen_Insumo, TI.Nombre_Imagen_Insumo FROM Tabla_Insumo TI INNER JOIN Tabla_Categoria_Insumo TCI ON TI.ID_Categoria_Insumo = TCI.ID_Categoria_Insumo INNER JOIN Tabla_Proveedor_Insumo TPI ON TI.ID_Proveedor_Insumo = TPI.ID_Proveedor_Insumo;";
 
                     StringBuilder Obj_StringBuilder = new StringBuilder();
 
-                    Obj_StringBuilder.AppendLine("SELECT ID_Insumo, TCI.ID_Categoria_Insumo, TCI.Nombre_Categoria_Insumo, TPI.ID_Proveedor_Insumo, TPI.Nombre_Proveedor_Insumo, Nombre_Insumo,");
-                    Obj_StringBuilder.AppendLine("Descripcion_Insumo, Unidad_Medida_Insumo, Precio_Insumo, Stock_Insumo, Estado_Insumo, Fecha_Vencimiento_Insumo, Ruta_Imagen_Insumo, Nombre_Imagen_Insumo");
-                    Obj_StringBuilder.AppendLine("FROM Tabla_Insumo TI INNER JOIN Tabla_Categoria_Insumo TCI ON TI.ID_Categoria_Insumo = TCI.ID_Categoria_Insumo");
+                    Obj_StringBuilder.AppendLine("SELECT TI.ID_Insumo, TCI.ID_Categoria_Insumo, TCI.Nombre_Categoria_Insumo,");
+                    Obj_StringBuilder.AppendLine("TPI.ID_Proveedor_Insumo, TPI.Nombre_Proveedor_Insumo, TI.Nombre_Insumo, TI.Descripcion_Insumo, ");
+                    Obj_StringBuilder.AppendLine("TI.Unidad_Medida_Insumo, TI.Precio_Insumo, TI.Stock_Insumo, TI.Estado_Insumo,");
+                    Obj_StringBuilder.AppendLine("TI.Fecha_Vencimiento_Insumo, TI.Ruta_Imagen_Insumo, TI.Nombre_Imagen_Insumo FROM Tabla_Insumo TI INNER JOIN ");
+                    Obj_StringBuilder.AppendLine("Tabla_Categoria_Insumo TCI ON TI.ID_Categoria_Insumo = TCI.ID_Categoria_Insumo");
                     Obj_StringBuilder.AppendLine("INNER JOIN Tabla_Proveedor_Insumo TPI ON TI.ID_Proveedor_Insumo = TPI.ID_Proveedor_Insumo;");
 
                     SqlCommand Obj_SqlCommand = new SqlCommand(Obj_StringBuilder.ToString(), Obj_SqlConnection);
