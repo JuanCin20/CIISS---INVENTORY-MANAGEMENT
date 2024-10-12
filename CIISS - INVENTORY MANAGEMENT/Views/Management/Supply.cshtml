@@ -1,0 +1,109 @@
+﻿@{
+    ViewData["Title"] = "Supply";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    :root {
+        --bd-dark-blue-bg: rgb(5, 45, 100);
+        --bs-white: rgb(255, 255, 255);
+    }
+
+    .custom-popover {
+        --bs-popover-max-width: 500px;
+        --bs-popover-border-color: var(--bd-dark-blue-bg);
+        --bs-popover-header-bg: var(--bd-dark-blue-bg);
+        --bs-popover-header-color: var(--bs-white);
+        --bs-popover-body-padding-x: 20px;
+        --bs-popover-body-padding-y: 20px;
+    }
+</style>
+
+<nav class="mt-2" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">Mantenimiento</li>
+        <li class="breadcrumb-item active" aria-current="page">Insumos</li>
+    </ol>
+</nav>
+
+<div class="card">
+    <div class="card-header">
+        <i class="fa-solid fa-boxes-stacked"></i> Insumos Registrados
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-success" onclick="Open_Form_Modal(null)">Insertar Insumo <i
+                        class="fa-solid fa-plus"></i></button>
+            </div>
+        </div>
+
+        <hr />
+
+        <table id="Table_Insumo" class="display cell-border" style="width: 100%">
+            <thead>
+                <tr>
+                    <th>ID:</th>
+                    <th>Nombre:</th>
+                    <th>Estado:</th>
+                    <th>Operaciones:</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!--Vertically Centered Modal-->
+<div class="modal fade" id="Form_Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Proveedor del Insumo</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!----><input id="ID_Proveedor_Insumo" type="hidden" value="0" /><!---->
+                <div class="row g-2">
+                    <div class="col-sm-6">
+                        <label for="Estado_Proveedor_Insumo" class="form-label">Estado:</label>
+                        <select class="form-select" name="Estado_Proveedor_Insumo" id="Estado_Proveedor_Insumo"
+                            aria-label="Default select example">
+                            <option value="0" selected disabled>Seleccionar</option>
+                            <option value="Available">Disponible</option>
+                            <option value="Not_Available">No Disponible</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="Nombre_Proveedor_Insumo" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="Nombre_Proveedor_Insumo" placeholder="Nombre"
+                            autocomplete="off">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="Telefono_Proveedor_Insumo" class="form-label">Teléfono:</label>
+                        <input type="number" class="form-control" id="Telefono_Proveedor_Insumo" placeholder="Teléfono"
+                            autocomplete="off">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="E_Mail_Proveedor_Insumo" class="form-label">E-Mail:</label>
+                        <input type="email" class="form-control" id="E_Mail_Proveedor_Insumo" placeholder="E-Mail"
+                            autocomplete="off">
+                    </div>
+                    <div class="col-sm-12">
+                        <label for="Direccion_Proveedor_Insumo" class="form-label">Dirección:</label>
+                        <textarea class="form-control" id="Direccion_Proveedor_Insumo" placeholder="Dirección"
+                            autocomplete="off"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" onclick="Procesar()">Procesar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Vertically Centered Modal-->

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css"
+    />
+    <link rel="stylesheet" href="Test.css" />
+    <title>Test</title>
+  </head>
+
+  <body>
+    <div class="container-fluid p-3 mb-3 bg-danger text-light">
+      <header class="text-center">
+        <h1>Test</h1>
+      </header>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa-solid fa-table"></i> Categorías de Insumos Registradas
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-12">
+              <button
+                type="button"
+                class="btn btn-success"
+                onclick="Open_Form_Modal(null)"
+              >
+                Insertar Categoría de Insumo <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <hr />
+
+          <table id="myTable" class="display cell-border" style="width: 100%">
+            <thead>
+              <tr>
+                <th>ID:</th>
+                <th>Nombre:</th>
+                <th>Estado:</th>
+                <th>Operaciones:</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr role="row" class="odd">
+                <td>1</td>
+                <td>
+                  <a
+                    tabindex="0"
+                    role="button"
+                    class="btn btn-primary Button_Pop"
+                    data-bs-toggle="popover"
+                    data-bs-title="Modal Button #5"
+                    data-bs-content="Modal Button #5"
+                    >Modal Button #5</a
+                  >
+                </td>
+                <td><span class="badge text-bg-success">Disponible</span></td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-sm Edit_Button"
+                  >
+                    <i class="fa-solid fa-pencil"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-danger btn-sm ms-2 Delete_Button"
+                  >
+                    <i class="fa-solid fa-trash"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <br />
+      <br />
+
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-bs-custom-class="custom-popover"
+        data-bs-container="body"
+        data-bs-toggle="popover"
+        data-bs-title="Modal Button #1"
+        data-bs-content="Modal Button #1 Modal Button #1"
+      >
+        Modal Button #1
+      </button>
+
+      <br />
+      <br />
+
+      <a
+        href="#"
+        data-bs-trigger="focus"
+        data-bs-container="body"
+        data-bs-toggle="popover"
+        data-bs-title="Modal Button #2"
+        data-bs-content="Modal Button #2"
+        >Modal Button #2</a
+      >
+
+      <br />
+      <br />
+
+      <a
+        href="#"
+        data-bs-trigger="hover"
+        data-bs-container="body"
+        data-bs-toggle="popover"
+        data-bs-title="Modal Button #3"
+        data-bs-content="Modal Button #3"
+        >Modal Button #3</a
+      >
+
+      <br />
+      <br />
+
+      <a
+        tabindex="1"
+        role="button"
+        class="btn btn-primary Button_Pop"
+        data-bs-container="body"
+        data-bs-toggle="popover"
+        data-bs-title="Modal Button #4"
+        data-bs-content="Modal Button #4"
+        >Modal Button #4</a
+      >
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <script
+      src="https://kit.fontawesome.com/81581fb069.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="Test.js"></script>
+
+    <script>
+      var myTable;
+      $(document).ready(function () {
+        myTable = $("#myTable").DataTable({
+          fnDrawCallback: function () {
+            /**/
+            $(document).ready(function () {
+              $(".Button_Pop").popover({
+                trigger: "hover focus",
+                animation: true,
+              });
+            });
+            /**/
+          },
+          ordering: false,
+          language: {
+            url: "//cdn.datatables.net/plug-ins/2.1.8/i18n/es-MX.json",
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+:root {
+  --bd-JuanCin20-bg: rgb(5, 45, 100);
+  --bs-white: rgb(255, 255, 255);
+}
+
+.custom-popover {
+  --bs-popover-max-width: 200px;
+  --bs-popover-border-color: var(--bd-JuanCin20-bg);
+  --bs-popover-header-bg: var(--bd-JuanCin20-bg);
+  --bs-popover-header-color: var(--bs-white);
+  --bs-popover-body-padding-x: 1rem;
+  --bs-popover-body-padding-y: 0.5rem;
+}

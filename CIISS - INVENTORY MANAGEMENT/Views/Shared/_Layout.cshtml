@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Sistema de Inventario</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/Real_Use/Bootstrap_v5.3.3/Content/bootstrap.min.css" asp-append-version="true" />
+    <link rel="stylesheet"
+        href="~/lib/Real_Use/JQuery_Datatables_v1.10.15/Content/DataTables/css/jquery.dataTables.min.css"
+        asp-append-version="true" />
+    <link rel="stylesheet"
+        href="~/lib/Real_Use/JQuery_Datatables_v1.10.15/Content/DataTables/css/responsive.dataTables.min.css"
+        asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/Real_Use/Sweet_Alert_2_v1.0.1/staticwebassets/bootstrap4Theme.min.css"
+        asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/Real_Use/Toastr_v2.1.1/content/toastr.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/Real_Use/Fontawesome_v6.6.0/css/all.css" asp-append-version="true" />
+</head>
+
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <!--Navbar Brand-->
+        <a class="navbar-brand ps-3" href="@Url.Action("Index", "Home")">Sistema de Inventario</a>
+        <!--Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#"><i
+                class="fa-solid fa-bars"></i></button>
+        <!--Navbar-->
+        <ul class="navbar-nav ms-auto me-0 me-md-3 my-2 my-md-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"><i class="fa-solid fa-user"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Correo del Usuario</a></li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">Reportes</div>
+                        <a class="nav-link" href="@Url.Action("Index", "Home")">
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-gauge"></i></div>
+                            Dashboard
+                        </a>
+                        <a class="nav-link" href="@Url.Action("User", "Home")">
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
+                            Usuarios
+                        </a>
+                        <div class="sb-sidenav-menu-heading">Mantenimiento</div>
+                        <a class="nav-link" href="@Url.Action("Category", "Management")">
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-table"></i></div>
+                            Categorías de Insumos
+                        </a>
+                        <a class="nav-link" href="@Url.Action("Supplier", "Management")">
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+                            Proveedores de Insumos
+                        </a>
+                        <a class="nav-link" href="@Url.Action("Supply", "Management")">
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+                            Insumos
+                        </a>
+                    </div>
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Sesión Iniciada Como:</div>
+                    JuanCin20
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid px-4">
+                    @RenderBody()
+                </div>
+            </main>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">&copy; 2024 Tec-Samples</div>
+                        <div>
+                            <a asp-area="" asp-controller="Home" asp-action="Privacy">Política de Privacidad</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/Real_Use/Bootstrap_v5.3.3/Scripts/bootstrap.bundle.min.js" asp-append-version="true"></script>
+    <script src="~/lib/Real_Use/JQuery_v3.7.1/Scripts/jquery-3.7.1.min.js" asp-append-version="true"></script>
+    <script src="~/lib/Real_Use/JQuery_Datatables_v1.10.15/Scripts/DataTables/jquery.dataTables.min.js"
+        asp-append-version="true"></script>
+    <script src="~/lib/Real_Use/JQuery_Datatables_v1.10.15/Scripts/DataTables/dataTables.responsive.min.js"
+        asp-append-version="true"></script>
+    <script src="~/lib/Real_Use/JQuery_Loading_Overlay_v2.1.5/Scripts/loadingoverlay.min.js"
+        asp-append-version="true"></script>
+    <script src="~/lib/Real_Use/Sweet_Alert_2_v1.0.1/staticwebassets/sweetAlert2.min.js"
+        asp-append-version="true"></script>
+    <script src="~/lib/Real_Use/Toastr_v2.1.1/scripts/toastr.min.js" asp-append-version="true"></script>
+    <script src="~/lib/Real_Use/Fontawesome_v6.6.0/js/all.js" asp-append-version="true"></script>
+    @RenderSection("Java_Script", required: false);
+</body>
+
+</html>
