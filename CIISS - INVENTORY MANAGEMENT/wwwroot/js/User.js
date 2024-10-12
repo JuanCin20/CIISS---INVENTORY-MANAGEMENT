@@ -3,7 +3,7 @@ var Selected_Row;
 
 /**
  * *jQuery.ajax({
- * *    url: "https://localhost:7050/Home/Home_Controller_Usuario_Listar",
+ * *    url: "https://localhost:7050/Staff/Staff_Controller_Usuario_Listar",
  * *    type: "GET",
  * *    dataType: "json",
  * *    contentType: "application/json; charset=UTF-8",
@@ -19,7 +19,7 @@ Table_Usuario = $("#Table_Usuario").DataTable({
     url: "//cdn.datatables.net/plug-ins/2.1.8/i18n/es-MX.json",
   },
   ajax: {
-    url: "https://localhost:7050/Home/Home_Controller_Usuario_Listar",
+    url: "https://localhost:7050/Staff/Staff_Controller_Usuario_Listar",
     type: "GET",
     dataType: "json",
   },
@@ -120,7 +120,7 @@ $("#Table_Usuario").on("click", ".Delete_Button", function () {
   }).then((result) => {
     if (result.isConfirmed) {
       jQuery.ajax({
-        url: "https://localhost:7050/Home/Home_Controller_Usuario_Eliminar",
+        url: "https://localhost:7050/Staff/Staff_Controller_Usuario_Eliminar",
         type: "DELETE",
         data: { ID_Usuario: data.iD_Usuario },
         success: function (data) {
@@ -165,7 +165,7 @@ function Procesar() {
 
   if ($("#ID_Usuario").val() == 0) {
     jQuery.ajax({
-      url: "https://localhost:7050/Home/Home_Controller_Usuario_Registrar",
+      url: "https://localhost:7050/Staff/Staff_Controller_Usuario_Registrar",
       type: "POST",
       data: { Obj_Class_Entity_Usuario: Usuario },
       success: function (data) {
@@ -216,7 +216,7 @@ function Procesar() {
   } else {
     if ($("#ID_Usuario").val() != 0) {
       jQuery.ajax({
-        url: "https://localhost:7050/Home/Home_Controller_Usuario_Editar",
+        url: "https://localhost:7050/Staff/Staff_Controller_Usuario_Editar",
         type: "PUT",
         data: { Obj_Class_Entity_Usuario: Usuario },
         success: function (data) {

@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="~/lib/Real_Use/Toastr_v2.1.1/content/toastr.min.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/lib/Real_Use/Fontawesome_v6.6.0/css/all.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/Custom_Popover.css" asp-append-version="true">
+    <!---->
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet"
+        asp-append-version="true" />
 </head>
 
 <body class="sb-nav-fixed">
@@ -47,12 +50,13 @@
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
-                        <div class="sb-sidenav-menu-heading">Reportes</div>
+                        <div class="sb-sidenav-menu-heading">Home</div>
                         <a class="nav-link" href="@Url.Action("Index", "Home")">
                             <div class="sb-nav-link-icon"><i class="fa-solid fa-gauge"></i></div>
                             Dashboard
                         </a>
-                        <a class="nav-link" href="@Url.Action("User", "Home")">
+                        <div class="sb-sidenav-menu-heading">Personal</div>
+                        <a class="nav-link" href="@Url.Action("User", "Staff")">
                             <div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
                             Usuarios
                         </a>

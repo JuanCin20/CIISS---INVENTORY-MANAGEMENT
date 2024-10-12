@@ -34,10 +34,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/Documentos/CIISS - INVENTORY MANAGEMENT/CIISS - INVENTORY MANAGEMENT/CIISS - INVENTORY MANAGEMENT/Views/Home/User.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/HP/Documentos/CIISS - INVENTORY MANAGEMENT/CIISS - INVENTORY MANAGEMENT/CIISS - INVENTORY MANAGEMENT/Views/Management/Category.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlbWVudFxDYXRlZ29yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -56,6 +52,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/HP/Documentos/CIISS - INVENTORY MANAGEMENT/CIISS - INVENTORY MANAGEMENT/CIISS - INVENTORY MANAGEMENT/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Documentos/CIISS - INVENTORY MANAGEMENT/CIISS - INVENTORY MANAGEMENT/CIISS - INVENTORY MANAGEMENT/Views/Staff/User.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/HP/Documentos/CIISS - INVENTORY MANAGEMENT/CIISS - INVENTORY MANAGEMENT/CIISS - INVENTORY MANAGEMENT/Views/_ViewImports.cshtml]
