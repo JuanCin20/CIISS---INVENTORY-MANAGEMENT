@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CIISS - INVENTORY MANAGEMENT.props" />
+</Project>
