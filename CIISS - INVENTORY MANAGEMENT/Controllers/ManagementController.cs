@@ -140,41 +140,41 @@ namespace CIISS___INVENTORY_MANAGEMENT.Controllers
         public JsonResult Management_Controller_Insumo_Registrar(string Obj_Class_Entity_Insumo, IFormFile Obj_IFormFile)
         {
             string message = string.Empty;
-            bool Successful_Operation = true;
-            bool Successful_Save_Image = true;
+            bool successful_operation = true;
+            bool successful_save_image = true;
 
-            Class_Entity_Insumo Obj_Class_Entity_Insumo_Alter = new Class_Entity_Insumo();
-            Obj_Class_Entity_Insumo_Alter = JsonConvert.DeserializeObject<Class_Entity_Insumo>(Obj_Class_Entity_Insumo);
+            Class_Entity_Insumo obj_class_entity_insumo_alter = new Class_Entity_Insumo();
+            obj_class_entity_insumo_alter = JsonConvert.DeserializeObject<Class_Entity_Insumo>(Obj_Class_Entity_Insumo);
 
             decimal Precio_Insumo;
 
-            if (decimal.TryParse(Obj_Class_Entity_Insumo_Alter.Precio_Insumo_String, NumberStyles.AllowDecimalPoint, new CultureInfo("es-PE"), out Precio_Insumo))
+            if (decimal.TryParse(obj_class_entity_insumo_alter.Precio_Insumo_String, NumberStyles.AllowDecimalPoint, new CultureInfo("es-PE"), out Precio_Insumo))
             {
-                Obj_Class_Entity_Insumo_Alter.Precio_Insumo = Precio_Insumo;
+                obj_class_entity_insumo_alter.Precio_Insumo = Precio_Insumo;
             }
             else
             {
-                return Json(new { Successful_Operation = false, message = "El Formato Numérico del Precio del Insumo debe ser ##.##" });
+                return Json(new { successful_operation = false, message = "El Formato Numérico del Precio del Insumo debe ser ##.##" });
             }
 
-            int ID_Insumo_Generated = new Class_Business_Insumo().Class_Business_Insumo_Registrar(Obj_Class_Entity_Insumo_Alter, out message);
+            int id_insumo_generated = new Class_Business_Insumo().Class_Business_Insumo_Registrar(obj_class_entity_insumo_alter, out message);
 
-            if (ID_Insumo_Generated != 0)
+            if (id_insumo_generated != 0)
             {
-                Obj_Class_Entity_Insumo_Alter.ID_Insumo = ID_Insumo_Generated;
+                obj_class_entity_insumo_alter.ID_Insumo = id_insumo_generated;
             }
             else
             {
-                Successful_Operation = false;
+                successful_operation = false;
             }
 
-            if (Successful_Operation)
+            if (successful_operation)
             {
                 if (Obj_IFormFile != null)
                 {
                     string Ruta_Imagen_Insumo = "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\Images";
                     string Image_Extension = Path.GetExtension(Obj_IFormFile.FileName);
-                    string Nombre_Imagen_Insumo = string.Concat(Obj_Class_Entity_Insumo_Alter.ID_Insumo.ToString(), Image_Extension);
+                    string Nombre_Imagen_Insumo = string.Concat(obj_class_entity_insumo_alter.ID_Insumo.ToString(), Image_Extension);
 
                     try
                     {
@@ -187,14 +187,14 @@ namespace CIISS___INVENTORY_MANAGEMENT.Controllers
                     catch (Exception Error)
                     {
                         string Message = Error.Message;
-                        Successful_Save_Image = false;
+                        successful_save_image = false;
                     }
 
-                    if (Successful_Save_Image)
+                    if (successful_save_image)
                     {
-                        Obj_Class_Entity_Insumo_Alter.Ruta_Imagen_Insumo = Ruta_Imagen_Insumo;
-                        Obj_Class_Entity_Insumo_Alter.Nombre_Imagen_Insumo = Nombre_Imagen_Insumo;
-                        bool Answer = new Class_Business_Insumo().Class_Business_Insumo_Registrar_Imagen(Obj_Class_Entity_Insumo_Alter, out message);
+                        obj_class_entity_insumo_alter.Ruta_Imagen_Insumo = Ruta_Imagen_Insumo;
+                        obj_class_entity_insumo_alter.Nombre_Imagen_Insumo = Nombre_Imagen_Insumo;
+                        bool Answer = new Class_Business_Insumo().Class_Business_Insumo_Registrar_Imagen(obj_class_entity_insumo_alter, out message);
                     }
                     else
                     {
@@ -202,7 +202,7 @@ namespace CIISS___INVENTORY_MANAGEMENT.Controllers
                     }
                 }
             }
-            return Json(new { Successful_Operation = Successful_Operation, ID_Insumo_Generated = Obj_Class_Entity_Insumo_Alter.ID_Insumo, message = message });
+            return Json(new { successful_operation = successful_operation, id_insumo_generated = obj_class_entity_insumo_alter.ID_Insumo, message = message });
         }
 
         [HttpPut]

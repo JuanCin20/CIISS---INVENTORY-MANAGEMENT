@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CIISS - INVENTORY MANAGEMENT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44847fa7d4188a89f8082cc4fb4a4e6df00826a1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85f38812a973cbe5586676a18795b88b87ccdd66")]
 [assembly: System.Reflection.AssemblyProductAttribute("CIISS - INVENTORY MANAGEMENT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CIISS - INVENTORY MANAGEMENT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
