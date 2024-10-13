@@ -9,6 +9,7 @@
         public string E_Mail_Usuario { get; set; }
         public string Password_Usuario { get; set; }
         public bool Reestablecer_Password_Usuario { get; set; }
-        public string Imagen_Usuario { get; set; }
+        public string Ruta_Imagen_Usuario { get; set; }
+        public string Nombre_Imagen_Usuario { get; set; }
     }
 }

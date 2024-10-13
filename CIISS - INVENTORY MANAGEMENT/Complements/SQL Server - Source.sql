@@ -48,7 +48,8 @@ GO
 		Password_Usuario VARCHAR (150) NOT NULL,
 		Reestablecer_Password_Usuario BIT DEFAULT 1 NOT NULL,
 		Fecha_Registro_Usuario DATETIME DEFAULT GETDATE() NOT NULL,
-		Imagen_Usuario VARCHAR (255) NOT NULL
+		Ruta_Imagen_Usuario VARCHAR (255) NULL,
+		Nombre_Imagen_Usuario VARCHAR (255) NULL
 	);
 
 GO
@@ -195,109 +196,6 @@ VALUES
 		'soporte@verdurasfrescas.com',
 		'El Agustino',
 		1
-	);
-
-GO
-INSERT INTO
-	Tabla_Insumo (
-		ID_Categoria_Insumo,
-		ID_Proveedor_Insumo,
-		Nombre_Insumo,
-		Descripcion_Insumo,
-		Unidad_Medida_Insumo,
-		Precio_Insumo,
-		Stock_Insumo,
-		Estado_Insumo,
-		Fecha_Vencimiento_Insumo
-	)
-VALUES
-	(
-		1,
-		1,
-		'Queso Mozzarella',
-		'Queso fresco para derretir.',
-		'Kg.',
-		20.00,
-		30,
-		1,
-		'2025-05-05'
-	),
-	(
-		1,
-		1,
-		'Leche de Cabra',
-		'Mezcla en equilibrio de prote�nas, grasas, carbohidratos, sales y otros componentes.',
-		'Lt.',
-		20.00,
-		30,
-		1,
-		'2025-05-05'
-	),
-	(
-		2,
-		2,
-		'Pepperoni',
-		'Caracter�sticamente suave, ligeramente ahumado y de color rojo brillante.',
-		'Kg.',
-		20.00,
-		30,
-		1,
-		'2025-05-05'
-	),
-	(
-		2,
-		2,
-		'Jam�n Serrano',
-		'Obtenido a partir de la salaz�n y secado al aire de las patas traseras del cerdo.',
-		'Kg.',
-		20.00,
-		30,
-		1,
-		'2025-05-05'
-	),
-	(
-		3,
-		3,
-		'Aceitunas Negras',
-		'Contiene importantes cantidades de vitaminas A y E, que son altamente recomendables para el sistema inmunol�gico.',
-		'Kg.',
-		20.00,
-		30,
-		1,
-		'2025-05-05'
-	),
-	(
-		3,
-		3,
-		'Cebolla Caramelizada',
-		'Oxidaci�n del az�car de la cebolla por medios culinarios.',
-		'Kg.',
-		20.00,
-		30,
-		1,
-		'2025-05-05'
-	),
-	(
-		4,
-		2,
-		'Salsa de Tomate',
-		'Salsa para pizza.',
-		'Lt.',
-		20.00,
-		30,
-		1,
-		'2025-05-05'
-	),
-	(
-		4,
-		2,
-		'Salsa de Ajo',
-		'Salsa picante, cuya intensidad de sabor a ajo depende de la cantidad de ajo utilizado.',
-		'Lt.',
-		20.00,
-		30,
-		1,
-		'2025-05-05'
 	);
 
 GO

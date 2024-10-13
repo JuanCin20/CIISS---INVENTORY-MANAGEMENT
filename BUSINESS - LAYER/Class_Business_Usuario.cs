@@ -38,13 +38,6 @@ namespace BUSINESS___LAYER
                         {
                             Message = "Campo Requerido: Correo Electrónico del Usuario";
                         }
-                        else
-                        {
-                            if (string.IsNullOrEmpty(Obj_Class_Entity_Usuario.Imagen_Usuario) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Usuario.Imagen_Usuario))
-                            {
-                                Message = "Campo Requerido: Foto de Perfil del Usuario";
-                            }
-                        }
                     }
                 }
             }
@@ -100,13 +93,6 @@ namespace BUSINESS___LAYER
                         {
                             Message = "Campo Requerido: Correo Electrónico del Usuario";
                         }
-                        else
-                        {
-                            if (string.IsNullOrEmpty(Obj_Class_Entity_Usuario.Imagen_Usuario) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Usuario.Imagen_Usuario))
-                            {
-                                Message = "Campo Requerido: Foto de Perfil del Usuario";
-                            }
-                        }
                     }
                 }
             }
@@ -119,6 +105,11 @@ namespace BUSINESS___LAYER
             {
                 return false;
             }
+        }
+
+        public bool Class_Business_Usuario_Registrar_Imagen(Class_Entity_Usuario Obj_Class_Entity_Usuario, out string Message)
+        {
+            return Obj_Class_Data_Usuario.Class_Data_Usuario_Registrar_Imagen(Obj_Class_Entity_Usuario, out Message);
         }
 
         public bool Class_Business_Usuario_Eliminar(int ID_Usuario, out string Message)

@@ -1,6 +1,19 @@
 var Table_Usuario;
 var Selected_Row;
 
+function Show_User_Image(input) {
+  if (input.files) {
+    var Reader = new FileReader();
+    Reader.onload = function (event) {
+      $("#Imagen_Usuario")
+        .attr("src", event.target.result)
+        .width(200)
+        .height(195);
+    };
+    Reader.readAsDataURL(input.files[0]);
+  }
+}
+
 /**
  * *jQuery.ajax({
  * *    url: "https://localhost:7050/Staff/Staff_Controller_Usuario_Listar",
@@ -42,12 +55,12 @@ Table_Usuario = $("#Table_Usuario").DataTable({
     { data: "apellido_Usuario" },
     { data: "e_Mail_Usuario" },
     {
-      data: "imagen_Usuario",
-      render: function (imagen_Usuario) {
+      data: null,
+      render: function (data, type, row) {
         return (
-          '<img style="width: 50px; height: 50px;" class="img-fluid" src="' +
-          imagen_Usuario +
-          '" alt="Image_Error"/>'
+          '<img style="witdh: 60px; height: 60px;" src="../../User_Images/' +
+          row.nombre_Imagen_Usuario +
+          '" alt="Image_Error" class="border rounded img-fluid">'
         );
       },
     },
@@ -151,6 +164,8 @@ $("#Table_Usuario").on("click", ".Delete_Button", function () {
 });
 
 function Procesar() {
+  var Selected_Image = $("#Imagen_Usuario_Input")[0].files[0];
+
   var Usuario = {
     iD_Usuario: $("#ID_Usuario").val(),
     nombre_Usuario: $("#Nombre_Usuario").val(),
@@ -164,19 +179,26 @@ function Procesar() {
   };
 
   if ($("#ID_Usuario").val() == 0) {
+    var Request = new FormData();
+    Request.append("Obj_Class_Entity_Usuario", JSON.stringify(Usuario));
+    Request.append("Obj_IFormFile", Selected_Image);
+
     jQuery.ajax({
       url: "https://localhost:7050/Staff/Staff_Controller_Usuario_Registrar",
       type: "POST",
-      data: { Obj_Class_Entity_Usuario: Usuario },
+      data: Request,
+      processData: false,
+      contentType: false,
       success: function (data) {
         // debugger; // TODO: Punto de Depuración
 
         $(".modal-body").LoadingOverlay("hide");
 
-        if (data.result != 0) {
-          Usuario.iD_Usuario = data.result;
+        if (data.iD_Auto_Generated != 0) {
+          Usuario.iD_Usuario = data.iD_Auto_Generated;
           Table_Usuario.row.add(Usuario).draw(false);
           $("#Form_Modal").modal("hide");
+          window.location.reload(); // ?
         } else {
           toastr.options = {
             closeButton: true,
@@ -215,15 +237,22 @@ function Procesar() {
     });
   } else {
     if ($("#ID_Usuario").val() != 0) {
+      var Request = new FormData();
+      Request.append("Obj_Class_Entity_Usuario", JSON.stringify(Usuario));
+      Request.append("Obj_IFormFile", Selected_Image);
+
       jQuery.ajax({
         url: "https://localhost:7050/Staff/Staff_Controller_Usuario_Editar",
         type: "PUT",
-        data: { Obj_Class_Entity_Usuario: Usuario },
+        data: Request,
+        processData: false,
+        contentType: false,
         success: function (data) {
           // debugger; // TODO: Punto de Depuración
 
           $(".modal-body").LoadingOverlay("hide");
-          if (data.result) {
+
+          if (data.successful_operation) {
             Table_Usuario.row(Selected_Row).data(Usuario).draw(false);
             Selected_Row = null;
             $("#Form_Modal").modal("hide");

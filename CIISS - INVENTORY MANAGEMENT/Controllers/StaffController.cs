@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using ENTITY___LAYER;
 using BUSINESS___LAYER;
+using Newtonsoft.Json;
 
 namespace CIISS___INVENTORY_MANAGEMENT.Controllers
 {
@@ -33,25 +34,110 @@ namespace CIISS___INVENTORY_MANAGEMENT.Controllers
         }
 
         [HttpPost]
-        public JsonResult Staff_Controller_Usuario_Registrar(Class_Entity_Usuario Obj_Class_Entity_Usuario)
+        public JsonResult Staff_Controller_Usuario_Registrar(string Obj_Class_Entity_Usuario, IFormFile Obj_IFormFile)
         {
-            object result;
             string message = string.Empty;
+            bool successful_operation = true;
+            bool successful_save_image = true;
 
-            result = new Class_Business_Usuario().Class_Business_Usuario_Registrar(Obj_Class_Entity_Usuario, out message);
+            Class_Entity_Usuario Obj_Class_Entity_Usuario_Alter = new Class_Entity_Usuario();
+            Obj_Class_Entity_Usuario_Alter = JsonConvert.DeserializeObject<Class_Entity_Usuario>(Obj_Class_Entity_Usuario);
 
-            return Json(new { result = result, message = message });
+            int ID_Auto_Generated = new Class_Business_Usuario().Class_Business_Usuario_Registrar(Obj_Class_Entity_Usuario_Alter, out message);
+
+            if (ID_Auto_Generated != 0)
+            {
+                Obj_Class_Entity_Usuario_Alter.ID_Usuario = ID_Auto_Generated;
+            }
+            else
+            {
+                successful_operation = false;
+            }
+
+            if (successful_operation)
+            {
+                if (Obj_IFormFile != null)
+                {
+                    string Ruta_Imagen_Usuario = "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\User_Images";
+                    string Image_Extension = Path.GetExtension(Obj_IFormFile.FileName);
+                    string Nombre_Imagen_Usuario = string.Concat(Obj_Class_Entity_Usuario_Alter.ID_Usuario.ToString(), Image_Extension);
+
+                    try
+                    {
+                        string FileNameWithPath = Path.Combine(Ruta_Imagen_Usuario, Nombre_Imagen_Usuario);
+                        using (var stream = new FileStream(FileNameWithPath, FileMode.Create))
+                        {
+                            Obj_IFormFile.CopyTo(stream);
+                        }
+                    }
+                    catch (Exception Error)
+                    {
+                        string Message = Error.Message;
+                        successful_save_image = false;
+                    }
+
+                    if (successful_save_image)
+                    {
+                        Obj_Class_Entity_Usuario_Alter.Ruta_Imagen_Usuario = Ruta_Imagen_Usuario;
+                        Obj_Class_Entity_Usuario_Alter.Nombre_Imagen_Usuario = Nombre_Imagen_Usuario;
+                        bool Answer = new Class_Business_Usuario().Class_Business_Usuario_Registrar_Imagen(Obj_Class_Entity_Usuario_Alter, out message);
+                    }
+                    else
+                    {
+                        message = "El Registro del Usuario se Realizó Exitosamente, sin Embargo, hubo Problemas al Registrar la Imagen del Usuario";
+                    }
+                }
+            }
+            return Json(new { successful_operation = successful_operation, iD_Auto_Generated = Obj_Class_Entity_Usuario_Alter.ID_Usuario, message = message });
         }
 
         [HttpPut]
-        public JsonResult Staff_Controller_Usuario_Editar(Class_Entity_Usuario Obj_Class_Entity_Usuario)
+        public JsonResult Staff_Controller_Usuario_Editar(string Obj_Class_Entity_Usuario, IFormFile Obj_IFormFile)
         {
-            object result;
             string message = string.Empty;
+            bool successful_operation = true;
+            bool successful_save_image = true;
 
-            result = new Class_Business_Usuario().Class_Business_Usuario_Editar(Obj_Class_Entity_Usuario, out message);
+            Class_Entity_Usuario Obj_Class_Entity_Usuario_Alter = new Class_Entity_Usuario();
+            Obj_Class_Entity_Usuario_Alter = JsonConvert.DeserializeObject<Class_Entity_Usuario>(Obj_Class_Entity_Usuario);
 
-            return Json(new { result = result, message = message });
+            successful_operation = new Class_Business_Usuario().Class_Business_Usuario_Editar(Obj_Class_Entity_Usuario_Alter, out message);
+
+            if (successful_operation)
+            {
+                if (Obj_IFormFile != null)
+                {
+                    string Ruta_Imagen_Usuario = "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\User_Images";
+                    string Image_Extension = Path.GetExtension(Obj_IFormFile.FileName);
+                    string Nombre_Imagen_Usuario = string.Concat(Obj_Class_Entity_Usuario_Alter.ID_Usuario.ToString(), Image_Extension);
+
+                    try
+                    {
+                        string FileNameWithPath = Path.Combine(Ruta_Imagen_Usuario, Nombre_Imagen_Usuario);
+                        using (var stream = new FileStream(FileNameWithPath, FileMode.Create))
+                        {
+                            Obj_IFormFile.CopyTo(stream);
+                        }
+                    }
+                    catch (Exception Error)
+                    {
+                        string Message = Error.Message;
+                        successful_save_image = false;
+                    }
+
+                    if (successful_save_image)
+                    {
+                        Obj_Class_Entity_Usuario_Alter.Ruta_Imagen_Usuario = Ruta_Imagen_Usuario;
+                        Obj_Class_Entity_Usuario_Alter.Nombre_Imagen_Usuario = Nombre_Imagen_Usuario;
+                        bool Answer = new Class_Business_Usuario().Class_Business_Usuario_Registrar_Imagen(Obj_Class_Entity_Usuario_Alter, out message);
+                    }
+                    else
+                    {
+                        message = "La Actualización de Datos del Usuario se Realizó Exitosamente, sin Embargo, hubo Problemas al Actualizar la Imagen del Usuario";
+                    }
+                }
+            }
+            return Json(new { successful_operation = successful_operation, ID_Auto_Generated = Obj_Class_Entity_Usuario_Alter.ID_Usuario, message = message });
         }
 
         [HttpDelete]

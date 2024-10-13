@@ -9,7 +9,8 @@ SELECT
 	TU.E_Mail_Usuario,
 	TU.Password_Usuario,
 	TU.Reestablecer_Password_Usuario,
-	TU.Imagen_Usuario
+	TU.Ruta_Imagen_Usuario,
+	TU.Nombre_Imagen_Usuario
 FROM
 	Tabla_Usuario TU
 	INNER JOIN Tabla_Tipo_Usuario TTU ON TU.ID_Tipo_Usuario = TTU.ID_Tipo_Usuario;
@@ -43,9 +44,8 @@ GO
 		@Apellido_Usuario VARCHAR (50),
 		@E_Mail_Usuario VARCHAR (30),
 		@Password_Usuario VARCHAR (150),
-		@Imagen_Usuario VARCHAR (255),
 		@Message VARCHAR (500) OUTPUT,
-		@Result BIT OUTPUT
+		@Result INT OUTPUT
 	) AS BEGIN
 SET
 	@Result = 0 IF NOT EXISTS (
@@ -62,8 +62,7 @@ INSERT INTO
 		Nombre_Usuario,
 		Apellido_Usuario,
 		E_Mail_Usuario,
-		Password_Usuario,
-		Imagen_Usuario
+		Password_Usuario
 	)
 VALUES
 	(
@@ -71,8 +70,7 @@ VALUES
 		@Nombre_Usuario,
 		@Apellido_Usuario,
 		@E_Mail_Usuario,
-		@Password_Usuario,
-		@Imagen_Usuario
+		@Password_Usuario
 	)
 SET
 	@Result = SCOPE_IDENTITY()
@@ -91,9 +89,8 @@ GO
 		@Nombre_Usuario VARCHAR (50),
 		@Apellido_Usuario VARCHAR (50),
 		@E_Mail_Usuario VARCHAR (30),
-		@Imagen_Usuario VARCHAR (255),
 		@Message VARCHAR (500) OUTPUT,
-		@Result BIT OUTPUT
+		@Result INT OUTPUT
 	) AS BEGIN
 SET
 	@Result = 0 IF NOT EXISTS (
@@ -111,8 +108,7 @@ SET
 	ID_Tipo_Usuario = @ID_Tipo_Usuario,
 	Nombre_Usuario = @Nombre_Usuario,
 	Apellido_Usuario = @Apellido_Usuario,
-	E_Mail_Usuario = @E_Mail_Usuario,
-	Imagen_Usuario = @Imagen_Usuario
+	E_Mail_Usuario = @E_Mail_Usuario
 WHERE
 	ID_Usuario = @ID_Usuario
 SET
@@ -129,7 +125,7 @@ GO
 	OR ALTER PROCEDURE SP_USER_DELETE (
 		@ID_Usuario INT,
 		@Message VARCHAR (500) OUTPUT,
-		@Result BIT OUTPUT
+		@Result INT OUTPUT
 	) AS BEGIN
 SET
 	@Result = 0 IF NOT EXISTS (
@@ -154,6 +150,7 @@ SET
 	@Message = 'El ID del Usuario se Encuentra Relacionado a un Movimiento dentro del Inventario'
 END;
 
+----UPDATE Tabla_Usuario SET Ruta_Imagen_Usuario = @Ruta_Imagen_Usuario, Nombre_Imagen_Usuario = @Nombre_Imagen_Usuario WHERE ID_Usuario = @ID_Usuario;
 GO
 	CREATE
 	OR ALTER PROCEDURE SP_CATEGORY_CREATE (
@@ -161,7 +158,7 @@ GO
 		@Descripcion_Categoria_Insumo TEXT,
 		@Estado_Categoria_Insumo BIT,
 		@Message VARCHAR (500) OUTPUT,
-		@Result BIT OUTPUT
+		@Result INT OUTPUT
 	) AS BEGIN
 SET
 	@Result = 0 IF NOT EXISTS (
@@ -201,7 +198,7 @@ GO
 		@Descripcion_Categoria_Insumo TEXT,
 		@Estado_Categoria_Insumo BIT,
 		@Message VARCHAR (500) OUTPUT,
-		@Result BIT OUTPUT
+		@Result INT OUTPUT
 	) AS BEGIN
 SET
 	@Result = 0 IF NOT EXISTS (
@@ -235,7 +232,7 @@ GO
 	OR ALTER PROCEDURE SP_CATEGORY_DELETE (
 		@ID_Categoria_Insumo INT,
 		@Message VARCHAR (500) OUTPUT,
-		@Result BIT OUTPUT
+		@Result INT OUTPUT
 	) AS BEGIN
 SET
 	@Result = 0 IF NOT EXISTS (
@@ -269,7 +266,7 @@ GO
 		@Direccion_Proveedor_Insumo VARCHAR (50),
 		@Estado_Proveedor_Insumo BIT,
 		@Message VARCHAR (500) OUTPUT,
-		@Result BIT OUTPUT
+		@Result INT OUTPUT
 	) AS BEGIN
 SET
 	@Result = 0 IF NOT EXISTS (
@@ -315,7 +312,7 @@ GO
 		@Direccion_Proveedor_Insumo VARCHAR (50),
 		@Estado_Proveedor_Insumo BIT,
 		@Message VARCHAR (500) OUTPUT,
-		@Result BIT OUTPUT
+		@Result INT OUTPUT
 	) AS BEGIN
 SET
 	@Result = 0 IF NOT EXISTS (
@@ -351,7 +348,7 @@ GO
 	OR ALTER PROCEDURE SP_SUPPLIER_DELETE (
 		@ID_Proveedor_Insumo INT,
 		@Message VARCHAR (500) OUTPUT,
-		@Result BIT OUTPUT
+		@Result INT OUTPUT
 	) AS BEGIN
 SET
 	@Result = 0 IF NOT EXISTS (
@@ -389,7 +386,7 @@ GO
 		@Estado_Insumo BIT,
 		@Fecha_Vencimiento_Insumo DATE,
 		@Message VARCHAR (500) OUTPUT,
-		@Result BIT OUTPUT
+		@Result INT OUTPUT
 	) AS BEGIN
 SET
 	@Result = 0 IF NOT EXISTS (
@@ -447,7 +444,7 @@ GO
 		@Estado_Insumo BIT,
 		@Fecha_Vencimiento_Insumo DATE,
 		@Message VARCHAR (500) OUTPUT,
-		@Result BIT OUTPUT
+		@Result INT OUTPUT
 	) AS BEGIN
 SET
 	@Result = 0 IF NOT EXISTS (
@@ -487,7 +484,7 @@ GO
 	OR ALTER PROCEDURE SP_SUPPLY_DELETE (
 		@ID_Insumo INT,
 		@Message VARCHAR (500) OUTPUT,
-		@Result BIT OUTPUT
+		@Result INT OUTPUT
 	) AS BEGIN
 SET
 	@Result = 0 IF NOT EXISTS (
@@ -512,4 +509,5 @@ SET
 	@Message = 'El ID del Insumo se Encuentra Relacionado a un Movimiento dentro del Inventario'
 END;
 
-----UPDATE Tabla_Insumo SET Ruta_Imagen_Insumo = @Ruta_Imagen_Insumo, Nombre_Imagen_Insumo = @Nombre_Imagen_Insumo WHERE ID_Insumo = @ID_Insumo;
+GO
+	----UPDATE Tabla_Insumo SET Ruta_Imagen_Insumo = @Ruta_Imagen_Insumo, Nombre_Imagen_Insumo = @Nombre_Imagen_Insumo WHERE ID_Insumo = @ID_Insumo;

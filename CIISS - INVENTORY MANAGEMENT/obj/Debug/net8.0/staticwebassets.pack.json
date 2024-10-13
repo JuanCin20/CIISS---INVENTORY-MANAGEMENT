@@ -197,12 +197,12 @@
       "PackagePath": "staticwebassets\\js\\Category.js"
     },
     {
-      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\js\\Suply.js",
-      "PackagePath": "staticwebassets\\js\\Suply.js"
-    },
-    {
       "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\js\\Supplier.js",
       "PackagePath": "staticwebassets\\js\\Supplier.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\js\\Supply.js",
+      "PackagePath": "staticwebassets\\js\\Supply.js"
     },
     {
       "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\js\\User.js",

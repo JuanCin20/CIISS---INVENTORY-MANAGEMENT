@@ -80,10 +80,11 @@
                         <input type="email" class="form-control" id="E_Mail_Usuario" placeholder="E-Mail"
                             autocomplete="off">
                     </div>
-                    <div class="col-sm-12">
-                        <label for="Imagen_Usuario" class="form-label">Imagen:</label>
-                        <input type="text" class="form-control" id="Imagen_Usuario" placeholder="Url"
-                            autocomplete="off">
+                    <div class="col-sm-12 d-flex flex-column align-items-center gap-2">
+                        <img id="Imagen_Usuario" width="200" height="195"
+                            class="border rounded mx-auto d-block img-fluid">
+                        <input type="file" class="form-control" id="Imagen_Usuario_Input"
+                            accept="image/png, image/jpg, image/jpeg" onchange="Show_User_Image(this)">
                     </div>
                 </div>
             </div>
