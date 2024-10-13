@@ -163,11 +163,19 @@ function Open_Form_Modal(data) {
     if (data != null) {
       var fecha_Vencimiento_Insumo_SubString =
         data.fecha_Vencimiento_Insumo.substring(0, 10);
-      var Test_Date = ("0" + fecha_Vencimiento_Insumo_SubString).slice(-11); // ! "10/10/2024";
-      var Day = Test_Date.substring(0, 2);
-      var Month = Test_Date.substring(3, 5);
-      var Year = Test_Date.substring(6, 10);
-      var Final_Date = Year + "-" + Month + "-" + Day;
+      if ($.trim(fecha_Vencimiento_Insumo_SubString).length == 10) {
+        var Day = fecha_Vencimiento_Insumo_SubString.substring(0, 2);
+        var Month = fecha_Vencimiento_Insumo_SubString.substring(3, 5);
+        var Year = fecha_Vencimiento_Insumo_SubString.substring(6, 10);
+        var Final_Date = Year + "-" + Month + "-" + Day;
+      } else {
+        if ($.trim(fecha_Vencimiento_Insumo_SubString).length == 9) {
+          var Day = "0" + fecha_Vencimiento_Insumo_SubString.substring(0, 1);
+          var Month = fecha_Vencimiento_Insumo_SubString.substring(2, 4);
+          var Year = fecha_Vencimiento_Insumo_SubString.substring(5, 9);
+          var Final_Date = Year + "-" + Month + "-" + Day;
+        }
+      }
       $("#ID_Insumo").val(data.iD_Insumo);
       $("#Categoria_Insumo").val(
         data.object_ID_Categoria_Insumo.iD_Categoria_Insumo
@@ -203,7 +211,7 @@ function Selected_Row_Function(data) {
 $("#Table_Insumo").on("click", ".Edit_Button", function () {
   Selected_Row = Selected_Row_Function(this);
   var data = Table_Insumo.row(Selected_Row).data();
-  console.log(data); // ? Good 'console.log'
+  // console.log(data); // ? Good 'console.log'
   Open_Form_Modal(data);
 });
 

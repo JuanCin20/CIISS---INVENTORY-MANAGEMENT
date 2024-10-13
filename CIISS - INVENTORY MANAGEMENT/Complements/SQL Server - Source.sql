@@ -136,6 +136,7 @@ FROM
 	Tabla_Insumo;
 
 GO
+
 SELECT
 	*
 FROM
