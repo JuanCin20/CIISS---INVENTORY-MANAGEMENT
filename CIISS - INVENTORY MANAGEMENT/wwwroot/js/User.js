@@ -5,10 +5,7 @@ function Show_User_Image(input) {
   if (input.files) {
     var Reader = new FileReader();
     Reader.onload = function (event) {
-      $("#Imagen_Usuario")
-        .attr("src", event.target.result)
-        .width(200)
-        .height(195);
+      $("#Imagen_Usuario").attr("src", event.target.result);
     };
     Reader.readAsDataURL(input.files[0]);
   }
@@ -58,7 +55,7 @@ Table_Usuario = $("#Table_Usuario").DataTable({
       data: null,
       render: function (data, type, row) {
         return (
-          '<img style="witdh: 60px; height: 60px;" src="../../User_Images/' +
+          '<img style="witdh: 50px; height: 50px;" src="../../User_Images/' +
           row.nombre_Imagen_Usuario +
           '" alt="Image_Error" class="border rounded img-fluid">'
         );
@@ -190,7 +187,7 @@ function Procesar() {
       processData: false,
       contentType: false,
       success: function (data) {
-        // debugger; // TODO: Punto de Depuración
+        debugger; // TODO: Punto de Depuración
 
         $(".modal-body").LoadingOverlay("hide");
 

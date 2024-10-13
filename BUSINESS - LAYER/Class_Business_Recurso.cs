@@ -15,12 +15,12 @@ namespace BUSINESS___LAYER
             return Usuario_Password;
         }
 
-        // Encriptación de Texto en SHA256
-        public static string Convert_SHA256(string Password_Usuario)
+        // * Encriptación de Texto
+        public static string Convert_SHA_256(string Password_Usuario)
         {
             StringBuilder Obj_StringBuilder = new StringBuilder();
 
-            // Usar la Referencia de "System.Security.Cryptography"
+            // * Usar la Referencia de "System.Security.Cryptography"
             using (SHA256 Obj_SHA256 = SHA256Managed.Create())
             {
                 Encoding Obj_Encoding = Encoding.UTF8;
@@ -61,21 +61,21 @@ namespace BUSINESS___LAYER
             return Result;
         }
 
-        public static string Conversion_Base64(string Ruta_Imagen_Insumo, out bool Conversion)
+        public static string Convert_Base_64(string Ruta_Imagen, out bool Conversion)
         {
-            string Text_Base64 = string.Empty;
+            string Base_64 = string.Empty;
             Conversion = true;
             try
             {
-                byte[] Bytes = File.ReadAllBytes(Ruta_Imagen_Insumo);
-                Text_Base64 = Convert.ToBase64String(Bytes);
+                byte[] Bytes = File.ReadAllBytes(Ruta_Imagen);
+                Base_64 = Convert.ToBase64String(Bytes);
             }
             catch (Exception Error)
             {
                 Conversion = false;
                 Console.WriteLine(Error.Message);
             }
-            return Text_Base64;
+            return Base_64;
         }
     }
 }

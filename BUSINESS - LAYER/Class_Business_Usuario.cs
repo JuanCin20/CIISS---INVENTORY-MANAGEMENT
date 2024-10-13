@@ -53,7 +53,7 @@ namespace BUSINESS___LAYER
 
                 if (Result)
                 {
-                    Obj_Class_Entity_Usuario.Password_Usuario = Class_Business_Recurso.Convert_SHA256(Password_Usuario);
+                    Obj_Class_Entity_Usuario.Password_Usuario = Class_Business_Recurso.Convert_SHA_256(Password_Usuario);
                     return Obj_Class_Data_Usuario.Class_Data_Usuario_Registrar(Obj_Class_Entity_Usuario, out Message);
                 }
                 else

@@ -11,5 +11,7 @@
         public bool Reestablecer_Password_Usuario { get; set; }
         public string Ruta_Imagen_Usuario { get; set; }
         public string Nombre_Imagen_Usuario { get; set; }
+        public string Base_64_Imagen_Usuario { get; set; } // ?
+        public string Extension_Imagen_Usuario { get; set; } // ?
     }
 }

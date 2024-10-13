@@ -84,7 +84,7 @@ namespace CIISS___INVENTORY_MANAGEMENT.Controllers
                     }
                     else
                     {
-                        message = "El Registro del Usuario se Realizó Exitosamente, sin Embargo, hubo Problemas al Registrar la Imagen del Usuario";
+                        message = "El Registro de los Datos del Usuario se Realizó Exitosamente, sin Embargo, hubo Problemas al Registrar la Imagen del Usuario";
                     }
                 }
             }
@@ -107,7 +107,7 @@ namespace CIISS___INVENTORY_MANAGEMENT.Controllers
             {
                 if (Obj_IFormFile != null)
                 {
-                    string Ruta_Imagen_Usuario = "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\User_Images";
+                    string Ruta_Imagen_Usuario = "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\User_Images";
                     string Image_Extension = Path.GetExtension(Obj_IFormFile.FileName);
                     string Nombre_Imagen_Usuario = string.Concat(Obj_Class_Entity_Usuario_Alter.ID_Usuario.ToString(), Image_Extension);
 
@@ -133,11 +133,20 @@ namespace CIISS___INVENTORY_MANAGEMENT.Controllers
                     }
                     else
                     {
-                        message = "La Actualización de Datos del Usuario se Realizó Exitosamente, sin Embargo, hubo Problemas al Actualizar la Imagen del Usuario";
+                        message = "La Actualización de los Datos del Usuario se Realizó Exitosamente, sin Embargo, hubo Problemas al Actualizar la Imagen del Usuario";
                     }
                 }
             }
-            return Json(new { successful_operation = successful_operation, ID_Auto_Generated = Obj_Class_Entity_Usuario_Alter.ID_Usuario, message = message });
+            return Json(new { successful_operation = successful_operation, iD_Auto_Generated = Obj_Class_Entity_Usuario_Alter.ID_Usuario, message = message });
+        }
+
+        [HttpGet]
+        public JsonResult Management_Controller_Usuario_Imagen(int ID_Usuario)
+        {
+            bool conversion;
+            Class_Entity_Usuario Obj_Class_Entity_Usuario = new Class_Business_Usuario().Class_Business_Usuario_Listar().Where(Obj_Class_Entity_Usuario_Alter => Obj_Class_Entity_Usuario_Alter.ID_Usuario == ID_Usuario).FirstOrDefault();
+            string Base_64_Imagen_Usuario = Class_Business_Recurso.Convert_Base_64(Path.Combine(Obj_Class_Entity_Usuario.Ruta_Imagen_Usuario, Obj_Class_Entity_Usuario.Nombre_Imagen_Usuario), out conversion);
+            return Json(new { conversion = conversion, base_64_Imagen_Usuario = Base_64_Imagen_Usuario, extension_Imagen_Usuario = Path.GetExtension(Obj_Class_Entity_Usuario.Nombre_Imagen_Usuario) });
         }
 
         [HttpDelete]

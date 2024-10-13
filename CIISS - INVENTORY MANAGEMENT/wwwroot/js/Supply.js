@@ -5,10 +5,7 @@ function Show_Suply_Image(input) {
   if (input.files) {
     var Reader = new FileReader();
     Reader.onload = function (event) {
-      $("#Imagen_Insumo")
-        .attr("src", event.target.result)
-        .width(200)
-        .height(195);
+      $("#Imagen_Insumo").attr("src", event.target.result);
     };
     Reader.readAsDataURL(input.files[0]);
   }
@@ -76,6 +73,16 @@ $(document).ready(function () {
           var fecha_Vencimiento_Insumo_SubString =
             fecha_Vencimiento_Insumo.substring(0, 10);
           return fecha_Vencimiento_Insumo_SubString;
+        },
+      },
+      {
+        data: null,
+        render: function (data, type, row) {
+          return (
+            '<img style="witdh: 50px; height: 50px;" src="../../Supply_Images/' +
+            row.nombre_Imagen_Insumo +
+            '" alt="Image_Error" class="border rounded img-fluid">'
+          );
         },
       },
       {
@@ -343,7 +350,7 @@ function Procesar() {
       } else {
         if ($("#ID_Insumo").val() == 0) {
           var Request = new FormData();
-          Request.append("Obj_Class_Entity_Insumo", JSON.stringify(Insumo)); // !!!
+          Request.append("Obj_Class_Entity_Insumo", JSON.stringify(Insumo));
           Request.append("Obj_IFormFile", Selected_Image);
 
           jQuery.ajax({
@@ -353,14 +360,15 @@ function Procesar() {
             processData: false,
             contentType: false,
             success: function (data) {
-              // debugger; // TODO: Punto de Depuración
+              debugger; // TODO: Punto de Depuración
 
               $(".modal-body").LoadingOverlay("hide");
 
-              if (data.ID_Insumo_Generated != 0) {
-                Insumo.iD_Insumo = data.ID_Insumo_Generated;
+              if (data.iD_Auto_Generated != 0) {
+                Insumo.iD_Insumo = data.iD_Auto_Generated;
                 Table_Insumo.row.add(Insumo).draw(false);
                 $("#Form_Modal").modal("hide");
+                window.location.reload(); // ?
               } else {
                 toastr.options = {
                   closeButton: true,
@@ -400,7 +408,7 @@ function Procesar() {
         } else {
           if ($("#ID_Insumo").val() != 0) {
             var Request = new FormData();
-            Request.append("Obj_Class_Entity_Insumo", JSON.stringify(Insumo)); // !!!
+            Request.append("Obj_Class_Entity_Insumo", JSON.stringify(Insumo));
             Request.append("Obj_IFormFile", Selected_Image);
 
             jQuery.ajax({
@@ -414,7 +422,7 @@ function Procesar() {
 
                 $(".modal-body").LoadingOverlay("hide");
 
-                if (data.Successful_Operation) {
+                if (data.successful_operation) {
                   Table_Insumo.row(Selected_Row).data(Insumo).draw(false);
                   Selected_Row = null;
                   $("#Form_Modal").modal("hide");
