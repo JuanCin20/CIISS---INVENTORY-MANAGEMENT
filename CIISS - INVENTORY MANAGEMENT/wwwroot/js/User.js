@@ -55,7 +55,7 @@ Table_Usuario = $("#Table_Usuario").DataTable({
       data: null,
       render: function (data, type, row) {
         return (
-          '<img style="witdh: 50px; height: 50px;" src="../../User_Images/' +
+          '<img style="width: 60px; height: 60px;" src="../../User_Images/' +
           row.nombre_Imagen_Usuario +
           '" alt="Image_Error" class="border rounded img-fluid">'
         );

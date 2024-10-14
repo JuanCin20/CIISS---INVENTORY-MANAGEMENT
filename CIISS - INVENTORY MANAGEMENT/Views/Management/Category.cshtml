@@ -51,34 +51,43 @@
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                     aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                <!----><input id="ID_Categoria_Insumo" type="hidden" value="0" /><!---->
-                <div class="row g-2">
-                    <div class="col-sm-6">
-                        <label for="Estado_Categoria_Insumo" class="form-label">Estado:</label>
-                        <select class="form-select" name="Estado_Categoria_Insumo" id="Estado_Categoria_Insumo"
-                            aria-label="Default select example">
-                            <option value="0" selected disabled>Seleccionar</option>
-                            <option value="Available">Disponible</option>
-                            <option value="Not_Available">No Disponible</option>
-                        </select>
+            <form id="Form_Category">
+                <div class="modal-body">
+                    <!----><input id="ID_Categoria_Insumo" type="hidden" value="0" /><!---->
+                    <div class="row g-2">
+                        <div class="col-sm-6">
+                            <label for="Estado_Categoria_Insumo" class="form-label">Estado:</label>
+                            <select class="form-select" name="Estado_Categoria_Insumo" id="Estado_Categoria_Insumo"
+                                aria-label="Default select example">
+                                <option value="0" selected disabled>Seleccionar</option>
+                                <option value="Available">Disponible</option>
+                                <option value="Not_Available">No Disponible</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="Nombre_Categoria_Insumo" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="Nombre_Categoria_Insumo"
+                                name="Nombre_Categoria_Insumo" placeholder="Nombre" autocomplete="off">
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="Descripcion_Categoria_Insumo" class="form-label">Descripción:</label>
+                            <textarea class="form-control" id="Descripcion_Categoria_Insumo"
+                                name="Descripcion_Categoria_Insumo" placeholder="Descripción"
+                                autocomplete="off"></textarea>
+                        </div>
                     </div>
-                    <div class="col-sm-6">
-                        <label for="Nombre_Categoria_Insumo" class="form-label">Nombre:</label>
-                        <input type="text" class="form-control" id="Nombre_Categoria_Insumo" placeholder="Nombre"
-                            autocomplete="off">
-                    </div>
-                    <div class="col-sm-12">
-                        <label for="Descripcion_Categoria_Insumo" class="form-label">Descripción:</label>
-                        <textarea class="form-control" id="Descripcion_Categoria_Insumo" placeholder="Descripción"
-                            autocomplete="off"></textarea>
+                    <div class="row mt-2">
+                        <div class="col-12">
+                            <div id="Bootstrap_Error_Message" class="alert alert-danger" role="alert">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary" onclick="Procesar()">Procesar</button>
-            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" onclick="Procesar()">Procesar</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

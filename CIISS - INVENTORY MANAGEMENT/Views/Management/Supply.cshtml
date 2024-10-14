@@ -59,62 +59,72 @@
             </div>
             <div class="modal-body">
                 <!----><input id="ID_Insumo" type="hidden" value="0" /><!---->
-                <div class="row g-2">
-                    <div class="col-sm-6">
-                        <label for="Estado_Insumo" class="form-label">Estado:</label>
-                        <select class="form-select" name="Estado_Insumo" id="Estado_Insumo"
-                            aria-label="Default select example">
-                            <option value="0" selected disabled>Seleccionar</option>
-                            <option value="Available">Disponible</option>
-                            <option value="Not_Available">No Disponible</option>
-                        </select>
+                <form id="Form_Insumo">
+                    <div class="row g-2">
+                        <div class="col-sm-6">
+                            <label for="Estado_Insumo" class="form-label">Estado:</label>
+                            <select class="form-select" name="Estado_Insumo" id="Estado_Insumo"
+                                aria-label="Default select example">
+                                <option value="0" selected disabled>Seleccionar</option>
+                                <option value="Available">Disponible</option>
+                                <option value="Not_Available">No Disponible</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="Nombre_Insumo" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" name="Nombre_Insumo" id="Nombre_Insumo"
+                                placeholder="Nombre" autocomplete="off">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="Categoria_Insumo" class="form-label">Categoría:</label>
+                            <select class="form-select" name="Categoria_Insumo" id="Categoria_Insumo"
+                                aria-label="Default select example">
+                            </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="Proveedor_Insumo" class="form-label">Proveedor:</label>
+                            <select class="form-select" name="Proveedor_Insumo" id="Proveedor_Insumo"
+                                aria-label="Default select example">
+                            </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="Unidad_Medida_Insumo" class="form-label">Unidad de Medida:</label>
+                            <input type="text" class="form-control" name="Unidad_Medida_Insumo"
+                                id="Unidad_Medida_Insumo" placeholder="Unidad de Medida" autocomplete="off">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="Precio_Insumo" class="form-label">Precio:</label>
+                            <input type="number" class="form-control" name="Precio_Insumo" id="Precio_Insumo"
+                                placeholder="Precio" autocomplete="off">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="Stock_Insumo" class="form-label">Stock:</label>
+                            <input type="number" class="form-control" name="Stock_Insumo" id="Stock_Insumo"
+                                placeholder="Stock" autocomplete="off">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="Fecha_Vencimiento_Insumo" class="form-label">Fecha de Vencimiento:</label>
+                            <input type="date" class="form-control" name="Fecha_Vencimiento_Insumo"
+                                id="Fecha_Vencimiento_Insumo">
+                        </div>
+                        <div class="col-sm-12 d-flex flex-column align-items-center gap-2">
+                            <img id="Imagen_Insumo" style="width: 200px; height: 200px;"
+                                class="border rounded mx-auto d-block img-fluid">
+                            <input type="file" class="form-control" id="Imagen_Insumo_Input"
+                                accept="image/png, image/jpg, image/jpeg" onchange="Show_Suply_Image(this)">
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="Descripcion_Insumo" class="form-label">Descripción:</label>
+                            <textarea class="form-control" id="Descripcion_Insumo" name="Descripcion_Insumo"
+                                placeholder="Descripción" autocomplete="off"></textarea>
+                        </div>
                     </div>
-                    <div class="col-sm-6">
-                        <label for="Nombre_Insumo" class="form-label">Nombre:</label>
-                        <input type="text" class="form-control" id="Nombre_Insumo" placeholder="Nombre"
-                            autocomplete="off">
-                    </div>
-                    <div class="col-sm-6">
-                        <label for="Categoria_Insumo" class="form-label">Categoría:</label>
-                        <select class="form-select" name="Categoria_Insumo" id="Categoria_Insumo"
-                            aria-label="Default select example">
-                        </select>
-                    </div>
-                    <div class="col-sm-6">
-                        <label for="Proveedor_Insumo" class="form-label">Proveedor:</label>
-                        <select class="form-select" name="Proveedor_Insumo" id="Proveedor_Insumo"
-                            aria-label="Default select example">
-                        </select>
-                    </div>
-                    <div class="col-sm-6">
-                        <label for="Unidad_Medida_Insumo" class="form-label">Unidad de Medida:</label>
-                        <input type="text" class="form-control" id="Unidad_Medida_Insumo" placeholder="Unidad de Medida"
-                            autocomplete="off">
-                    </div>
-                    <div class="col-sm-6">
-                        <label for="Precio_Insumo" class="form-label">Precio:</label>
-                        <input type="number" class="form-control" id="Precio_Insumo" placeholder="Precio"
-                            autocomplete="off">
-                    </div>
-                    <div class="col-sm-6">
-                        <label for="Stock_Insumo" class="form-label">Stock:</label>
-                        <input type="number" class="form-control" id="Stock_Insumo" placeholder="Stock"
-                            autocomplete="off">
-                    </div>
-                    <div class="col-sm-6">
-                        <label for="Fecha_Vencimiento_Insumo" class="form-label">Fecha de Vencimiento:</label>
-                        <input type="date" class="form-control" id="Fecha_Vencimiento_Insumo">
-                    </div>
-                    <div class="col-sm-12 d-flex flex-column align-items-center gap-2">
-                        <img id="Imagen_Insumo" style="width: 200px; height: 200px;"
-                            class="border rounded mx-auto d-block img-fluid">
-                        <input type="file" class="form-control" id="Imagen_Insumo_Input"
-                            accept="image/png, image/jpg, image/jpeg" onchange="Show_Suply_Image(this)">
-                    </div>
-                    <div class="col-sm-12">
-                        <label for="Descripcion_Insumo" class="form-label">Descripción:</label>
-                        <textarea class="form-control" id="Descripcion_Insumo" placeholder="Descripción"
-                            autocomplete="off"></textarea>
+                </form>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <div id="Error_Message" class="alert alert-danger" role="alert">
+                            Hola!
+                        </div>
                     </div>
                 </div>
             </div>

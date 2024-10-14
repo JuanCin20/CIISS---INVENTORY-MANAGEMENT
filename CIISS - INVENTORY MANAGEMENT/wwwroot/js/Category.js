@@ -78,6 +78,7 @@ function Open_Form_Modal(data) {
     $("#Nombre_Categoria_Insumo").val("");
     $("#Descripcion_Categoria_Insumo").val("");
     $("#Estado_Categoria_Insumo").val(0);
+    $("#Bootstrap_Error_Message").hide();
   } else {
     if (data != null) {
       $("#ID_Categoria_Insumo").val(data.iD_Categoria_Insumo);
@@ -86,6 +87,7 @@ function Open_Form_Modal(data) {
       $("#Estado_Categoria_Insumo").val(
         data.estado_Categoria_Insumo == true ? "Available" : "Not_Available"
       );
+      $("#Bootstrap_Error_Message").hide();
     }
   }
   $("#Form_Modal").modal("show");
@@ -154,6 +156,57 @@ $("#Table_Categoria_Insumo").on("click", ".Delete_Button", function () {
   // console.log(data); // ? Good 'console.log'
 });
 
+jQuery.validator.addMethod(
+  "Valid_Name",
+  function (value, element) {
+    return (
+      this.optional(element) || /^[a-z áãâäàéêëèíîïìóõôöòúûüùçñ]+$/i.test(value)
+    );
+  },
+  "Error_01"
+);
+
+jQuery.validator.addMethod(
+  "Valid_State",
+  function (value, element) {
+    if ($(element).find(":selected").val() == 0) {
+      return false;
+    } else {
+      return true;
+    }
+  },
+  "<i class='fa-solid fa-circle-exclamation'></i> Error_State_01"
+);
+
+$("#Form_Category").validate({
+  rules: {
+    Estado_Categoria_Insumo: {
+      required: true,
+      // Valid_State: true,
+    },
+    Nombre_Categoria_Insumo: {
+      required: true,
+      Valid_Name: true,
+    },
+    Descripcion_Categoria_Insumo: {
+      required: true,
+    },
+  },
+  messages: {
+    Estado_Categoria_Insumo: {
+      // required: "Error_State_02",
+      // Valid_State: "Error_State_03",
+    },
+    Nombre_Categoria_Insumo: {
+      required: "Error_02",
+      Valid_Name: "Error_03",
+    },
+    Descripcion_Categoria_Insumo: "Error_04",
+  },
+  errorElement: "div",
+  errorLabelContainer: ".alert-danger",
+});
+
 function Procesar() {
   var Estado_Categoria_Insumo_Selection = $(
     "#Estado_Categoria_Insumo option:selected"
@@ -168,27 +221,10 @@ function Procesar() {
   };
 
   if (Estado_Categoria_Insumo_Selection == "Seleccionar") {
-    toastr.options = {
-      closeButton: true,
-      debug: false,
-      newestOnTop: true,
-      progressBar: true,
-      positionClass: "toast-bottom-center",
-      preventDuplicates: true,
-      onclick: null,
-      showDuration: "300",
-      hideDuration: "1000",
-      timeOut: "5000",
-      extendedTimeOut: "1000",
-      showEasing: "swing",
-      hideEasing: "linear",
-      showMethod: "fadeIn",
-      hideMethod: "fadeOut",
-    };
-    toastr["warning"](
-      "Campo Requerido: Estado de la Categoría del Insumo",
-      "Advertencia:"
+    $("#Bootstrap_Error_Message").html(
+      "<i class='fa-solid fa-circle-exclamation'></i> Campo Requerido: Estado de la Categoría del Insumo"
     );
+    $("#Bootstrap_Error_Message").show();
   } else {
     if ($("#ID_Categoria_Insumo").val() == 0) {
       jQuery.ajax({
@@ -205,24 +241,12 @@ function Procesar() {
             Table_Categoria_Insumo.row.add(Categoria).draw(false);
             $("#Form_Modal").modal("hide");
           } else {
-            toastr.options = {
-              closeButton: true,
-              debug: false,
-              newestOnTop: true,
-              progressBar: true,
-              positionClass: "toast-bottom-center",
-              preventDuplicates: true,
-              onclick: null,
-              showDuration: "300",
-              hideDuration: "1000",
-              timeOut: "5000",
-              extendedTimeOut: "1000",
-              showEasing: "swing",
-              hideEasing: "linear",
-              showMethod: "fadeIn",
-              hideMethod: "fadeOut",
-            };
-            toastr["warning"](data.message, "Advertencia:");
+            $("#Bootstrap_Error_Message").html(
+              "<i class='fa-solid fa-circle-exclamation'></i> " +
+                data.message +
+                ""
+            );
+            $("#Bootstrap_Error_Message").show();
           }
         },
         error: function (error) {

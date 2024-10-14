@@ -76,16 +76,6 @@ $(document).ready(function () {
         },
       },
       {
-        data: null,
-        render: function (data, type, row) {
-          return (
-            '<img style="witdh: 50px; height: 50px;" src="../../Supply_Images/' +
-            row.nombre_Imagen_Insumo +
-            '" alt="Image_Error" class="border rounded img-fluid">'
-          );
-        },
-      },
-      {
         data: "estado_Insumo",
         render: function (estado_Insumo) {
           if (estado_Insumo) {
@@ -93,6 +83,16 @@ $(document).ready(function () {
           } else {
             return '<span class="badge text-bg-danger">No Disponible</span>';
           }
+        },
+      },
+      {
+        data: null,
+        render: function (data, type, row) {
+          return (
+            '<img style="width: 60px; height: 60px;" src="../../Supply_Images/' +
+            row.nombre_Imagen_Insumo +
+            '" alt="Image_Error" class="border rounded img-fluid">'
+          );
         },
       },
       {
@@ -142,6 +142,66 @@ jQuery.ajax({
         .text(item.nombre_Proveedor_Insumo)
         .appendTo("#Proveedor_Insumo");
     });
+  },
+});
+
+jQuery.validator.addMethod(
+  "Valid_Number",
+  function (value, element) {
+    return this.optional(element) || /^\d{0,4}(\.\d{0,2})?$/i.test(value);
+  },
+  "El Formato Numérico del Precio del Insumo debe ser ##.##"
+);
+
+$("#Form_Insumo").validate({
+  rule: {
+    Estado_Insumo: {
+      required: true,
+    },
+    Nombre_Insumo: {
+      required: true,
+    },
+    Categoria_Insumo: {
+      required: true,
+    },
+    Proveedor_Insumo: {
+      required: true,
+    },
+    Unidad_Medida_Insumo: {
+      required: true,
+    },
+    Precio_Insumo: {
+      required: true,
+      Valid_Number: true,
+    },
+    Stock_Insumo: {
+      required: true,
+      number: true,
+    },
+    Fecha_Vencimiento_Insumo: {
+      required: true,
+    },
+    Descripcion_Insumo: {
+      required: true,
+    },
+  },
+  messages: {
+    Nombre_Insumo: "Campo Requerido: Nombre del Insumo",
+    Unidad_Medida_Insumo: "Campo Requerido: Unidad de Medida del Insumo",
+    Precio_Insumo: {
+      required: "Campo Requerido: Precio del Insumo",
+      Valid_Number: "El Formato Numérico del Precio del Insumo debe ser ##.##",
+    },
+    Stock_Insumo: {
+      required: "Campo Requerido: Stock del Insumo",
+      Valid_Number:
+        "Debe Ingresar solo Números en el Campo del Stock del Insumo",
+    },
+    Fecha_Vencimiento_Insumo:
+      "Campo Requerido: Fecha de Vencimiento del Insumo",
+    Descripcion_Insumo: "Campo Requerido: Descripción del Insumo",
+    errorElement: "div",
+    errorLabelContainer: ".alert-danger",
   },
 });
 
