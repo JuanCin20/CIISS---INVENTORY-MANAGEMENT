@@ -18,13 +18,13 @@ namespace BUSINESS___LAYER
             Message = string.Empty;
             if (string.IsNullOrEmpty(Obj_Class_Entity_Categoria_Insumo.Nombre_Categoria_Insumo) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Categoria_Insumo.Nombre_Categoria_Insumo))
             {
-                Message = "Campo Requerido: Nombre de la Categoría del Insumo";
+                Message = "Error: Nombre_Categoria_Insumo";
             }
             else
             {
                 if (string.IsNullOrEmpty(Obj_Class_Entity_Categoria_Insumo.Descripcion_Categoria_Insumo) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Categoria_Insumo.Descripcion_Categoria_Insumo))
                 {
-                    Message = "Campo Requerido: Descripción de la Categoría del Insumo";
+                    Message = "Error: Descripcion_Categoria_Insumo";
                 }
             }
 
@@ -43,13 +43,13 @@ namespace BUSINESS___LAYER
             Message = string.Empty;
             if (string.IsNullOrEmpty(Obj_Class_Entity_Categoria_Insumo.Nombre_Categoria_Insumo) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Categoria_Insumo.Nombre_Categoria_Insumo))
             {
-                Message = "Campo Requerido: Nombre de la Categoría del Insumo";
+                Message = "Error: Nombre_Categoria_Insumo";
             }
             else
             {
                 if (string.IsNullOrEmpty(Obj_Class_Entity_Categoria_Insumo.Descripcion_Categoria_Insumo) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Categoria_Insumo.Descripcion_Categoria_Insumo))
                 {
-                    Message = "Campo Requerido: Descripción de la Categoría del Insumo";
+                    Message = "Error: Descripcion_Categoria_Insumo";
                 }
             }
 

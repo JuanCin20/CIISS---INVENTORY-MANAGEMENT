@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Test.css" />
+    <title>Validation</title>
+  </head>
+  <body>
+    <div class="container-fluid p-3 mb-3 bg-danger text-light">
+      <header class="text-center">
+        <h1>Test</h1>
+      </header>
+    </div>
+    <div class="container">
+      <button type="button" id="Edit_Button" class="btn btn-primary">
+        <i class="fa-solid fa-pencil"></i>
+      </button>
+    </div>
+    <!--Vertically Centered Modal-->
+    <div
+      class="modal fade"
+      id="Form_Modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-white">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Categoría del Insumo
+            </h1>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <form id="Form_Category" class="form-horizontal">
+            <div class="modal-body">
+              <!----><input
+                id="ID_Categoria_Insumo"
+                type="hidden"
+                value="0"
+              /><!---->
+              <div class="d-flex flex-column gap-3 m-3">
+                <div class="form-group row">
+                  <label
+                    class="col-sm-6 col-form-label"
+                    for="Estado_Categoria_Insumo"
+                    >Estado:</label
+                  >
+                  <div class="col-sm-6">
+                    <select
+                      class="form-select"
+                      name="Estado_Categoria_Insumo"
+                      id="Estado_Categoria_Insumo"
+                      aria-label="Default select example"
+                    >
+                      <option value="0" selected disabled>Seleccionar</option>
+                      <option value="Available">Disponible</option>
+                      <option value="Not_Available">No Disponible</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label
+                    class="col-sm-6 col-form-label"
+                    for="Nombre_Categoria_Insumo"
+                    >Nombre:</label
+                  >
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="Nombre_Categoria_Insumo"
+                      name="Nombre_Categoria_Insumo"
+                      placeholder="Nombre"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label
+                    class="col-sm-6 col-form-label"
+                    for="Descripcion_Categoria_Insumo"
+                    >Descripción:</label
+                  >
+                  <div class="col-sm-6">
+                    <textarea
+                      class="form-control"
+                      id="Descripcion_Categoria_Insumo"
+                      name="Descripcion_Categoria_Insumo"
+                      placeholder="Descripción"
+                      autocomplete="off"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                onclick="Procesar()"
+              >
+                Procesar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../wwwroot/lib/Real_Use/JQuery_Validation_v1.19.5/dist/jquery.validate.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/81581fb069.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function Open_Form_Modal() {
+        $("#Form_Modal").modal("show");
+      }
+
+      $(document).on("click", "#Edit_Button", function () {
+        Open_Form_Modal();
+      });
+
+      jQuery.validator.addMethod(
+        "Valid_Nombre_Categoria_Insumo",
+        function (value, element) {
+          return (
+            this.optional(element) ||
+            /([a-zA-Z',.-]+( [a-zA-Z',.-]+)*){2,30}/.test(value)
+          );
+        }
+      );
+
+      jQuery.validator.addMethod(
+        "Valid_Descripcion_Categoria_Insumo",
+        function (value, element) {
+          return (
+            this.optional(element) ||
+            /([a-zA-Z',.-]+( [a-zA-Z',.-]+)*){2,30}/.test(value)
+          );
+        }
+      );
+
+      $.validator.setDefaults({
+        submitHandler: function () {
+          console.log("Ok!");
+          window.location.reload();
+        },
+      });
+
+      $(document).ready(function () {
+        $("#Form_Category").validate({
+          rules: {
+            Estado_Categoria_Insumo: {
+              required: true,
+            },
+            Nombre_Categoria_Insumo: {
+              required: true,
+              Valid_Nombre_Categoria_Insumo: true,
+            },
+            Descripcion_Categoria_Insumo: {
+              required: true,
+              Valid_Descripcion_Categoria_Insumo: true,
+            },
+          },
+          messages: {
+            Estado_Categoria_Insumo: {
+              required: "Campo Requerido: Estado de la Categoría del Insumo",
+            },
+            Nombre_Categoria_Insumo: {
+              required: "Campo Requerido: Nombre de la Categoría del Insumo",
+              Valid_Nombre_Categoria_Insumo:
+                "Campo Requerido: Nombre de la Categoría del Insumo",
+            },
+            Descripcion_Categoria_Insumo: {
+              required:
+                "Campo Requerido: Descripción de la Categoría del Insumo",
+              Valid_Descripcion_Categoria_Insumo:
+                "Campo Requerido: Descripción de la Categoría del Insumo",
+            },
+          },
+          errorElement: "em",
+          errorPlacement: function (error, element) {
+            // Add the "invalid-feedback" class to the error element
+            error.addClass("invalid-feedback");
+
+            if (element.prop("type") === "checkbox") {
+              error.insertAfter(element.next("label"));
+            } else {
+              error.insertAfter(element);
+            }
+          },
+          highlight: function (element, errorClass, validClass) {
+            $(element).addClass("is-invalid").removeClass("is-valid");
+          },
+          unhighlight: function (element, errorClass, validClass) {
+            $(element).addClass("is-valid").removeClass("is-invalid");
+          },
+        });
+      });
+
+      function Procesar() {
+        if (!$("#Form_Category").valid()) {
+          return;
+        } else {
+        }
+      }
+    </script>
+  </body>
+</html>

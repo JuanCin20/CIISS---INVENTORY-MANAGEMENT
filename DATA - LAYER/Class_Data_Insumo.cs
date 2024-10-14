@@ -177,7 +177,7 @@ namespace DATA___LAYER
                     }
                     else
                     {
-                        Message = "ERROR: Image_Error";
+                        Message = "Error: Ruta_Imagen_Insumo && Error: Nombre_Imagen_Insumo";
                     }
                 }
             }

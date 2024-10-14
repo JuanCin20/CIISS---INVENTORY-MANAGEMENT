@@ -78,7 +78,12 @@ function Open_Form_Modal(data) {
     $("#Nombre_Categoria_Insumo").val("");
     $("#Descripcion_Categoria_Insumo").val("");
     $("#Estado_Categoria_Insumo").val(0);
-    $("#Bootstrap_Error_Message").hide();
+    $("#Nombre_Categoria_Insumo").removeClass("is-valid");
+    $("#Nombre_Categoria_Insumo").removeClass("is-invalid");
+    $("#Descripcion_Categoria_Insumo").removeClass("is-valid");
+    $("#Descripcion_Categoria_Insumo").removeClass("is-invalid");
+    $("#Estado_Categoria_Insumo").removeClass("is-valid");
+    $("#Estado_Categoria_Insumo").removeClass("is-invalid");
   } else {
     if (data != null) {
       $("#ID_Categoria_Insumo").val(data.iD_Categoria_Insumo);
@@ -87,7 +92,6 @@ function Open_Form_Modal(data) {
       $("#Estado_Categoria_Insumo").val(
         data.estado_Categoria_Insumo == true ? "Available" : "Not_Available"
       );
-      $("#Bootstrap_Error_Message").hide();
     }
   }
   $("#Form_Modal").modal("show");
@@ -157,75 +161,89 @@ $("#Table_Categoria_Insumo").on("click", ".Delete_Button", function () {
 });
 
 jQuery.validator.addMethod(
-  "Valid_Name",
+  "Valid_Nombre_Categoria_Insumo",
   function (value, element) {
     return (
-      this.optional(element) || /^[a-z áãâäàéêëèíîïìóõôöòúûüùçñ]+$/i.test(value)
+      this.optional(element) ||
+      /([a-zA-Z',.-]+( [a-zA-Z',.-]+)*){2,30}/.test(value)
     );
-  },
-  "Error_01"
+  }
 );
 
 jQuery.validator.addMethod(
-  "Valid_State",
+  "Valid_Descripcion_Categoria_Insumo",
   function (value, element) {
-    if ($(element).find(":selected").val() == 0) {
-      return false;
-    } else {
-      return true;
-    }
-  },
-  "<i class='fa-solid fa-circle-exclamation'></i> Error_State_01"
+    return (
+      this.optional(element) ||
+      /([a-zA-Z',.-]+( [a-zA-Z',.-]+)*){2,30}/.test(value)
+    );
+  }
 );
 
-$("#Form_Category").validate({
-  rules: {
-    Estado_Categoria_Insumo: {
-      required: true,
-      // Valid_State: true,
+$(document).ready(function () {
+  $("#Form_Category").validate({
+    rules: {
+      Estado_Categoria_Insumo: {
+        required: true,
+      },
+      Nombre_Categoria_Insumo: {
+        required: true,
+        Valid_Nombre_Categoria_Insumo: true,
+      },
+      Descripcion_Categoria_Insumo: {
+        required: true,
+        Valid_Descripcion_Categoria_Insumo: true,
+      },
     },
-    Nombre_Categoria_Insumo: {
-      required: true,
-      Valid_Name: true,
+    messages: {
+      Estado_Categoria_Insumo: {
+        required: "Campo Requerido: Estado de la Categoría del Insumo",
+      },
+      Nombre_Categoria_Insumo: {
+        required: "Campo Requerido: Nombre de la Categoría del Insumo",
+        Valid_Nombre_Categoria_Insumo:
+          "Campo Requerido: Nombre de la Categoría del Insumo",
+      },
+      Descripcion_Categoria_Insumo: {
+        required: "Campo Requerido: Descripción de la Categoría del Insumo",
+        Valid_Descripcion_Categoria_Insumo:
+          "Campo Requerido: Descripción de la Categoría del Insumo",
+      },
     },
-    Descripcion_Categoria_Insumo: {
-      required: true,
+    errorElement: "em",
+    errorPlacement: function (error, element) {
+      // Add the "invalid-feedback" class to the error element
+      error.addClass("invalid-feedback");
+
+      if (element.prop("type") === "checkbox") {
+        error.insertAfter(element.next("label"));
+      } else {
+        error.insertAfter(element);
+      }
     },
-  },
-  messages: {
-    Estado_Categoria_Insumo: {
-      // required: "Error_State_02",
-      // Valid_State: "Error_State_03",
+    highlight: function (element, errorClass, validClass) {
+      $(element).addClass("is-invalid").removeClass("is-valid");
     },
-    Nombre_Categoria_Insumo: {
-      required: "Error_02",
-      Valid_Name: "Error_03",
+    unhighlight: function (element, errorClass, validClass) {
+      $(element).addClass("is-valid").removeClass("is-invalid");
     },
-    Descripcion_Categoria_Insumo: "Error_04",
-  },
-  errorElement: "div",
-  errorLabelContainer: ".alert-danger",
+  });
 });
 
 function Procesar() {
-  var Estado_Categoria_Insumo_Selection = $(
-    "#Estado_Categoria_Insumo option:selected"
-  ).text();
-
-  var Categoria = {
-    iD_Categoria_Insumo: $("#ID_Categoria_Insumo").val(),
-    nombre_Categoria_Insumo: $("#Nombre_Categoria_Insumo").val(),
-    descripcion_Categoria_Insumo: $("#Descripcion_Categoria_Insumo").val(),
-    estado_Categoria_Insumo:
-      $("#Estado_Categoria_Insumo").val() == "Available" ? true : false,
-  };
-
-  if (Estado_Categoria_Insumo_Selection == "Seleccionar") {
-    $("#Bootstrap_Error_Message").html(
-      "<i class='fa-solid fa-circle-exclamation'></i> Campo Requerido: Estado de la Categoría del Insumo"
-    );
-    $("#Bootstrap_Error_Message").show();
+  if (!$("#Form_Category").valid()) {
+    return;
   } else {
+    var Categoria = {
+      iD_Categoria_Insumo: $("#ID_Categoria_Insumo").val(),
+      nombre_Categoria_Insumo: $.trim($("#Nombre_Categoria_Insumo").val()),
+      descripcion_Categoria_Insumo: $.trim(
+        $("#Descripcion_Categoria_Insumo").val()
+      ),
+      estado_Categoria_Insumo:
+        $("#Estado_Categoria_Insumo").val() == "Available" ? true : false,
+    };
+
     if ($("#ID_Categoria_Insumo").val() == 0) {
       jQuery.ajax({
         url: "https://localhost:7050/Management/Management_Controller_Categoria_Insumo_Registrar",
@@ -241,12 +259,7 @@ function Procesar() {
             Table_Categoria_Insumo.row.add(Categoria).draw(false);
             $("#Form_Modal").modal("hide");
           } else {
-            $("#Bootstrap_Error_Message").html(
-              "<i class='fa-solid fa-circle-exclamation'></i> " +
-                data.message +
-                ""
-            );
-            $("#Bootstrap_Error_Message").show();
+            // !!! data.message
           }
         },
         error: function (error) {
@@ -282,24 +295,7 @@ function Procesar() {
               Selected_Row = null;
               $("#Form_Modal").modal("hide");
             } else {
-              toastr.options = {
-                closeButton: true,
-                debug: false,
-                newestOnTop: true,
-                progressBar: true,
-                positionClass: "toast-bottom-center",
-                preventDuplicates: true,
-                onclick: null,
-                showDuration: "300",
-                hideDuration: "1000",
-                timeOut: "5000",
-                extendedTimeOut: "1000",
-                showEasing: "swing",
-                hideEasing: "linear",
-                showMethod: "fadeIn",
-                hideMethod: "fadeOut",
-              };
-              toastr["warning"](data.message, "Advertencia:");
+              // !!! data.message
             }
           },
           error: function (error) {

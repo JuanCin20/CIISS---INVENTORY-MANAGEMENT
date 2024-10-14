@@ -11,3 +11,7 @@
   --bs-popover-body-padding-x: 1rem;
   --bs-popover-body-padding-y: 0.5rem;
 }
+
+body {
+  background-color: rgb(145, 145, 145);
+}
