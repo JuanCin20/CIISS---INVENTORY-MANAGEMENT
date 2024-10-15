@@ -30,6 +30,7 @@ $(document).ready(function () {
       url: "//cdn.datatables.net/plug-ins/2.1.8/i18n/es-MX.json",
     },
     ajax: {
+      // ? url: "@Url.Action('Management_Controller_Proveedor_Insumo_Listar', 'Management')",
       url: "https://localhost:7050/Management/Management_Controller_Proveedor_Insumo_Listar",
       type: "GET",
       dataType: "json",
@@ -78,6 +79,16 @@ $(document).ready(function () {
 
 function Open_Form_Modal(data) {
   if (data == null) {
+    $("#Nombre_Proveedor_Insumo").removeClass("is-valid");
+    $("#Nombre_Proveedor_Insumo").removeClass("is-invalid");
+    $("#Telefono_Proveedor_Insumo").removeClass("is-valid");
+    $("#Telefono_Proveedor_Insumo").removeClass("is-invalid");
+    $("#E_Mail_Proveedor_Insumo").removeClass("is-valid");
+    $("#E_Mail_Proveedor_Insumo").removeClass("is-invalid");
+    $("#Direccion_Proveedor_Insumo").removeClass("is-valid");
+    $("#Direccion_Proveedor_Insumo").removeClass("is-invalid");
+    $("#Estado_Proveedor_Insumo").removeClass("is-valid");
+    $("#Estado_Proveedor_Insumo").removeClass("is-invalid");
     $("#ID_Proveedor_Insumo").val(0);
     $("#Nombre_Proveedor_Insumo").val("");
     $("#Telefono_Proveedor_Insumo").val("");
@@ -86,6 +97,16 @@ function Open_Form_Modal(data) {
     $("#Estado_Proveedor_Insumo").val(0);
   } else {
     if (data != null) {
+      $("#Nombre_Proveedor_Insumo").removeClass("is-valid");
+      $("#Nombre_Proveedor_Insumo").removeClass("is-invalid");
+      $("#Telefono_Proveedor_Insumo").removeClass("is-valid");
+      $("#Telefono_Proveedor_Insumo").removeClass("is-invalid");
+      $("#E_Mail_Proveedor_Insumo").removeClass("is-valid");
+      $("#E_Mail_Proveedor_Insumo").removeClass("is-invalid");
+      $("#Direccion_Proveedor_Insumo").removeClass("is-valid");
+      $("#Direccion_Proveedor_Insumo").removeClass("is-invalid");
+      $("#Estado_Proveedor_Insumo").removeClass("is-valid");
+      $("#Estado_Proveedor_Insumo").removeClass("is-invalid");
       $("#ID_Proveedor_Insumo").val(data.iD_Proveedor_Insumo);
       $("#Nombre_Proveedor_Insumo").val(data.nombre_Proveedor_Insumo);
       $("#Telefono_Proveedor_Insumo").val(data.telefono_Proveedor_Insumo);
@@ -132,6 +153,7 @@ $("#Table_Proveedor_Insumo").on("click", ".Delete_Button", function () {
   }).then((result) => {
     if (result.isConfirmed) {
       jQuery.ajax({
+        // ? url: "@Url.Action('Management_Controller_Proveedor_Insumo_Eliminar', 'Management')",
         url: "https://localhost:7050/Management/Management_Controller_Proveedor_Insumo_Eliminar",
         type: "DELETE",
         data: { ID_Proveedor_Insumo: data.iD_Proveedor_Insumo },
@@ -162,46 +184,139 @@ $("#Table_Proveedor_Insumo").on("click", ".Delete_Button", function () {
   // console.log(data); // ? Good 'console.log'
 });
 
-function Procesar() {
-  var Estado_Proveedor_Insumo_Selection = $(
-    "#Estado_Proveedor_Insumo option:selected"
-  ).text();
-
-  var Proveedor = {
-    iD_Proveedor_Insumo: $("#ID_Proveedor_Insumo").val(),
-    nombre_Proveedor_Insumo: $("#Nombre_Proveedor_Insumo").val(),
-    telefono_Proveedor_Insumo: $("#Telefono_Proveedor_Insumo").val(),
-    e_Mail_Proveedor_Insumo: $("#E_Mail_Proveedor_Insumo").val(),
-    direccion_Proveedor_Insumo: $("#Direccion_Proveedor_Insumo").val(),
-    estado_Proveedor_Insumo:
-      $("#Estado_Proveedor_Insumo").val() == "Available" ? true : false,
-  };
-
-  if (Estado_Proveedor_Insumo_Selection == "Seleccionar") {
-    toastr.options = {
-      closeButton: true,
-      debug: false,
-      newestOnTop: true,
-      progressBar: true,
-      positionClass: "toast-bottom-center",
-      preventDuplicates: true,
-      onclick: null,
-      showDuration: "300",
-      hideDuration: "1000",
-      timeOut: "5000",
-      extendedTimeOut: "1000",
-      showEasing: "swing",
-      hideEasing: "linear",
-      showMethod: "fadeIn",
-      hideMethod: "fadeOut",
-    };
-    toastr["warning"](
-      "Campo Requerido: Estado del Proveedor del Insumo",
-      "Advertencia:"
+jQuery.validator.addMethod(
+  "Valid_Nombre_Proveedor_Insumo",
+  function (value, element) {
+    return (
+      this.optional(element) ||
+      /([a-zA-Z',.-]+( [a-zA-Z',.-]+)*){2,30}/.test(value)
     );
+  }
+);
+
+jQuery.validator.addMethod(
+  "Valid_Telefono_Proveedor_Insumo",
+  function (value, element) {
+    return (
+      this.optional(element) ||
+      /^(?:\+1)?\s?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/.test(value)
+    );
+  }
+);
+
+jQuery.validator.addMethod(
+  "Valid_E_Mail_Proveedor_Insumo",
+  function (value, element) {
+    return (
+      this.optional(element) || /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(value)
+    );
+  }
+);
+
+jQuery.validator.addMethod(
+  "Valid_Direccion_Proveedor_Insumo",
+  function (value, element) {
+    return (
+      this.optional(element) ||
+      /([a-zA-Z',.-]+( [a-zA-Z',.-]+)*){2,30}/.test(value)
+    );
+  }
+);
+
+$(document).ready(function () {
+  $("#Form_Supplier").validate({
+    rules: {
+      Estado_Proveedor_Insumo: {
+        required: true,
+      },
+      Nombre_Proveedor_Insumo: {
+        required: true,
+        Valid_Nombre_Proveedor_Insumo: true,
+      },
+      Telefono_Proveedor_Insumo: {
+        required: true,
+        number: true,
+        Valid_Telefono_Proveedor_Insumo: true,
+      },
+      E_Mail_Proveedor_Insumo: {
+        required: true,
+        Valid_E_Mail_Proveedor_Insumo: true,
+      },
+      Direccion_Proveedor_Insumo: {
+        required: true,
+        Valid_Direccion_Proveedor_Insumo: true,
+      },
+    },
+    messages: {
+      Estado_Proveedor_Insumo: {
+        required: "Campo Requerido: Estado del Proveedor del Insumo",
+      },
+      Nombre_Proveedor_Insumo: {
+        required: "Campo Requerido: Nombre del Proveedor del Insumo",
+        Valid_Nombre_Proveedor_Insumo:
+          "Campo Requerido: Nombre de la Categoría del Insumo",
+      },
+      Telefono_Proveedor_Insumo: {
+        required: "Campo Requerido: Teléfono del Proveedor del Insumo",
+        number: "Ingrese un Número Teléfonico Válido (Alter)",
+        Valid_Telefono_Proveedor_Insumo: "Ingrese un Número Teléfonico Válido",
+      },
+      E_Mail_Proveedor_Insumo: {
+        required:
+          "Campo Requerido: Correo Electrónico del Proveedor del Insumo",
+        Valid_E_Mail_Proveedor_Insumo: "Ingrese un Correo Electrónico Válido",
+      },
+      Direccion_Proveedor_Insumo: {
+        required: "Campo Requerido: Dirección del Proveedor del Insumo",
+        Valid_Direccion_Proveedor_Insumo:
+          "Campo Requerido: Dirección del Proveedor del Insumo",
+      },
+    },
+    errorElement: "em",
+    errorPlacement: function (error, element) {
+      // Add the "invalid-feedback" class to the error element
+      error.addClass("invalid-feedback");
+
+      if (element.prop("type") === "checkbox") {
+        error.insertAfter(element.next("label"));
+      } else {
+        error.insertAfter(element);
+      }
+    },
+    highlight: function (element, errorClass, validClass) {
+      $(element).addClass("is-invalid").removeClass("is-valid");
+    },
+    unhighlight: function (element, errorClass, validClass) {
+      $(element).addClass("is-valid").removeClass("is-invalid");
+    },
+  });
+});
+
+$.validator.setDefaults({
+  submitHandler: function () {
+    console.log("Ok!");
+  },
+});
+
+function Procesar() {
+  if (!$("#Form_Category").valid()) {
+    return;
   } else {
+    var Proveedor = {
+      iD_Proveedor_Insumo: $("#ID_Proveedor_Insumo").val(),
+      nombre_Proveedor_Insumo: $.trim($("#Nombre_Proveedor_Insumo").val()),
+      telefono_Proveedor_Insumo: $.trim($("#Telefono_Proveedor_Insumo").val()),
+      e_Mail_Proveedor_Insumo: $.trim($("#E_Mail_Proveedor_Insumo").val()),
+      direccion_Proveedor_Insumo: $.trim(
+        $("#Direccion_Proveedor_Insumo").val()
+      ),
+      estado_Proveedor_Insumo:
+        $("#Estado_Proveedor_Insumo").val() == "Available" ? true : false,
+    };
+
     if ($("#ID_Proveedor_Insumo").val() == 0) {
       jQuery.ajax({
+        // ? url: "@Url.Action('Management_Controller_Proveedor_Insumo_Registrar', 'Management')",
         url: "https://localhost:7050/Management/Management_Controller_Proveedor_Insumo_Registrar",
         type: "POST",
         data: { Obj_Class_Entity_Proveedor_Insumo: Proveedor },
@@ -214,14 +329,13 @@ function Procesar() {
             Proveedor.iD_Proveedor_Insumo = data.result;
             Table_Proveedor_Insumo.row.add(Proveedor).draw(false);
             $("#Form_Modal").modal("hide");
-          } else {
             toastr.options = {
               closeButton: true,
               debug: false,
               newestOnTop: true,
               progressBar: true,
               positionClass: "toast-bottom-center",
-              preventDuplicates: true,
+              preventDuplicates: false,
               onclick: null,
               showDuration: "300",
               hideDuration: "1000",
@@ -232,7 +346,26 @@ function Procesar() {
               showMethod: "fadeIn",
               hideMethod: "fadeOut",
             };
-            toastr["warning"](data.message, "Advertencia:");
+            toastr["success"]("El Proveedor ha sido Registrado", "Éxito:");
+          } else {
+            toastr.options = {
+              closeButton: true,
+              debug: false,
+              newestOnTop: true,
+              progressBar: true,
+              positionClass: "toast-bottom-center",
+              preventDuplicates: false,
+              onclick: null,
+              showDuration: "300",
+              hideDuration: "1000",
+              timeOut: "5000",
+              extendedTimeOut: "1000",
+              showEasing: "swing",
+              hideEasing: "linear",
+              showMethod: "fadeIn",
+              hideMethod: "fadeOut",
+            };
+            toastr["error"](data.message, "Error:");
           }
         },
         error: function (error) {
@@ -253,6 +386,7 @@ function Procesar() {
     } else {
       if ($("#ID_Proveedor_Insumo").val() != 0) {
         jQuery.ajax({
+          // ? url: "@Url.Action('Management_Controller_Proveedor_Insumo_Editar', 'Management')",
           url: "https://localhost:7050/Management/Management_Controller_Proveedor_Insumo_Editar",
           type: "PUT",
           data: { Obj_Class_Entity_Proveedor_Insumo: Proveedor },
@@ -267,14 +401,13 @@ function Procesar() {
                 .draw(false);
               Selected_Row = null;
               $("#Form_Modal").modal("hide");
-            } else {
               toastr.options = {
                 closeButton: true,
                 debug: false,
                 newestOnTop: true,
                 progressBar: true,
                 positionClass: "toast-bottom-center",
-                preventDuplicates: true,
+                preventDuplicates: false,
                 onclick: null,
                 showDuration: "300",
                 hideDuration: "1000",
@@ -285,7 +418,26 @@ function Procesar() {
                 showMethod: "fadeIn",
                 hideMethod: "fadeOut",
               };
-              toastr["warning"](data.message, "Advertencia:");
+              toastr["info"]("El Proveedor ha sido Modificado", "Información:");
+            } else {
+              toastr.options = {
+                closeButton: true,
+                debug: false,
+                newestOnTop: true,
+                progressBar: true,
+                positionClass: "toast-bottom-center",
+                preventDuplicates: false,
+                onclick: null,
+                showDuration: "300",
+                hideDuration: "1000",
+                timeOut: "5000",
+                extendedTimeOut: "1000",
+                showEasing: "swing",
+                hideEasing: "linear",
+                showMethod: "fadeIn",
+                hideMethod: "fadeOut",
+              };
+              toastr["error"](data.message, "Error:");
             }
           },
           error: function (error) {

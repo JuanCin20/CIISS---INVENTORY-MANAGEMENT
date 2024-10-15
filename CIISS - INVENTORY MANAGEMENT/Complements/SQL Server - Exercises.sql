@@ -1,5 +1,5 @@
 --EJERCICIOS
-----CONSULTA EMPLEANDO M�S DE UNA TABLA
+----CONSULTA EMPLEANDO MÁS DE UNA TABLA
 SELECT
 	TU.ID_Usuario,
 	TTU.ID_Tipo_Usuario,
@@ -78,7 +78,7 @@ END;
 
 ELSE
 SET
-	@Message = 'El Correo Electr�nico del Usuario ya se Encuentra Registrado'
+	@Message = 'El Correo Electrónico del Usuario ya se Encuentra Registrado'
 END;
 
 GO
@@ -117,7 +117,7 @@ END;
 
 ELSE
 SET
-	@Message = 'El Correo Electr�nico del Usuario ya se Encuentra Registrado'
+	@Message = 'El Correo Electrónico del Usuario ya se Encuentra Registrado'
 END;
 
 GO
@@ -187,7 +187,7 @@ END;
 
 ELSE
 SET
-	@Message = 'El Nombre de la Categor�a del Insumo ya se Encuentra Registrado'
+	@Message = 'El Nombre de la Categoría del Insumo ya se Encuentra Registrado'
 END;
 
 GO
@@ -224,7 +224,7 @@ END;
 
 ELSE
 SET
-	@Message = 'El Nombre de la Categor�a del Insumo ya se Encuentra Registrado'
+	@Message = 'El Nombre de la Categoría del Insumo ya se Encuentra Registrado'
 END;
 
 GO
@@ -254,7 +254,7 @@ END;
 
 ELSE
 SET
-	@Message = 'El Nombre de la Categor�a del Insumo se Encuentra Relacionado a un Insumo'
+	@Message = 'El Nombre de la Categoría del Insumo se Encuentra Relacionado a un Insumo'
 END;
 
 GO

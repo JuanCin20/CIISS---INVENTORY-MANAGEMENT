@@ -1,4 +1,4 @@
-----ELIMINACI�N DE LA BASE DE DATOS
+----ELIMINACIÓN DE LA BASE DE DATOS
 USE MASTER;
 
 GO
@@ -11,7 +11,7 @@ GO
 	DROP DATABASE DataBase_Inventory_Management;
 
 GO
-	----CREACI�N DE LA BASE DE DATOS
+	----CREACIÓN DE LA BASE DE DATOS
 SET
 	DATEFORMAT DMY;
 
@@ -30,7 +30,7 @@ SET
 	IDENTITY_CACHE = OFF;
 
 GO
-	----CREACI�N DE LAS TABLAS
+	----CREACIÓN DE LAS TABLAS
 	CREATE TABLE Tabla_Tipo_Usuario (
 		ID_Tipo_Usuario INT IDENTITY (1, 1) PRIMARY KEY,
 		Nombre_Tipo_Usuario VARCHAR (50) CHECK (
@@ -158,12 +158,12 @@ INSERT INTO
 		Estado_Categoria_Insumo
 	)
 VALUES
-	('L�cteos', 'Productos Derivados de la Leche.', 1),
-	('Carnes', 'Insumos C�rnicos para Pizzas.', 1),
+	('Lácteos', 'Productos Derivados de la Leche.', 1),
+	('Carnes', 'Insumos Córnicos para Pizzas.', 1),
 	('Vegetales', 'Insumos Vegetales y Verduras.', 1),
 	(
 		'Salsas',
-		'Salsas para la Preparaci�n de las Pizzas.',
+		'Salsas para la Preparación de las Pizzas.',
 		1
 	);
 
@@ -178,7 +178,7 @@ INSERT INTO
 	)
 VALUES
 	(
-		'Distribuidora L�ctea',
+		'Distribuidora Láctea',
 		963358452,
 		'contacto@lacteos.com',
 		'Centro de Lima',
@@ -188,7 +188,7 @@ VALUES
 		'Carnes Premium',
 		907896723,
 		'ventas@carnespremium.com',
-		'San Mart�n de Porres',
+		'San Martín de Porres',
 		1
 	),
 	(

@@ -18,19 +18,19 @@ namespace BUSINESS___LAYER
             Message = string.Empty;
             if (string.IsNullOrEmpty(Obj_Class_Entity_Proveedor_Insumo.Nombre_Proveedor_Insumo) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Proveedor_Insumo.Nombre_Proveedor_Insumo))
             {
-                Message = "Campo Requerido: Nombre del Proveedor del Insumo";
+                Message = "Error: Nombre_Proveedor_Insumo";
             }
             else
             {
                 if (string.IsNullOrEmpty(Obj_Class_Entity_Proveedor_Insumo.E_Mail_Proveedor_Insumo) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Proveedor_Insumo.E_Mail_Proveedor_Insumo))
                 {
-                    Message = "Campo Requerido: Correo Electrónico del Proveedor del Insumo";
+                    Message = "Error: Nombre_Proveedor_Insumo";
                 }
                 else
                 {
                     if (string.IsNullOrEmpty(Obj_Class_Entity_Proveedor_Insumo.Direccion_Proveedor_Insumo) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Proveedor_Insumo.Direccion_Proveedor_Insumo))
                     {
-                        Message = "Campo Requerido: Dirección del Proveedor del Insumo";
+                        Message = "Error: Nombre_Proveedor_Insumo";
                     }
                 }
             }
@@ -50,19 +50,19 @@ namespace BUSINESS___LAYER
             Message = string.Empty;
             if (string.IsNullOrEmpty(Obj_Class_Entity_Proveedor_Insumo.Nombre_Proveedor_Insumo) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Proveedor_Insumo.Nombre_Proveedor_Insumo))
             {
-                Message = "Campo Requerido: Nombre del Proveedor del Insumo";
+                Message = "Error: Nombre_Proveedor_Insumo";
             }
             else
             {
                 if (string.IsNullOrEmpty(Obj_Class_Entity_Proveedor_Insumo.E_Mail_Proveedor_Insumo) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Proveedor_Insumo.E_Mail_Proveedor_Insumo))
                 {
-                    Message = "Campo Requerido: Correo Electrónico del Proveedor del Insumo";
+                    Message = "Error: E_Mail_Proveedor_Insumo";
                 }
                 else
                 {
                     if (string.IsNullOrEmpty(Obj_Class_Entity_Proveedor_Insumo.Direccion_Proveedor_Insumo) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Proveedor_Insumo.Direccion_Proveedor_Insumo))
                     {
-                        Message = "Campo Requerido: Dirección del Proveedor del Insumo";
+                        Message = "Error: Direccion_Proveedor_Insumo";
                     }
                 }
             }

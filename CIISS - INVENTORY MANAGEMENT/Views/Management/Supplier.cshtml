@@ -1,98 +1,99 @@
 ﻿@{
-    ViewData["Title"] = "Supplier";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+  ViewData["Title"] = "Supplier";
+  Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <nav class="mt-2"
-    style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
-    aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Dashboard</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Proveedores de Insumos</li>
-    </ol>
+  style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+  aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Dashboard</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Proveedores de Insumos</li>
+  </ol>
 </nav>
 
 <div class="card">
-    <div class="card-header">
-        <i class="fa-solid fa-book-bookmark"></i> Proveedores de Insumos Registrados
+  <div class="card-header">
+    <i class="fa-solid fa-book-bookmark"></i> Proveedores de Insumos Registrados
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-12">
+        <button type="button" class="btn btn-success" onclick="Open_Form_Modal(null)">Insertar Proveedor de
+          Insumo <i class="fa-solid fa-plus"></i></button>
+      </div>
     </div>
-    <div class="card-body">
-        <div class="row">
-            <div class="col-12">
-                <button type="button" class="btn btn-success" onclick="Open_Form_Modal(null)">Insertar Proveedor de
-                    Insumo <i class="fa-solid fa-plus"></i></button>
-            </div>
-        </div>
 
-        <hr />
+    <hr />
 
-        <table id="Table_Proveedor_Insumo" class="display cell-border" style="width: 100%">
-            <thead>
-                <tr>
-                    <th>ID:</th>
-                    <th>Nombre:</th>
-                    <th>Estado:</th>
-                    <th>Operaciones:</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-    </div>
+    <table id="Table_Proveedor_Insumo" class="display cell-border" style="width: 100%">
+      <thead>
+        <tr>
+          <th>ID:</th>
+          <th>Nombre:</th>
+          <th>Estado:</th>
+          <th>Operaciones:</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
 </div>
 
 <!--Vertically Centered Modal-->
 <div class="modal fade" id="Form_Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
-    data-bs-backdrop="static">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header bg-dark text-white">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Proveedor del Insumo</h1>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                    aria-label="Close"></button>
+  data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Proveedor del Insumo</h1>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form id="Form_Supplier" class="needs-validation" novalidate>
+        <div class="modal-body">
+          <!----><input id="ID_Proveedor_Insumo" type="hidden" value="0" /><!---->
+          <div class="row g-2">
+            <div class="col-sm-6">
+              <label for="Estado_Proveedor_Insumo" class="form-label">Estado:</label>
+              <select class="form-select" id="Estado_Proveedor_Insumo" name="Estado_Proveedor_Insumo"
+                aria-label="Default select example">
+                <option value="0" selected disabled>Seleccionar</option>
+                <option value="Available">Disponible</option>
+                <option value="Not_Available">No Disponible</option>
+              </select>
             </div>
-            <div class="modal-body">
-                <!----><input id="ID_Proveedor_Insumo" type="hidden" value="0" /><!---->
-                <div class="row g-2">
-                    <div class="col-sm-6">
-                        <label for="Estado_Proveedor_Insumo" class="form-label">Estado:</label>
-                        <select class="form-select" name="Estado_Proveedor_Insumo" id="Estado_Proveedor_Insumo"
-                            aria-label="Default select example">
-                            <option value="0" selected disabled>Seleccionar</option>
-                            <option value="Available">Disponible</option>
-                            <option value="Not_Available">No Disponible</option>
-                        </select>
-                    </div>
-                    <div class="col-sm-6">
-                        <label for="Nombre_Proveedor_Insumo" class="form-label">Nombre:</label>
-                        <input type="text" class="form-control" id="Nombre_Proveedor_Insumo" placeholder="Nombre"
-                            autocomplete="off">
-                    </div>
-                    <div class="col-sm-6">
-                        <label for="Telefono_Proveedor_Insumo" class="form-label">Teléfono:</label>
-                        <input type="number" class="form-control" id="Telefono_Proveedor_Insumo" placeholder="Teléfono"
-                            autocomplete="off">
-                    </div>
-                    <div class="col-sm-6">
-                        <label for="E_Mail_Proveedor_Insumo" class="form-label">E-Mail:</label>
-                        <input type="email" class="form-control" id="E_Mail_Proveedor_Insumo" placeholder="E-Mail"
-                            autocomplete="off">
-                    </div>
-                    <div class="col-sm-12">
-                        <label for="Direccion_Proveedor_Insumo" class="form-label">Dirección:</label>
-                        <textarea class="form-control" id="Direccion_Proveedor_Insumo" placeholder="Dirección"
-                            autocomplete="off"></textarea>
-                    </div>
-                </div>
+            <div class="col-sm-6">
+              <label for="Nombre_Proveedor_Insumo" class="form-label">Nombre:</label>
+              <input type="text" class="form-control" id="Nombre_Proveedor_Insumo" name="Nombre_Proveedor_Insumo"
+                placeholder="Nombre" autocomplete="off">
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary" onclick="Procesar()">Procesar</button>
+            <div class="col-sm-6">
+              <label for="Telefono_Proveedor_Insumo" class="form-label">Teléfono:</label>
+              <input type="number" class="form-control" id="Telefono_Proveedor_Insumo" name="Telefono_Proveedor_Insumo"
+                placeholder="Teléfono" autocomplete="off">
             </div>
+            <div class="col-sm-6">
+              <label for="E_Mail_Proveedor_Insumo" class="form-label">E-Mail:</label>
+              <input type="email" class="form-control" id="E_Mail_Proveedor_Insumo" name="E_Mail_Proveedor_Insumo"
+                placeholder="E-Mail" autocomplete="off">
+            </div>
+            <div class="col-sm-12">
+              <label for="Direccion_Proveedor_Insumo" class="form-label">Dirección:</label>
+              <textarea class="form-control" id="Direccion_Proveedor_Insumo" name="Direccion_Proveedor_Insumo"
+                placeholder="Dirección" autocomplete="off"></textarea>
+            </div>
+          </div>
         </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-primary" onclick="Procesar()">Procesar</button>
+        </div>
+      </form>
     </div>
+  </div>
 </div>
 <!--Vertically Centered Modal-->
 @section Java_Script {
-    <script src="~/js/Supplier.js" asp-append-version="true"></script>
+  <script src="~/js/Supplier.js" asp-append-version="true"></script>
 }

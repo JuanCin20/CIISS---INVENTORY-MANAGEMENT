@@ -30,6 +30,7 @@ $(document).ready(function () {
       url: "//cdn.datatables.net/plug-ins/2.1.8/i18n/es-MX.json",
     },
     ajax: {
+      // ? url: "@Url.Action('Management_Controller_Categoria_Insumo_Listar', 'Management')",
       url: "https://localhost:7050/Management/Management_Controller_Categoria_Insumo_Listar",
       type: "GET",
       dataType: "json",
@@ -74,18 +75,24 @@ $(document).ready(function () {
 
 function Open_Form_Modal(data) {
   if (data == null) {
-    $("#ID_Categoria_Insumo").val(0);
-    $("#Nombre_Categoria_Insumo").val("");
-    $("#Descripcion_Categoria_Insumo").val("");
-    $("#Estado_Categoria_Insumo").val(0);
     $("#Nombre_Categoria_Insumo").removeClass("is-valid");
     $("#Nombre_Categoria_Insumo").removeClass("is-invalid");
     $("#Descripcion_Categoria_Insumo").removeClass("is-valid");
     $("#Descripcion_Categoria_Insumo").removeClass("is-invalid");
     $("#Estado_Categoria_Insumo").removeClass("is-valid");
     $("#Estado_Categoria_Insumo").removeClass("is-invalid");
+    $("#ID_Categoria_Insumo").val(0);
+    $("#Nombre_Categoria_Insumo").val("");
+    $("#Descripcion_Categoria_Insumo").val("");
+    $("#Estado_Categoria_Insumo").val(0);
   } else {
     if (data != null) {
+      $("#Nombre_Categoria_Insumo").removeClass("is-valid");
+      $("#Nombre_Categoria_Insumo").removeClass("is-invalid");
+      $("#Descripcion_Categoria_Insumo").removeClass("is-valid");
+      $("#Descripcion_Categoria_Insumo").removeClass("is-invalid");
+      $("#Estado_Categoria_Insumo").removeClass("is-valid");
+      $("#Estado_Categoria_Insumo").removeClass("is-invalid");
       $("#ID_Categoria_Insumo").val(data.iD_Categoria_Insumo);
       $("#Nombre_Categoria_Insumo").val(data.nombre_Categoria_Insumo);
       $("#Descripcion_Categoria_Insumo").val(data.descripcion_Categoria_Insumo);
@@ -130,6 +137,7 @@ $("#Table_Categoria_Insumo").on("click", ".Delete_Button", function () {
   }).then((result) => {
     if (result.isConfirmed) {
       jQuery.ajax({
+        // ? url: "@Url.Action('Management_Controller_Categoria_Insumo_Eliminar', 'Management')",
         url: "https://localhost:7050/Management/Management_Controller_Categoria_Insumo_Eliminar",
         type: "DELETE",
         data: { ID_Categoria_Insumo: data.iD_Categoria_Insumo },
@@ -230,6 +238,12 @@ $(document).ready(function () {
   });
 });
 
+$.validator.setDefaults({
+  submitHandler: function () {
+    console.log("Ok!");
+  },
+});
+
 function Procesar() {
   if (!$("#Form_Category").valid()) {
     return;
@@ -246,6 +260,7 @@ function Procesar() {
 
     if ($("#ID_Categoria_Insumo").val() == 0) {
       jQuery.ajax({
+        // ? url: "@Url.Action('Management_Controller_Categoria_Insumo_Registrar', 'Management')",
         url: "https://localhost:7050/Management/Management_Controller_Categoria_Insumo_Registrar",
         type: "POST",
         data: { Obj_Class_Entity_Categoria_Insumo: Categoria },
@@ -258,8 +273,43 @@ function Procesar() {
             Categoria.iD_Categoria_Insumo = data.result;
             Table_Categoria_Insumo.row.add(Categoria).draw(false);
             $("#Form_Modal").modal("hide");
+            toastr.options = {
+              closeButton: true,
+              debug: false,
+              newestOnTop: true,
+              progressBar: true,
+              positionClass: "toast-bottom-center",
+              preventDuplicates: false,
+              onclick: null,
+              showDuration: "300",
+              hideDuration: "1000",
+              timeOut: "5000",
+              extendedTimeOut: "1000",
+              showEasing: "swing",
+              hideEasing: "linear",
+              showMethod: "fadeIn",
+              hideMethod: "fadeOut",
+            };
+            toastr["success"]("La Categoría ha sido Registrada", "Éxito:");
           } else {
-            // !!! data.message
+            toastr.options = {
+              closeButton: true,
+              debug: false,
+              newestOnTop: true,
+              progressBar: true,
+              positionClass: "toast-bottom-center",
+              preventDuplicates: false,
+              onclick: null,
+              showDuration: "300",
+              hideDuration: "1000",
+              timeOut: "5000",
+              extendedTimeOut: "1000",
+              showEasing: "swing",
+              hideEasing: "linear",
+              showMethod: "fadeIn",
+              hideMethod: "fadeOut",
+            };
+            toastr["error"](data.message, "Error:");
           }
         },
         error: function (error) {
@@ -280,6 +330,7 @@ function Procesar() {
     } else {
       if ($("#ID_Categoria_Insumo").val() != 0) {
         jQuery.ajax({
+          // ? url: "@Url.Action('Management_Controller_Categoria_Insumo_Editar', 'Management')",
           url: "https://localhost:7050/Management/Management_Controller_Categoria_Insumo_Editar",
           type: "PUT",
           data: { Obj_Class_Entity_Categoria_Insumo: Categoria },
@@ -294,8 +345,43 @@ function Procesar() {
                 .draw(false);
               Selected_Row = null;
               $("#Form_Modal").modal("hide");
+              toastr.options = {
+                closeButton: true,
+                debug: false,
+                newestOnTop: true,
+                progressBar: true,
+                positionClass: "toast-bottom-center",
+                preventDuplicates: false,
+                onclick: null,
+                showDuration: "300",
+                hideDuration: "1000",
+                timeOut: "5000",
+                extendedTimeOut: "1000",
+                showEasing: "swing",
+                hideEasing: "linear",
+                showMethod: "fadeIn",
+                hideMethod: "fadeOut",
+              };
+              toastr["info"]("La Categoría ha sido Modificada", "Información:");
             } else {
-              // !!! data.message
+              toastr.options = {
+                closeButton: true,
+                debug: false,
+                newestOnTop: true,
+                progressBar: true,
+                positionClass: "toast-bottom-center",
+                preventDuplicates: false,
+                onclick: null,
+                showDuration: "300",
+                hideDuration: "1000",
+                timeOut: "5000",
+                extendedTimeOut: "1000",
+                showEasing: "swing",
+                hideEasing: "linear",
+                showMethod: "fadeIn",
+                hideMethod: "fadeOut",
+              };
+              toastr["error"](data.message, "Error:");
             }
           },
           error: function (error) {
