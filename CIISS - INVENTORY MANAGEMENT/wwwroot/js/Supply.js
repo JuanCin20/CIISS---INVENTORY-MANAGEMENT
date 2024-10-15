@@ -1,7 +1,7 @@
 var Table_Insumo;
 var Selected_Row;
 
-function Show_Suply_Image(input) {
+-function Show_Supply_Image(input) {
   if (input.files) {
     var Reader = new FileReader();
     Reader.onload = function (event) {
@@ -9,7 +9,7 @@ function Show_Suply_Image(input) {
     };
     Reader.readAsDataURL(input.files[0]);
   }
-}
+};
 
 /**
  * *jQuery.ajax({
@@ -40,6 +40,7 @@ $(document).ready(function () {
       url: "//cdn.datatables.net/plug-ins/2.1.8/i18n/es-MX.json",
     },
     ajax: {
+      // ? url: "@Url.Action('Management_Controller_Insumo_Listar', 'Management')",
       url: "https://localhost:7050/Management/Management_Controller_Insumo_Listar",
       type: "GET",
       dataType: "json",
@@ -108,6 +109,7 @@ $(document).ready(function () {
 });
 
 jQuery.ajax({
+  // ? url: "@Url.Action('Management_Controller_Categoria_Insumo_Listar', 'Management')",
   url: "https://localhost:7050/Management/Management_Controller_Categoria_Insumo_Listar",
   type: "GET",
   dataType: "json",
@@ -127,6 +129,7 @@ jQuery.ajax({
 });
 
 jQuery.ajax({
+  // ? url: "@Url.Action('Management_Controller_Proveedor_Insumo_Listar', 'Management')",
   url: "https://localhost:7050/Management/Management_Controller_Proveedor_Insumo_Listar",
   type: "GET",
   dataType: "json",
@@ -145,68 +148,28 @@ jQuery.ajax({
   },
 });
 
-jQuery.validator.addMethod(
-  "Valid_Number",
-  function (value, element) {
-    return this.optional(element) || /^\d{0,4}(\.\d{0,2})?$/i.test(value);
-  },
-  "El Formato Numérico del Precio del Insumo debe ser ##.##"
-);
-
-$("#Form_Insumo").validate({
-  rule: {
-    Estado_Insumo: {
-      required: true,
-    },
-    Nombre_Insumo: {
-      required: true,
-    },
-    Categoria_Insumo: {
-      required: true,
-    },
-    Proveedor_Insumo: {
-      required: true,
-    },
-    Unidad_Medida_Insumo: {
-      required: true,
-    },
-    Precio_Insumo: {
-      required: true,
-      Valid_Number: true,
-    },
-    Stock_Insumo: {
-      required: true,
-      number: true,
-    },
-    Fecha_Vencimiento_Insumo: {
-      required: true,
-    },
-    Descripcion_Insumo: {
-      required: true,
-    },
-  },
-  messages: {
-    Nombre_Insumo: "Campo Requerido: Nombre del Insumo",
-    Unidad_Medida_Insumo: "Campo Requerido: Unidad de Medida del Insumo",
-    Precio_Insumo: {
-      required: "Campo Requerido: Precio del Insumo",
-      Valid_Number: "El Formato Numérico del Precio del Insumo debe ser ##.##",
-    },
-    Stock_Insumo: {
-      required: "Campo Requerido: Stock del Insumo",
-      Valid_Number:
-        "Debe Ingresar solo Números en el Campo del Stock del Insumo",
-    },
-    Fecha_Vencimiento_Insumo:
-      "Campo Requerido: Fecha de Vencimiento del Insumo",
-    Descripcion_Insumo: "Campo Requerido: Descripción del Insumo",
-    errorElement: "div",
-    errorLabelContainer: ".alert-danger",
-  },
-});
-
 function Open_Form_Modal(data) {
   if (data == null) {
+    $("#Categoria_Insumo").removeClass("is-valid");
+    $("#Categoria_Insumo").removeClass("is-invalid");
+    $("#Proveedor_Insumo").removeClass("is-valid");
+    $("#Proveedor_Insumo").removeClass("is-invalid");
+    $("#Nombre_Insumo").removeClass("is-valid");
+    $("#Nombre_Insumo").removeClass("is-invalid");
+    $("#Descripcion_Insumo").removeClass("is-valid");
+    $("#Descripcion_Insumo").removeClass("is-invalid");
+    $("#Unidad_Medida_Insumo").removeClass("is-valid");
+    $("#Unidad_Medida_Insumo").removeClass("is-invalid");
+    $("#Precio_Insumo").removeClass("is-valid");
+    $("#Precio_Insumo").removeClass("is-invalid");
+    $("#Stock_Insumo").removeClass("is-valid");
+    $("#Stock_Insumo").removeClass("is-invalid");
+    $("#Estado_Insumo").removeClass("is-valid");
+    $("#Estado_Insumo").removeClass("is-invalid");
+    $("#Fecha_Vencimiento_Insumo").removeClass("is-valid");
+    $("#Fecha_Vencimiento_Insumo").removeClass("is-invalid");
+    $("#Imagen_Insumo_Input").removeClass("is-valid");
+    $("#Imagen_Insumo_Input").removeClass("is-invalid");
     $("#ID_Insumo").val(0);
     $("#Categoria_Insumo").val(0);
     $("#Proveedor_Insumo").val(0);
@@ -218,9 +181,28 @@ function Open_Form_Modal(data) {
     $("#Estado_Insumo").val(0);
     $("#Fecha_Vencimiento_Insumo").val("");
     $("#Imagen_Insumo").removeAttr("src");
-    $("#Imagen_Insumo_Input").val("");
   } else {
     if (data != null) {
+      $("#Categoria_Insumo").removeClass("is-valid");
+      $("#Categoria_Insumo").removeClass("is-invalid");
+      $("#Proveedor_Insumo").removeClass("is-valid");
+      $("#Proveedor_Insumo").removeClass("is-invalid");
+      $("#Nombre_Insumo").removeClass("is-valid");
+      $("#Nombre_Insumo").removeClass("is-invalid");
+      $("#Descripcion_Insumo").removeClass("is-valid");
+      $("#Descripcion_Insumo").removeClass("is-invalid");
+      $("#Unidad_Medida_Insumo").removeClass("is-valid");
+      $("#Unidad_Medida_Insumo").removeClass("is-invalid");
+      $("#Precio_Insumo").removeClass("is-valid");
+      $("#Precio_Insumo").removeClass("is-invalid");
+      $("#Stock_Insumo").removeClass("is-valid");
+      $("#Stock_Insumo").removeClass("is-invalid");
+      $("#Estado_Insumo").removeClass("is-valid");
+      $("#Estado_Insumo").removeClass("is-invalid");
+      $("#Fecha_Vencimiento_Insumo").removeClass("is-valid");
+      $("#Fecha_Vencimiento_Insumo").removeClass("is-invalid");
+      $("#Imagen_Insumo_Input").removeClass("is-valid");
+      $("#Imagen_Insumo_Input").removeClass("is-invalid");
       var fecha_Vencimiento_Insumo_SubString =
         data.fecha_Vencimiento_Insumo.substring(0, 10);
       if ($.trim(fecha_Vencimiento_Insumo_SubString).length == 10) {
@@ -290,6 +272,7 @@ $("#Table_Insumo").on("click", ".Delete_Button", function () {
   }).then((result) => {
     if (result.isConfirmed) {
       jQuery.ajax({
+        // ? url: "@Url.Action('Management_Controller_Insumo_Eliminar', 'Management')",
         url: "https://localhost:7050/Management/Management_Controller_Insumo_Eliminar",
         type: "DELETE",
         data: { ID_Insumo: data.iD_Insumo },
@@ -320,218 +303,270 @@ $("#Table_Insumo").on("click", ".Delete_Button", function () {
   // console.log(data); // ? Good 'console.log'
 });
 
-function Procesar() {
-  var Estado_Insumo_Selection = $("#Estado_Insumo option:selected").text();
-  var Categoria_Insumo_Selection = $(
-    "#Categoria_Insumo option:selected"
-  ).text();
-  var Proveedor_Insumo_Selection = $(
-    "#Proveedor_Insumo option:selected"
-  ).text();
+jQuery.validator.addMethod("Valid_Nombre_Insumo", function (value, element) {
+  return (
+    this.optional(element) ||
+    /([a-zA-Z',.-]+( [a-zA-Z',.-]+)*){2,30}/.test(value)
+  );
+});
 
-  var Selected_Image = $("#Imagen_Insumo_Input")[0].files[0];
+jQuery.validator.addMethod(
+  "Valid_Unidad_Medida_Insumo",
+  function (value, element) {
+    return (
+      this.optional(element) ||
+      /([a-zA-Z',.-]+( [a-zA-Z',.-]+)*){2,30}/.test(value)
+    );
+  }
+);
 
-  var Insumo = {
-    iD_Insumo: $("#ID_Insumo").val(),
-    object_ID_Categoria_Insumo: {
-      iD_Categoria_Insumo: $("#Categoria_Insumo option:selected").val(),
-      nombre_Categoria_Insumo: $("#Categoria_Insumo option:selected").text(),
+$(document).ready(function () {
+  $("#Form_User").validate({
+    rules: {
+      Estado_Insumo: {
+        required: true,
+      },
+      Nombre_Insumo: {
+        required: true,
+        Valid_Nombre_Insumo: true,
+      },
+      Categoria_Insumo: {
+        required: true,
+      },
+      Proveedor_Insumo: {
+        required: true,
+      },
+      Unidad_Medida_Insumo: {
+        required: true,
+        Valid_Unidad_Medida_Insumo: true,
+      },
+      Precio_Insumo: {
+        required: true,
+        number: true,
+      },
+      Stock_Insumo: {
+        required: true,
+        number: true,
+      },
+      Fecha_Vencimiento_Insumo: {
+        required: true,
+      },
+      Imagen_Insumo_Input: {
+        required: true,
+      },
     },
-    object_ID_Proveedor_Insumo: {
-      iD_Proveedor_Insumo: $("#Proveedor_Insumo option:selected").val(),
-      nombre_Proveedor_Insumo: $("#Proveedor_Insumo option:selected").text(),
+    messages: {
+      Estado_Insumo: {
+        required: "Campo Requerido: Estado del Insumo",
+      },
+      Nombre_Insumo: {
+        required: "Campo Requerido: Nombre de Insumo",
+        Valid_Nombre_Insumo: true,
+      },
+      Categoria_Insumo: {
+        required: "Campo Requerido: Categoría del Insumo",
+      },
+      Proveedor_Insumo: {
+        required: "Campo Requerido: Proveedor del Insummo",
+      },
+      Unidad_Medida_Insumo: {
+        required: "Campo Requerido: Unidad de Medida del Insumo",
+        Valid_Unidad_Medida_Insumo:
+          "Campo Requerido: Unidad de Medida del Insumo",
+      },
+      Precio_Insumo: {
+        required: "Campo Requerido: Precio del Insumo",
+        number: "Ingrese un Precio Válido",
+      },
+      Stock_Insumo: {
+        required: "Campo Requerido: Stock del Insumo",
+        number: "Ingrese un Stock Válido",
+      },
+      Fecha_Vencimiento_Insumo: {
+        required: "Campo Requerido: Fecha de Vencimiento del Insumo",
+      },
+      Imagen_Insumo_Input: {
+        required: "Campo Requerido: Imagen del Insumo",
+      },
     },
-    nombre_Insumo: $("#Nombre_Insumo").val(),
-    descripcion_Insumo: $("#Descripcion_Insumo").val(),
-    unidad_Medida_Insumo: $("#Unidad_Medida_Insumo").val(),
-    precio_Insumo: $("#Precio_Insumo").val(),
-    stock_Insumo: $("#Stock_Insumo").val(),
-    estado_Insumo: $("#Estado_Insumo").val() == "Available" ? true : false,
-    fecha_Vencimiento_Insumo: $("#Fecha_Vencimiento_Insumo").val(),
-  };
+    errorElement: "em",
+    errorPlacement: function (error, element) {
+      // Add the "invalid-feedback" class to the error element
+      error.addClass("invalid-feedback");
 
-  if (Estado_Insumo_Selection == "Seleccionar") {
-    toastr.options = {
-      closeButton: true,
-      debug: false,
-      newestOnTop: true,
-      progressBar: true,
-      positionClass: "toast-bottom-center",
-      preventDuplicates: true,
-      onclick: null,
-      showDuration: "300",
-      hideDuration: "1000",
-      timeOut: "5000",
-      extendedTimeOut: "1000",
-      showEasing: "swing",
-      hideEasing: "linear",
-      showMethod: "fadeIn",
-      hideMethod: "fadeOut",
-    };
-    toastr["warning"]("Campo Requerido: Estado del Insumo", "Advertencia:");
-  } else {
-    if (Categoria_Insumo_Selection == "Seleccionar") {
-      toastr.options = {
-        closeButton: true,
-        debug: false,
-        newestOnTop: true,
-        progressBar: true,
-        positionClass: "toast-bottom-center",
-        preventDuplicates: true,
-        onclick: null,
-        showDuration: "300",
-        hideDuration: "1000",
-        timeOut: "5000",
-        extendedTimeOut: "1000",
-        showEasing: "swing",
-        hideEasing: "linear",
-        showMethod: "fadeIn",
-        hideMethod: "fadeOut",
-      };
-      toastr["warning"](
-        "Campo Requerido: Categoría del Insumo",
-        "Advertencia:"
-      );
-    } else {
-      if (Proveedor_Insumo_Selection == "Seleccionar") {
-        toastr.options = {
-          closeButton: true,
-          debug: false,
-          newestOnTop: true,
-          progressBar: true,
-          positionClass: "toast-bottom-center",
-          preventDuplicates: true,
-          onclick: null,
-          showDuration: "300",
-          hideDuration: "1000",
-          timeOut: "5000",
-          extendedTimeOut: "1000",
-          showEasing: "swing",
-          hideEasing: "linear",
-          showMethod: "fadeIn",
-          hideMethod: "fadeOut",
-        };
-        toastr["warning"](
-          "Campo Requerido: Proveedor del Insumo",
-          "Advertencia:"
-        );
+      if (element.prop("type") === "checkbox") {
+        error.insertAfter(element.next("label"));
       } else {
-        if ($("#ID_Insumo").val() == 0) {
-          var Request = new FormData();
-          Request.append("Obj_Class_Entity_Insumo", JSON.stringify(Insumo));
-          Request.append("Obj_IFormFile", Selected_Image);
+        error.insertAfter(element);
+      }
+    },
+    highlight: function (element, errorClass, validClass) {
+      $(element).addClass("is-invalid").removeClass("is-valid");
+    },
+    unhighlight: function (element, errorClass, validClass) {
+      $(element).addClass("is-valid").removeClass("is-invalid");
+    },
+  });
+});
 
-          jQuery.ajax({
-            url: "https://localhost:7050/Management/Management_Controller_Insumo_Registrar",
-            type: "POST",
-            data: Request,
-            processData: false,
-            contentType: false,
-            success: function (data) {
-              debugger; // TODO: Punto de Depuración
+$.validator.setDefaults({
+  submitHandler: function () {
+    console.log("Ok!");
+  },
+});
 
-              $(".modal-body").LoadingOverlay("hide");
+function Procesar() {
+  if (!$("#Form_User").valid()) {
+    return;
+  } else {
+    var Estado_Insumo_Selection = $("#Estado_Insumo option:selected").text();
+    var Categoria_Insumo_Selection = $(
+      "#Categoria_Insumo option:selected"
+    ).text();
+    var Proveedor_Insumo_Selection = $(
+      "#Proveedor_Insumo option:selected"
+    ).text();
 
-              if (data.iD_Auto_Generated != 0) {
-                Insumo.iD_Insumo = data.iD_Auto_Generated;
-                Table_Insumo.row.add(Insumo).draw(false);
-                $("#Form_Modal").modal("hide");
-                window.location.reload(); // ?
-              } else {
-                toastr.options = {
-                  closeButton: true,
-                  debug: false,
-                  newestOnTop: true,
-                  progressBar: true,
-                  positionClass: "toast-bottom-center",
-                  preventDuplicates: true,
-                  onclick: null,
-                  showDuration: "300",
-                  hideDuration: "1000",
-                  timeOut: "5000",
-                  extendedTimeOut: "1000",
-                  showEasing: "swing",
-                  hideEasing: "linear",
-                  showMethod: "fadeIn",
-                  hideMethod: "fadeOut",
-                };
-                toastr["warning"](data.message, "Advertencia:");
-              }
-            },
-            error: function (error) {
-              $(".modal-body").LoadingOverlay("hide");
-              alert(error);
-            },
-            beforeSend: function () {
-              $(".modal-body").LoadingOverlay("show", {
-                background: "rgba(0, 0, 0, 0.5)",
-                image: "../img/clock-regular.svg",
-                imageAnimation: "1.5s fadein",
-                imageAutoResize: true,
-                imageResizeFactor: 1,
-                imageColor: "rgb(255, 205, 0)",
-              });
-            },
-          });
-        } else {
-          if ($("#ID_Insumo").val() != 0) {
-            var Request = new FormData();
-            Request.append("Obj_Class_Entity_Insumo", JSON.stringify(Insumo));
-            Request.append("Obj_IFormFile", Selected_Image);
+    var Selected_Image = $("#Imagen_Insumo_Input")[0].files[0];
 
-            jQuery.ajax({
-              url: "https://localhost:7050/Management/Management_Controller_Insumo_Editar",
-              type: "PUT",
-              data: Request,
-              processData: false,
-              contentType: false,
-              success: function (data) {
-                // debugger; // TODO: Punto de Depuración
+    var Insumo = {
+      iD_Insumo: $("#ID_Insumo").val(),
+      object_ID_Categoria_Insumo: {
+        iD_Categoria_Insumo: $("#Categoria_Insumo option:selected").val(),
+        nombre_Categoria_Insumo: $("#Categoria_Insumo option:selected").text(),
+      },
+      object_ID_Proveedor_Insumo: {
+        iD_Proveedor_Insumo: $("#Proveedor_Insumo option:selected").val(),
+        nombre_Proveedor_Insumo: $("#Proveedor_Insumo option:selected").text(),
+      },
+      nombre_Insumo: $("#Nombre_Insumo").val(),
+      descripcion_Insumo: $("#Descripcion_Insumo").val(),
+      unidad_Medida_Insumo: $("#Unidad_Medida_Insumo").val(),
+      precio_Insumo: $("#Precio_Insumo").val(),
+      stock_Insumo: $("#Stock_Insumo").val(),
+      estado_Insumo: $("#Estado_Insumo").val() == "Available" ? true : false,
+      fecha_Vencimiento_Insumo: $("#Fecha_Vencimiento_Insumo").val(),
+    };
 
-                $(".modal-body").LoadingOverlay("hide");
+    if ($("#ID_Insumo").val() == 0) {
+      var Request = new FormData();
+      Request.append("Obj_Class_Entity_Insumo", JSON.stringify(Insumo));
+      Request.append("Obj_IFormFile", Selected_Image);
 
-                if (data.successful_operation) {
-                  Table_Insumo.row(Selected_Row).data(Insumo).draw(false);
-                  Selected_Row = null;
-                  $("#Form_Modal").modal("hide");
-                } else {
-                  toastr.options = {
-                    closeButton: true,
-                    debug: false,
-                    newestOnTop: true,
-                    progressBar: true,
-                    positionClass: "toast-bottom-center",
-                    preventDuplicates: true,
-                    onclick: null,
-                    showDuration: "300",
-                    hideDuration: "1000",
-                    timeOut: "5000",
-                    extendedTimeOut: "1000",
-                    showEasing: "swing",
-                    hideEasing: "linear",
-                    showMethod: "fadeIn",
-                    hideMethod: "fadeOut",
-                  };
-                  toastr["warning"](data.message, "Advertencia:");
-                }
-              },
-              error: function (error) {
-                $(".modal-body").LoadingOverlay("hide");
-                alert(error);
-              },
-              beforeSend: function () {
-                $(".modal-body").LoadingOverlay("show", {
-                  background: "rgba(0, 0, 0, 0.5)",
-                  image: "../img/clock-regular.svg",
-                  imageAnimation: "1.5s fadein",
-                  imageAutoResize: true,
-                  imageResizeFactor: 1,
-                  imageColor: "rgb(255, 205, 0)",
-                });
-              },
-            });
+      jQuery.ajax({
+        // ? url: "@Url.Action('Management_Controller_Insumo_Registrar', 'Management')",
+        url: "https://localhost:7050/Management/Management_Controller_Insumo_Registrar",
+        type: "POST",
+        data: Request,
+        processData: false,
+        contentType: false,
+        success: function (data) {
+          debugger; // TODO: Punto de Depuración
+
+          $(".modal-body").LoadingOverlay("hide");
+
+          if (data.iD_Auto_Generated != 0) {
+            Insumo.iD_Insumo = data.iD_Auto_Generated;
+            Table_Insumo.row.add(Insumo).draw(false);
+            $("#Form_Modal").modal("hide");
+            // !!!
+            window.location.reload();
+          } else {
+            toastr.options = {
+              closeButton: true,
+              debug: false,
+              newestOnTop: true,
+              progressBar: true,
+              positionClass: "toast-bottom-center",
+              preventDuplicates: false,
+              onclick: null,
+              showDuration: "300",
+              hideDuration: "1000",
+              timeOut: "5000",
+              extendedTimeOut: "1000",
+              showEasing: "swing",
+              hideEasing: "linear",
+              showMethod: "fadeIn",
+              hideMethod: "fadeOut",
+            };
+            toastr["error"](data.message, "Error:");
           }
-        }
+        },
+        error: function (error) {
+          $(".modal-body").LoadingOverlay("hide");
+          alert(error);
+        },
+        beforeSend: function () {
+          $(".modal-body").LoadingOverlay("show", {
+            background: "rgba(0, 0, 0, 0.5)",
+            image: "../img/clock-regular.svg",
+            imageAnimation: "1.5s fadein",
+            imageAutoResize: true,
+            imageResizeFactor: 1,
+            imageColor: "rgb(255, 205, 0)",
+          });
+        },
+      });
+    } else {
+      if ($("#ID_Insumo").val() != 0) {
+        var Request = new FormData();
+        Request.append("Obj_Class_Entity_Insumo", JSON.stringify(Insumo));
+        Request.append("Obj_IFormFile", Selected_Image);
+
+        jQuery.ajax({
+          // ? url: "@Url.Action('Management_Controller_Insumo_Editar', 'Management')",
+          url: "https://localhost:7050/Management/Management_Controller_Insumo_Editar",
+          type: "PUT",
+          data: Request,
+          processData: false,
+          contentType: false,
+          success: function (data) {
+            // debugger; // TODO: Punto de Depuración
+
+            $(".modal-body").LoadingOverlay("hide");
+
+            if (data.successful_operation) {
+              Table_Insumo.row(Selected_Row).data(Insumo).draw(false);
+              Selected_Row = null;
+              $("#Form_Modal").modal("hide");
+              // !!!
+              window.location.reload();
+            } else {
+              toastr.options = {
+                closeButton: true,
+                debug: false,
+                newestOnTop: true,
+                progressBar: true,
+                positionClass: "toast-bottom-center",
+                preventDuplicates: false,
+                onclick: null,
+                showDuration: "300",
+                hideDuration: "1000",
+                timeOut: "5000",
+                extendedTimeOut: "1000",
+                showEasing: "swing",
+                hideEasing: "linear",
+                showMethod: "fadeIn",
+                hideMethod: "fadeOut",
+              };
+              toastr["error"](data.message, "Error:");
+            }
+          },
+          error: function (error) {
+            $(".modal-body").LoadingOverlay("hide");
+            alert(error);
+          },
+          beforeSend: function () {
+            $(".modal-body").LoadingOverlay("show", {
+              background: "rgba(0, 0, 0, 0.5)",
+              image: "../img/clock-regular.svg",
+              imageAnimation: "1.5s fadein",
+              imageAutoResize: true,
+              imageResizeFactor: 1,
+              imageColor: "rgb(255, 205, 0)",
+            });
+          },
+        });
       }
     }
   }

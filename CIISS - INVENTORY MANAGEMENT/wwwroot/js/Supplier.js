@@ -199,7 +199,7 @@ jQuery.validator.addMethod(
   function (value, element) {
     return (
       this.optional(element) ||
-      /^(?:\+1)?\s?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/.test(value)
+      /^(?:\+1)?\s?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{3}$/.test(value)
     );
   }
 );
@@ -254,11 +254,11 @@ $(document).ready(function () {
       Nombre_Proveedor_Insumo: {
         required: "Campo Requerido: Nombre del Proveedor del Insumo",
         Valid_Nombre_Proveedor_Insumo:
-          "Campo Requerido: Nombre de la Categoría del Insumo",
+          "Campo Requerido: Nombre del Proveedor del Insumo",
       },
       Telefono_Proveedor_Insumo: {
         required: "Campo Requerido: Teléfono del Proveedor del Insumo",
-        number: "Ingrese un Número Teléfonico Válido (Alter)",
+        number: "Ingrese un Número Teléfonico Válido",
         Valid_Telefono_Proveedor_Insumo: "Ingrese un Número Teléfonico Válido",
       },
       E_Mail_Proveedor_Insumo: {
@@ -299,7 +299,7 @@ $.validator.setDefaults({
 });
 
 function Procesar() {
-  if (!$("#Form_Category").valid()) {
+  if (!$("#Form_Supplier").valid()) {
     return;
   } else {
     var Proveedor = {

@@ -157,7 +157,7 @@ namespace DATA___LAYER
                     }
                     else
                     {
-                        Message = "ERROR: Image_Error";
+                        Message = "Error: Ruta_Imagen_Usuario && Error: Nombre_Imagen_Usuario";
                     }
                 }
             }

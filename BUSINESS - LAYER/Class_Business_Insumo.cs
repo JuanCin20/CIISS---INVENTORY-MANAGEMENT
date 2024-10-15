@@ -18,49 +18,49 @@ namespace BUSINESS___LAYER
             Message = string.Empty;
             if (Obj_Class_Entity_Insumo.Object_ID_Categoria_Insumo.ID_Categoria_Insumo == 0)
             {
-                Message = "Campo Requerido: Categoría del Insumo";
+                Message = "Error: ID_Categoria_Insumo";
             }
             else
             {
                 if (Obj_Class_Entity_Insumo.Object_ID_Proveedor_Insumo.ID_Proveedor_Insumo == 0)
                 {
-                    Message = "Campo Requerido: Proveedor del Insumo";
+                    Message = "Error: ID_Proveedor_Insumo";
                 }
                 else
                 {
                     if (string.IsNullOrEmpty(Obj_Class_Entity_Insumo.Nombre_Insumo) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Insumo.Nombre_Insumo))
                     {
-                        Message = "Campo Requerido: Nombre del Insumo";
+                        Message = "Error: Nombre_Insumo";
                     }
                     else
                     {
                         if (string.IsNullOrEmpty(Obj_Class_Entity_Insumo.Descripcion_Insumo) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Insumo.Descripcion_Insumo))
                         {
-                            Message = "Campo Requerido: Descripción del Insumo";
+                            Message = "Error: Descripcion_Insumo";
                         }
                         else
                         {
                             if (string.IsNullOrEmpty(Obj_Class_Entity_Insumo.Unidad_Medida_Insumo) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Insumo.Unidad_Medida_Insumo))
                             {
-                                Message = "Campo Requerido: Unidad de Medida del Insumo";
+                                Message = "Error: Unidad_Medida_Insumo";
                             }
                             else
                             {
                                 if (Obj_Class_Entity_Insumo.Precio_Insumo <= 0)
                                 {
-                                    Message = "Campo Requerido: Precio del Insumo";
+                                    Message = "Error: Precio_Insumo";
                                 }
                                 else
                                 {
                                     if (Obj_Class_Entity_Insumo.Stock_Insumo < 0)
                                     {
-                                        Message = "Campo Requerido: Stock del Insumo";
+                                        Message = "Error: Stock_Insumo";
                                     }
                                     else
                                     {
                                         if (string.IsNullOrEmpty(Obj_Class_Entity_Insumo.Fecha_Vencimiento_Insumo) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Insumo.Fecha_Vencimiento_Insumo))
                                         {
-                                            Message = "Campo Requerido: Fecha de Vencimiento del Insumo";
+                                            Message = "Error: Fecha_Vencimiento_Insumo";
                                         }
                                     }
                                 }
@@ -85,49 +85,49 @@ namespace BUSINESS___LAYER
             Message = string.Empty;
             if (Obj_Class_Entity_Insumo.Object_ID_Categoria_Insumo.ID_Categoria_Insumo == 0)
             {
-                Message = "Campo Requerido: Categoría del Insumo";
+                Message = "Error: ID_Categoria_Insumo";
             }
             else
             {
                 if (Obj_Class_Entity_Insumo.Object_ID_Proveedor_Insumo.ID_Proveedor_Insumo == 0)
                 {
-                    Message = "Campo Requerido: Proveedor del Insumo";
+                    Message = "Error: ID_Proveedor_Insumo";
                 }
                 else
                 {
                     if (string.IsNullOrEmpty(Obj_Class_Entity_Insumo.Nombre_Insumo) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Insumo.Nombre_Insumo))
                     {
-                        Message = "Campo Requerido: Nombre del Insumo";
+                        Message = "Error: Nombre_Insumo";
                     }
                     else
                     {
                         if (string.IsNullOrEmpty(Obj_Class_Entity_Insumo.Descripcion_Insumo) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Insumo.Descripcion_Insumo))
                         {
-                            Message = "Campo Requerido: Descripción del Insumo";
+                            Message = "Error: Descripcion_Insumo";
                         }
                         else
                         {
                             if (string.IsNullOrEmpty(Obj_Class_Entity_Insumo.Unidad_Medida_Insumo) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Insumo.Unidad_Medida_Insumo))
                             {
-                                Message = "Campo Requerido: Unidad de Medida del Insumo";
+                                Message = "Error: Unidad_Medida_Insumo";
                             }
                             else
                             {
                                 if (Obj_Class_Entity_Insumo.Precio_Insumo <= 0)
                                 {
-                                    Message = "Campo Requerido: Precio del Insumo";
+                                    Message = "Error: Precio_Insumo";
                                 }
                                 else
                                 {
                                     if (Obj_Class_Entity_Insumo.Stock_Insumo < 0)
                                     {
-                                        Message = "Campo Requerido: Stock del Insumo";
+                                        Message = "Error: Stock_Insumo";
                                     }
                                     else
                                     {
                                         if (string.IsNullOrEmpty(Obj_Class_Entity_Insumo.Fecha_Vencimiento_Insumo) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Insumo.Fecha_Vencimiento_Insumo))
                                         {
-                                            Message = "Campo Requerido: Fecha de Vencimiento del Insumo";
+                                            Message = "Error: Fecha_Vencimiento_Insumo";
                                         }
                                     }
                                 }

@@ -84,7 +84,7 @@ namespace CIISS___INVENTORY_MANAGEMENT.Controllers
                     }
                     else
                     {
-                        message = "El Registro de los Datos del Usuario se Realizó Exitosamente, sin Embargo, hubo Problemas al Registrar la Imagen del Usuario";
+                        message = "Error: Ruta_Imagen_Usuario && Error: Nombre_Imagen_Usuario";
                     }
                 }
             }
@@ -133,7 +133,7 @@ namespace CIISS___INVENTORY_MANAGEMENT.Controllers
                     }
                     else
                     {
-                        message = "La Actualización de los Datos del Usuario se Realizó Exitosamente, sin Embargo, hubo Problemas al Actualizar la Imagen del Usuario";
+                        message = "Error: Ruta_Imagen_Usuario && Error: Nombre_Imagen_Usuario";
                     }
                 }
             }

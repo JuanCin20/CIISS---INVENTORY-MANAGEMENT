@@ -16,28 +16,21 @@ namespace BUSINESS___LAYER
         public int Class_Business_Usuario_Registrar(Class_Entity_Usuario Obj_Class_Entity_Usuario, out string Message)
         {
             Message = string.Empty;
-            if (string.IsNullOrEmpty(Obj_Class_Entity_Usuario.Object_ID_Tipo_Usuario.Nombre_Tipo_Usuario))
+            if (string.IsNullOrEmpty(Obj_Class_Entity_Usuario.Nombre_Usuario) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Usuario.Nombre_Usuario))
             {
-                Message = "Campo Requerido: Rol del Usuario";
+                Message = "Error: Nombre_Usuario";
             }
             else
             {
-                if (string.IsNullOrEmpty(Obj_Class_Entity_Usuario.Nombre_Usuario) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Usuario.Nombre_Usuario))
+                if (string.IsNullOrEmpty(Obj_Class_Entity_Usuario.Apellido_Usuario) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Usuario.Apellido_Usuario))
                 {
-                    Message = "Campo Requerido: Nombres del Usuario";
+                    Message = "Error: Apellido_Usuario";
                 }
                 else
                 {
-                    if (string.IsNullOrEmpty(Obj_Class_Entity_Usuario.Apellido_Usuario) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Usuario.Apellido_Usuario))
+                    if (string.IsNullOrEmpty(Obj_Class_Entity_Usuario.E_Mail_Usuario) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Usuario.E_Mail_Usuario))
                     {
-                        Message = "Campo Requerido: Apellidos del Usuario";
-                    }
-                    else
-                    {
-                        if (string.IsNullOrEmpty(Obj_Class_Entity_Usuario.E_Mail_Usuario) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Usuario.E_Mail_Usuario))
-                        {
-                            Message = "Campo Requerido: Correo Electrónico del Usuario";
-                        }
+                        Message = "Error: E_Mail_Usuario";
                     }
                 }
             }
@@ -58,7 +51,7 @@ namespace BUSINESS___LAYER
                 }
                 else
                 {
-                    Message = "Ingrese un Correo Electrónico Válido";
+                    Message = "Error: E_Mail_Usuario";
                     return 0;
                 }
             }
@@ -71,28 +64,21 @@ namespace BUSINESS___LAYER
         public bool Class_Business_Usuario_Editar(Class_Entity_Usuario Obj_Class_Entity_Usuario, out string Message)
         {
             Message = string.Empty;
-            if (string.IsNullOrEmpty(Obj_Class_Entity_Usuario.Object_ID_Tipo_Usuario.Nombre_Tipo_Usuario))
+            if (string.IsNullOrEmpty(Obj_Class_Entity_Usuario.Nombre_Usuario) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Usuario.Nombre_Usuario))
             {
-                Message = "Campo Requerido: Rol del Usuario";
+                Message = "Error: Nombre_Usuario";
             }
             else
             {
-                if (string.IsNullOrEmpty(Obj_Class_Entity_Usuario.Nombre_Usuario) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Usuario.Nombre_Usuario))
+                if (string.IsNullOrEmpty(Obj_Class_Entity_Usuario.Apellido_Usuario) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Usuario.Apellido_Usuario))
                 {
-                    Message = "Campo Requerido: Nombres del Usuario";
+                    Message = "Error: Apellido_Usuario";
                 }
                 else
                 {
-                    if (string.IsNullOrEmpty(Obj_Class_Entity_Usuario.Apellido_Usuario) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Usuario.Apellido_Usuario))
+                    if (string.IsNullOrEmpty(Obj_Class_Entity_Usuario.E_Mail_Usuario) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Usuario.E_Mail_Usuario))
                     {
-                        Message = "Campo Requerido: Apellidos del Usuario";
-                    }
-                    else
-                    {
-                        if (string.IsNullOrEmpty(Obj_Class_Entity_Usuario.E_Mail_Usuario) || string.IsNullOrWhiteSpace(Obj_Class_Entity_Usuario.E_Mail_Usuario))
-                        {
-                            Message = "Campo Requerido: Correo Electrónico del Usuario";
-                        }
+                        Message = "Error: E_Mail_Usuario";
                     }
                 }
             }

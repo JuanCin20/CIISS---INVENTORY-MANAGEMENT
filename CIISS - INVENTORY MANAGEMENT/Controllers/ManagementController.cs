@@ -202,7 +202,7 @@ namespace CIISS___INVENTORY_MANAGEMENT.Controllers
                     }
                     else
                     {
-                        message = "El Registro de los Datos del Insumo se Realizó Exitosamente, sin Embargo, hubo Problemas al Registrar la Imagen del Insumo";
+                        message = "Error: Ruta_Imagen_Insumo && Error: Nombre_Imagen_Insumo";
                     }
                 }
             }
@@ -266,7 +266,7 @@ namespace CIISS___INVENTORY_MANAGEMENT.Controllers
                     }
                     else
                     {
-                        message = "La Actualización de los Datos del Insumo se Realizó Exitosamente, sin Embargo, hubo Problemas al Actualizar la Imagen del Insumo";
+                        message = "Error: Ruta_Imagen_Insumo && Error: Nombre_Imagen_Insumo";
                     }
                 }
             }
