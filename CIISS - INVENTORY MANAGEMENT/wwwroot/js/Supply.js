@@ -1,7 +1,7 @@
 var Table_Insumo;
 var Selected_Row;
 
--function Show_Supply_Image(input) {
+function Show_Supply_Image(input) {
   if (input.files) {
     var Reader = new FileReader();
     Reader.onload = function (event) {
@@ -9,7 +9,7 @@ var Selected_Row;
     };
     Reader.readAsDataURL(input.files[0]);
   }
-};
+}
 
 /**
  * *jQuery.ajax({
@@ -320,8 +320,18 @@ jQuery.validator.addMethod(
   }
 );
 
+jQuery.validator.addMethod(
+  "Valid_Descripcion_Insumo",
+  function (value, element) {
+    return (
+      this.optional(element) ||
+      /([a-zA-Z',.-]+( [a-zA-Z',.-]+)*){2,30}/.test(value)
+    );
+  }
+);
+
 $(document).ready(function () {
-  $("#Form_User").validate({
+  $("#Form_Supply").validate({
     rules: {
       Estado_Insumo: {
         required: true,
@@ -354,6 +364,10 @@ $(document).ready(function () {
       Imagen_Insumo_Input: {
         required: true,
       },
+      Descripcion_Insumo: {
+        required: true,
+        Valid_Descripcion_Insumo: true,
+      },
     },
     messages: {
       Estado_Insumo: {
@@ -361,7 +375,7 @@ $(document).ready(function () {
       },
       Nombre_Insumo: {
         required: "Campo Requerido: Nombre de Insumo",
-        Valid_Nombre_Insumo: true,
+        Valid_Nombre_Insumo: "Campo Requerido: Nombre de Insumo",
       },
       Categoria_Insumo: {
         required: "Campo Requerido: Categoría del Insumo",
@@ -387,6 +401,10 @@ $(document).ready(function () {
       },
       Imagen_Insumo_Input: {
         required: "Campo Requerido: Imagen del Insumo",
+      },
+      Descripcion_Insumo: {
+        required: "Campo Requerido: Descripción del Insumo",
+        Valid_Descripcion_Insumo: "Campo Requerido: Descripción del Insumo",
       },
     },
     errorElement: "em",
@@ -416,18 +434,10 @@ $.validator.setDefaults({
 });
 
 function Procesar() {
-  if (!$("#Form_User").valid()) {
+  if (!$("#Form_Supply").valid()) {
     return;
   } else {
-    var Estado_Insumo_Selection = $("#Estado_Insumo option:selected").text();
-    var Categoria_Insumo_Selection = $(
-      "#Categoria_Insumo option:selected"
-    ).text();
-    var Proveedor_Insumo_Selection = $(
-      "#Proveedor_Insumo option:selected"
-    ).text();
-
-    var Selected_Image = $("#Imagen_Insumo_Input")[0].files[0];
+    var Imagen_Insumo_Input = $("#Imagen_Insumo_Input")[0].files[0];
 
     var Insumo = {
       iD_Insumo: $("#ID_Insumo").val(),
@@ -439,10 +449,11 @@ function Procesar() {
         iD_Proveedor_Insumo: $("#Proveedor_Insumo option:selected").val(),
         nombre_Proveedor_Insumo: $("#Proveedor_Insumo option:selected").text(),
       },
-      nombre_Insumo: $("#Nombre_Insumo").val(),
-      descripcion_Insumo: $("#Descripcion_Insumo").val(),
-      unidad_Medida_Insumo: $("#Unidad_Medida_Insumo").val(),
+      nombre_Insumo: $.trim($("#Nombre_Insumo").val()),
+      descripcion_Insumo: $.trim($("#Descripcion_Insumo").val()),
+      unidad_Medida_Insumo: $.trim($("#Unidad_Medida_Insumo").val()),
       precio_Insumo: $("#Precio_Insumo").val(),
+      precio_Insumo_String: $("#Precio_Insumo").val(),
       stock_Insumo: $("#Stock_Insumo").val(),
       estado_Insumo: $("#Estado_Insumo").val() == "Available" ? true : false,
       fecha_Vencimiento_Insumo: $("#Fecha_Vencimiento_Insumo").val(),
@@ -451,7 +462,7 @@ function Procesar() {
     if ($("#ID_Insumo").val() == 0) {
       var Request = new FormData();
       Request.append("Obj_Class_Entity_Insumo", JSON.stringify(Insumo));
-      Request.append("Obj_IFormFile", Selected_Image);
+      Request.append("Obj_IFormFile", Imagen_Insumo_Input);
 
       jQuery.ajax({
         // ? url: "@Url.Action('Management_Controller_Insumo_Registrar', 'Management')",
@@ -461,7 +472,7 @@ function Procesar() {
         processData: false,
         contentType: false,
         success: function (data) {
-          debugger; // TODO: Punto de Depuración
+          // debugger; // TODO: Punto de Depuración
 
           $(".modal-body").LoadingOverlay("hide");
 
@@ -511,7 +522,7 @@ function Procesar() {
       if ($("#ID_Insumo").val() != 0) {
         var Request = new FormData();
         Request.append("Obj_Class_Entity_Insumo", JSON.stringify(Insumo));
-        Request.append("Obj_IFormFile", Selected_Image);
+        Request.append("Obj_IFormFile", Imagen_Insumo_Input);
 
         jQuery.ajax({
           // ? url: "@Url.Action('Management_Controller_Insumo_Editar', 'Management')",
