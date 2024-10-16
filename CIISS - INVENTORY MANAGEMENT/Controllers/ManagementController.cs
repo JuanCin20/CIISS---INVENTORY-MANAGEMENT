@@ -156,7 +156,7 @@ namespace CIISS___INVENTORY_MANAGEMENT.Controllers
             }
             else
             {
-                return Json(new { successful_operation = false, message = "El Formato Numérico del Precio del Insumo debe ser ##.##" });
+                return Json(new { successful_operation = false, message = "Error: Precio_Insumo" });
             }
 
             // **
@@ -229,7 +229,7 @@ namespace CIISS___INVENTORY_MANAGEMENT.Controllers
             }
             else
             {
-                return Json(new { successful_operation = false, message = "El Formato Numérico del Precio del Insumo debe ser ##.##" });
+                return Json(new { successful_operation = false, message = "Error: Precio_Insumo" });
             }
 
             // **

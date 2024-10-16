@@ -141,7 +141,7 @@ namespace CIISS___INVENTORY_MANAGEMENT.Controllers
         }
 
         [HttpGet]
-        public JsonResult Management_Controller_Usuario_Imagen(int ID_Usuario)
+        public JsonResult Staff_Controller_Usuario_Imagen(int ID_Usuario)
         {
             bool conversion;
             Class_Entity_Usuario Obj_Class_Entity_Usuario = new Class_Business_Usuario().Class_Business_Usuario_Listar().Where(Obj_Class_Entity_Usuario_Alter => Obj_Class_Entity_Usuario_Alter.ID_Usuario == ID_Usuario).FirstOrDefault();

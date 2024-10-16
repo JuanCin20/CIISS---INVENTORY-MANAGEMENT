@@ -112,6 +112,59 @@ function Open_Form_Modal(data) {
           ? "Administrador"
           : "Empleado"
       );
+      jQuery.ajax({
+        url: "https://localhost:7050/Staff/Staff_Controller_Usuario_Imagen",
+        type: "GET",
+        data: JSON.stringify({ ID_Usuario: data.iD_Usuario }),
+        dataType: "json",
+        contentType: "application/json; charset=UTF-8",
+        success: function (data) {
+          $("#Imagen_Usuario").LoadingOverlay("hide");
+          if (data.conversion) {
+            $("#Imagen_Usuario").attr({
+              src:
+                "data:image/" +
+                data.extension_Imagen_Usuario +
+                ";base64," +
+                data.base_64_Imagen_Usuario,
+            });
+          }
+        },
+        error: function (error) {
+          $("#Imagen_Usuario").LoadingOverlay("hide");
+          toastr.options = {
+            closeButton: true,
+            debug: false,
+            newestOnTop: true,
+            progressBar: true,
+            positionClass: "toast-bottom-center",
+            preventDuplicates: false,
+            onclick: null,
+            showDuration: "300",
+            hideDuration: "1000",
+            timeOut: "5000",
+            extendedTimeOut: "1000",
+            showEasing: "swing",
+            hideEasing: "linear",
+            showMethod: "fadeIn",
+            hideMethod: "fadeOut",
+          };
+          toastr["error"](
+            "Error: Ruta_Imagen_Usuario && Error: Nombre_Imagen_Usuario",
+            "Error:"
+          );
+        },
+        beforeSend: function () {
+          $("#Imagen_Usuario").LoadingOverlay("show", {
+            background: "rgba(0, 0, 0, 0.5)",
+            image: "../img/clock-regular.svg",
+            imageAnimation: "1.5s fadein",
+            imageAutoResize: true,
+            imageResizeFactor: 1,
+            imageColor: "rgb(255, 205, 0)",
+          });
+        },
+      });
     }
   }
   $("#Form_Modal").modal("show");
