@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AEC24837-3B92-41E1-A6FA-5063DE1C549D}|CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT.csproj|c:\\users\\hp\\documentos\\ciiss - inventory management\\ciiss - inventory management\\ciiss - inventory management\\views\\staff\\user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AEC24837-3B92-41E1-A6FA-5063DE1C549D}|CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT.csproj|solutionrelative:ciiss - inventory management\\views\\staff\\user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEC24837-3B92-41E1-A6FA-5063DE1C549D}|CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT.csproj|c:\\users\\hp\\documentos\\ciiss - inventory management\\ciiss - inventory management\\ciiss - inventory management\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEC24837-3B92-41E1-A6FA-5063DE1C549D}|CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT.csproj|solutionrelative:ciiss - inventory management\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E378C2C9-B1EF-4BD0-B733-52F4A0421E65}|BUSINESS - LAYER\\BUSINESS - LAYER.csproj|c:\\users\\hp\\documentos\\ciiss - inventory management\\ciiss - inventory management\\business - layer\\class_business_recurso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E378C2C9-B1EF-4BD0-B733-52F4A0421E65}|BUSINESS - LAYER\\BUSINESS - LAYER.csproj|solutionrelative:business - layer\\class_business_recurso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\Views\\Staff\\User.cshtml",
+              "RelativeDocumentMoniker": "CIISS - INVENTORY MANAGEMENT\\Views\\Staff\\User.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\Views\\Staff\\User.cshtml",
+              "RelativeToolTip": "CIISS - INVENTORY MANAGEMENT\\Views\\Staff\\User.cshtml",
+              "ViewState": "AgIAANQAAAAAAAAAAAAAANoAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-16T22:14:42.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StaffController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\Controllers\\StaffController.cs",
+              "RelativeDocumentMoniker": "CIISS - INVENTORY MANAGEMENT\\Controllers\\StaffController.cs",
+              "ToolTip": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\Controllers\\StaffController.cs*",
+              "RelativeToolTip": "CIISS - INVENTORY MANAGEMENT\\Controllers\\StaffController.cs*",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAowI4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T22:14:37.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class_Business_Recurso.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\BUSINESS - LAYER\\Class_Business_Recurso.cs",
+              "RelativeDocumentMoniker": "BUSINESS - LAYER\\Class_Business_Recurso.cs",
+              "ToolTip": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\BUSINESS - LAYER\\Class_Business_Recurso.cs",
+              "RelativeToolTip": "BUSINESS - LAYER\\Class_Business_Recurso.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAgwE4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T22:14:30.484Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -30,7 +30,7 @@ $(document).ready(function () {
       url: "//cdn.datatables.net/plug-ins/2.1.8/i18n/es-MX.json",
     },
     ajax: {
-      // ? url: "@Url.Action('Management_Controller_Proveedor_Insumo_Listar', 'Management')",
+      // ? url: "@Url.Action("Management_Controller_Proveedor_Insumo_Listar", "Management")",
       url: "https://localhost:7050/Management/Management_Controller_Proveedor_Insumo_Listar",
       type: "GET",
       dataType: "json",
@@ -153,7 +153,7 @@ $("#Table_Proveedor_Insumo").on("click", ".Delete_Button", function () {
   }).then((result) => {
     if (result.isConfirmed) {
       jQuery.ajax({
-        // ? url: "@Url.Action('Management_Controller_Proveedor_Insumo_Eliminar', 'Management')",
+        // ? url: "@Url.Action("Management_Controller_Proveedor_Insumo_Eliminar", "Management")",
         url: "https://localhost:7050/Management/Management_Controller_Proveedor_Insumo_Eliminar",
         type: "DELETE",
         data: { ID_Proveedor_Insumo: data.iD_Proveedor_Insumo },
@@ -316,7 +316,7 @@ function Procesar() {
 
     if ($("#ID_Proveedor_Insumo").val() == 0) {
       jQuery.ajax({
-        // ? url: "@Url.Action('Management_Controller_Proveedor_Insumo_Registrar', 'Management')",
+        // ? url: "@Url.Action("Management_Controller_Proveedor_Insumo_Registrar", "Management")",
         url: "https://localhost:7050/Management/Management_Controller_Proveedor_Insumo_Registrar",
         type: "POST",
         data: { Obj_Class_Entity_Proveedor_Insumo: Proveedor },
@@ -386,7 +386,7 @@ function Procesar() {
     } else {
       if ($("#ID_Proveedor_Insumo").val() != 0) {
         jQuery.ajax({
-          // ? url: "@Url.Action('Management_Controller_Proveedor_Insumo_Editar', 'Management')",
+          // ? url: "@Url.Action("Management_Controller_Proveedor_Insumo_Editar", "Management")",
           url: "https://localhost:7050/Management/Management_Controller_Proveedor_Insumo_Editar",
           type: "PUT",
           data: { Obj_Class_Entity_Proveedor_Insumo: Proveedor },

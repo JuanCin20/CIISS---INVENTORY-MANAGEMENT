@@ -29,7 +29,7 @@ Table_Usuario = $("#Table_Usuario").DataTable({
     url: "//cdn.datatables.net/plug-ins/2.1.8/i18n/es-MX.json",
   },
   ajax: {
-    // ? url: "@Url.Action('Staff_Controller_Usuario_Listar', 'Staff')",
+    // ? url: "@Url.Action("Staff_Controller_Usuario_Listar", "Staff")",
     url: "https://localhost:7050/Staff/Staff_Controller_Usuario_Listar",
     type: "GET",
     dataType: "json",
@@ -113,12 +113,12 @@ function Open_Form_Modal(data) {
           : "Empleado"
       );
       jQuery.ajax({
+        // ? url: "@Url.Action("Staff_Controller_Usuario_Imagen", "Staff")",
         url: "https://localhost:7050/Staff/Staff_Controller_Usuario_Imagen",
         type: "GET",
-        data: JSON.stringify({ ID_Usuario: data.iD_Usuario }),
-        dataType: "json",
-        contentType: "application/json; charset=UTF-8",
+        data: { ID_Usuario: data.iD_Usuario },
         success: function (data) {
+          debugger;
           $("#Imagen_Usuario").LoadingOverlay("hide");
           if (data.conversion) {
             $("#Imagen_Usuario").attr({
@@ -131,28 +131,7 @@ function Open_Form_Modal(data) {
           }
         },
         error: function (error) {
-          $("#Imagen_Usuario").LoadingOverlay("hide");
-          toastr.options = {
-            closeButton: true,
-            debug: false,
-            newestOnTop: true,
-            progressBar: true,
-            positionClass: "toast-bottom-center",
-            preventDuplicates: false,
-            onclick: null,
-            showDuration: "300",
-            hideDuration: "1000",
-            timeOut: "5000",
-            extendedTimeOut: "1000",
-            showEasing: "swing",
-            hideEasing: "linear",
-            showMethod: "fadeIn",
-            hideMethod: "fadeOut",
-          };
-          toastr["error"](
-            "Error: Ruta_Imagen_Usuario && Error: Nombre_Imagen_Usuario",
-            "Error:"
-          );
+          alert(error);
         },
         beforeSend: function () {
           $("#Imagen_Usuario").LoadingOverlay("show", {
@@ -203,7 +182,7 @@ $("#Table_Usuario").on("click", ".Delete_Button", function () {
   }).then((result) => {
     if (result.isConfirmed) {
       jQuery.ajax({
-        // ? url: "@Url.Action('Staff_Controller_Usuario_Eliminar', 'Staff')",
+        // ? url: "@Url.Action("Staff_Controller_Usuario_Eliminar", "Staff")",
         url: "https://localhost:7050/Staff/Staff_Controller_Usuario_Eliminar",
         type: "DELETE",
         data: { ID_Usuario: data.iD_Usuario },
@@ -350,7 +329,7 @@ function Procesar() {
       Request.append("Obj_IFormFile", Imagen_Usuario_Input);
 
       jQuery.ajax({
-        // ? url: "@Url.Action('Staff_Controller_Usuario_Registrar', 'Staff')",
+        // ? url: "@Url.Action("Staff_Controller_Usuario_Registrar", "Staff")",
         url: "https://localhost:7050/Staff/Staff_Controller_Usuario_Registrar",
         type: "POST",
         data: Request,
@@ -410,7 +389,7 @@ function Procesar() {
         Request.append("Obj_IFormFile", Imagen_Usuario_Input);
 
         jQuery.ajax({
-          // ? url: "@Url.Action('Staff_Controller_Usuario_Editar', 'Staff')",
+          // ? url: "@Url.Action("Staff_Controller_Usuario_Editar", "Staff")",
           url: "https://localhost:7050/Staff/Staff_Controller_Usuario_Editar",
           type: "PUT",
           data: Request,
