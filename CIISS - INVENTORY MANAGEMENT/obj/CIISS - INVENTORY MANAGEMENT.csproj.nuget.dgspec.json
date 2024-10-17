@@ -120,10 +120,6 @@
               "target": "Package",
               "version": "[2.1.5, )"
             },
-            "jQuery.Validation": {
-              "target": "Package",
-              "version": "[1.21.0, )"
-            },
             "jquery.datatables": {
               "target": "Package",
               "version": "[1.10.15, )"

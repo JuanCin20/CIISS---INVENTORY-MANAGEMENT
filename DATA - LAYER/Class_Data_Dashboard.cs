@@ -1,5 +1,4 @@
-using System.Collections.Generic;
-using System.Data.SqlClient;
+﻿using System.Data.SqlClient;
 using System.Data;
 using System;
 using ENTITY___LAYER;
@@ -16,7 +15,7 @@ namespace DATA___LAYER
                 using (SqlConnection Obj_SqlConnection = new SqlConnection(Class_Data_Connection.Connection_String))
                 {
                     SqlCommand Obj_SqlCommand = new SqlCommand("SP_DASHBOARD_REPORT", Obj_SqlConnection);
-                    Obj_SqlCommand.CommandType = Obj_SqlCommand.StoredProcedure;
+                    Obj_SqlCommand.CommandType = CommandType.StoredProcedure;
 
                     Obj_SqlConnection.Open();
 

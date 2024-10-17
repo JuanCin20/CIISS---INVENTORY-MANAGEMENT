@@ -3,8 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using ENTITY___LAYER;
 using BUSINESS___LAYER;
-using Newtonsoft.Json;
-using System.Globalization;
 
 namespace CIISS___INVENTORY_MANAGEMENT.Controllers
 {
@@ -28,7 +26,7 @@ namespace CIISS___INVENTORY_MANAGEMENT.Controllers
         }
 
         [HttpGet]
-        public JsonResult See_Dashboard()
+        public JsonResult Home_Controller_See_Dashboard()
         {
             Class_Entity_Dashboard Obj_Class_Entity_Dashboard = new Class_Business_Dashboard().Class_Business_See_Dashboard();
 

@@ -1,4 +1,4 @@
-namespace ENTITY___LAYER
+﻿namespace ENTITY___LAYER
 {
     public class Class_Entity_Dashboard
     {

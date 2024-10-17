@@ -880,12 +880,6 @@
           "jQuery": "1.7.0"
         }
       },
-      "jQuery.Validation/1.21.0": {
-        "type": "package",
-        "dependencies": {
-          "jQuery": "1.4.4"
-        }
-      },
       "Microsoft.AspNetCore.Authorization/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -4417,20 +4411,6 @@
         "content/Scripts/loadingoverlay.min.js.map",
         "jquery.loadingoverlay.2.1.5.nupkg.sha512",
         "jquery.loadingoverlay.nuspec"
-      ]
-    },
-    "jQuery.Validation/1.21.0": {
-      "sha512": "bXkjFal9Ec4vwirRVF1sQgK5MtDW/o3H22rzocW9+0O9ParIAkrzW9RtRZVMB6J5lo+X7mRduFwi6TzFqrR0pQ==",
-      "type": "package",
-      "path": "jquery.validation/1.21.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Content/Scripts/jquery.validate-vsdoc.js",
-        "Content/Scripts/jquery.validate.js",
-        "Content/Scripts/jquery.validate.min.js",
-        "jquery.validation.1.21.0.nupkg.sha512",
-        "jquery.validation.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authorization/8.0.0": {
@@ -9018,7 +8998,6 @@
       "bootstrap >= 5.3.3",
       "jQuery >= 3.7.1",
       "jQuery.LoadingOverlay >= 2.1.5",
-      "jQuery.Validation >= 1.21.0",
       "jquery.datatables >= 1.10.15",
       "toastr >= 2.1.1"
     ]
@@ -9120,10 +9099,6 @@
           "jQuery.LoadingOverlay": {
             "target": "Package",
             "version": "[2.1.5, )"
-          },
-          "jQuery.Validation": {
-            "target": "Package",
-            "version": "[1.21.0, )"
           },
           "jquery.datatables": {
             "target": "Package",
