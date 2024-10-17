@@ -509,5 +509,37 @@ SET
 	@Message = 'El ID del Insumo se Encuentra Relacionado a un Movimiento dentro del Inventario'
 END;
 
+----UPDATE Tabla_Insumo SET Ruta_Imagen_Insumo = @Ruta_Imagen_Insumo, Nombre_Imagen_Insumo = @Nombre_Imagen_Insumo WHERE ID_Insumo = @ID_Insumo;
+
 GO
-	----UPDATE Tabla_Insumo SET Ruta_Imagen_Insumo = @Ruta_Imagen_Insumo, Nombre_Imagen_Insumo = @Nombre_Imagen_Insumo WHERE ID_Insumo = @ID_Insumo;
+
+CREATE
+OR ALTER PROCEDURE SP_DASHBOARD_REPORT AS BEGIN
+SELECT
+	(
+		SELECT
+			ISNULL(SUM(Cantidad_Movimiento_Inventario), 0)
+		FROM
+			Tabla_Movimiento_Inventario
+	) [Cantidad_Movimiento_Inventario],
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			Tabla_Categoria_Insumo
+	) [Tabla_Categoria_Insumo],
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			Tabla_Proveedor_Insumo
+	) [Tabla_Proveedor_Insumo],
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			Tabla_Insumo
+	) [Tabla_Insumo] 
+END;
+
+----EXEC SP_DASHBOARD_REPORT;

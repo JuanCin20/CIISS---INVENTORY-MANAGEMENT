@@ -118,7 +118,6 @@ function Open_Form_Modal(data) {
         type: "GET",
         data: { ID_Usuario: data.iD_Usuario },
         success: function (data) {
-          debugger;
           $("#Imagen_Usuario").LoadingOverlay("hide");
           if (data.conversion) {
             $("#Imagen_Usuario").attr({

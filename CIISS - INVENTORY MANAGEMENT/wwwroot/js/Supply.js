@@ -240,7 +240,6 @@ function Open_Form_Modal(data) {
         type: "GET",
         data: { ID_Insumo: data.iD_Insumo },
         success: function (data) {
-          debugger;
           $("#Imagen_Insumo").LoadingOverlay("hide");
           if (data.conversion) {
             $("#Imagen_Insumo").attr({
@@ -256,7 +255,7 @@ function Open_Form_Modal(data) {
           alert(error);
         },
         beforeSend: function () {
-          $("#Imagen_Usuario").LoadingOverlay("show", {
+          $("#Imagen_Insumo").LoadingOverlay("show", {
             background: "rgba(0, 0, 0, 0.5)",
             image: "../img/clock-regular.svg",
             imageAnimation: "1.5s fadein",
