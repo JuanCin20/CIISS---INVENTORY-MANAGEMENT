@@ -392,9 +392,6 @@ $(document).ready(function () {
       Fecha_Vencimiento_Insumo: {
         required: true,
       },
-      Imagen_Insumo_Input: {
-        required: true,
-      },
       Descripcion_Insumo: {
         required: true,
         Valid_Descripcion_Insumo: true,
@@ -429,9 +426,6 @@ $(document).ready(function () {
       },
       Fecha_Vencimiento_Insumo: {
         required: "Campo Requerido: Fecha de Vencimiento del Insumo",
-      },
-      Imagen_Insumo_Input: {
-        required: "Campo Requerido: Imagen del Insumo",
       },
       Descripcion_Insumo: {
         required: "Campo Requerido: Descripción del Insumo",

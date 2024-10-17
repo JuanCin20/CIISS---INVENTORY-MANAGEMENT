@@ -305,7 +305,7 @@ function Procesar() {
     var Proveedor = {
       iD_Proveedor_Insumo: $("#ID_Proveedor_Insumo").val(),
       nombre_Proveedor_Insumo: $.trim($("#Nombre_Proveedor_Insumo").val()),
-      telefono_Proveedor_Insumo: $.trim($("#Telefono_Proveedor_Insumo").val()),
+      telefono_Proveedor_Insumo: $("#Telefono_Proveedor_Insumo").val(),
       e_Mail_Proveedor_Insumo: $.trim($("#E_Mail_Proveedor_Insumo").val()),
       direccion_Proveedor_Insumo: $.trim(
         $("#Direccion_Proveedor_Insumo").val()

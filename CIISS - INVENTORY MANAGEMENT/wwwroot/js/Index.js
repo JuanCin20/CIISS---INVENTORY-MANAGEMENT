@@ -1,5 +1,5 @@
 jQuery.ajax({
-  // ? url: "@Url.Action("","")",
+  // ? url: "@Url.Action("Home_Controller_See_Dashboard","Home")",
   url: "https://localhost:7050/Home/Home_Controller_See_Dashboard",
   type: "GET",
   dataType: "json",

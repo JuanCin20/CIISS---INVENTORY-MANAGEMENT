@@ -510,11 +510,9 @@ SET
 END;
 
 ----UPDATE Tabla_Insumo SET Ruta_Imagen_Insumo = @Ruta_Imagen_Insumo, Nombre_Imagen_Insumo = @Nombre_Imagen_Insumo WHERE ID_Insumo = @ID_Insumo;
-
 GO
-
-CREATE
-OR ALTER PROCEDURE SP_DASHBOARD_REPORT AS BEGIN
+	CREATE
+	OR ALTER PROCEDURE SP_DASHBOARD_REPORT AS BEGIN
 SELECT
 	(
 		SELECT
@@ -539,7 +537,7 @@ SELECT
 			COUNT(*)
 		FROM
 			Tabla_Insumo
-	) [Tabla_Insumo] 
+	) [Tabla_Insumo]
 END;
 
 ----EXEC SP_DASHBOARD_REPORT;

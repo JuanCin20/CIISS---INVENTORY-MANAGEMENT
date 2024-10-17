@@ -17,7 +17,6 @@
           "bootstrap": "5.3.3",
           "jQuery": "3.7.1",
           "jQuery.LoadingOverlay": "2.1.5",
-          "jQuery.Validation": "1.21.0",
           "jquery.datatables": "1.10.15",
           "toastr": "2.1.1"
         },
@@ -607,11 +606,6 @@
         }
       },
       "jQuery.LoadingOverlay/2.1.5": {
-        "dependencies": {
-          "jQuery": "3.7.1"
-        }
-      },
-      "jQuery.Validation/1.21.0": {
         "dependencies": {
           "jQuery": "3.7.1"
         }
@@ -2437,13 +2431,6 @@
       "sha512": "sha512-/W3aBl7mdr2GfqkMEkCiBxsGlTv64sVVP6x0NQptcUC4jshAt8FNNGanLdNqCz5YtgR4bSzUZc99/yA+zXOFcA==",
       "path": "jquery.loadingoverlay/2.1.5",
       "hashPath": "jquery.loadingoverlay.2.1.5.nupkg.sha512"
-    },
-    "jQuery.Validation/1.21.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-bXkjFal9Ec4vwirRVF1sQgK5MtDW/o3H22rzocW9+0O9ParIAkrzW9RtRZVMB6J5lo+X7mRduFwi6TzFqrR0pQ==",
-      "path": "jquery.validation/1.21.0",
-      "hashPath": "jquery.validation.1.21.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authorization/8.0.0": {
       "type": "package",

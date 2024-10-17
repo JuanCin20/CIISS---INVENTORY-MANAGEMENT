@@ -254,9 +254,6 @@ $(document).ready(function () {
         required: true,
         Valid_E_Mail_Usuario: true,
       },
-      Imagen_Usuario_Input: {
-        required: true,
-      },
     },
     messages: {
       Rol_Usuario: {
@@ -273,9 +270,6 @@ $(document).ready(function () {
       E_Mail_Usuario: {
         required: "Campo Requerido: Correo Electrónico del Usuario",
         Valid_E_Mail_Usuario: "Ingrese un Correo Electrónico Válido",
-      },
-      Imagen_Usuario_Input: {
-        required: "Campo Requerido: Imagen del Usuario",
       },
     },
     errorElement: "em",

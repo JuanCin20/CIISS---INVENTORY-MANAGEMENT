@@ -185,6 +185,22 @@
       "PackagePath": "staticwebassets\\User_Images\\1.jpeg"
     },
     {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\User_Images\\2.jpeg",
+      "PackagePath": "staticwebassets\\User_Images\\2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\User_Images\\3.jpeg",
+      "PackagePath": "staticwebassets\\User_Images\\3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\User_Images\\4.jpeg",
+      "PackagePath": "staticwebassets\\User_Images\\4.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\User_Images\\Image_Error.jpg",
+      "PackagePath": "staticwebassets\\User_Images\\Image_Error.jpg"
+    },
+    {
       "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\css\\Extras.css",
       "PackagePath": "staticwebassets\\css\\Extras.css"
     },
@@ -205,6 +221,10 @@
       "PackagePath": "staticwebassets\\js\\Category.js"
     },
     {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\js\\Index.js",
+      "PackagePath": "staticwebassets\\js\\Index.js"
+    },
+    {
       "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\js\\Supplier.js",
       "PackagePath": "staticwebassets\\js\\Supplier.js"
     },
@@ -215,18 +235,6 @@
     {
       "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\js\\User.js",
       "PackagePath": "staticwebassets\\js\\User.js"
-    },
-    {
-      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\js\\chart-area-demo.js",
-      "PackagePath": "staticwebassets\\js\\chart-area-demo.js"
-    },
-    {
-      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\js\\chart-bar-demo.js",
-      "PackagePath": "staticwebassets\\js\\chart-bar-demo.js"
-    },
-    {
-      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\js\\datatables-simple-demo.js",
-      "PackagePath": "staticwebassets\\js\\datatables-simple-demo.js"
     },
     {
       "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\js\\site.js",
