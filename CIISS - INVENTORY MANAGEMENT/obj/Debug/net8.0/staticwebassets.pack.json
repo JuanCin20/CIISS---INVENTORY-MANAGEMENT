@@ -177,6 +177,10 @@
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
     },
     {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\Supply_Images\\1.png",
+      "PackagePath": "staticwebassets\\Supply_Images\\1.png"
+    },
+    {
       "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\Supply_Images\\Image_Error.jpg",
       "PackagePath": "staticwebassets\\Supply_Images\\Image_Error.jpg"
     },

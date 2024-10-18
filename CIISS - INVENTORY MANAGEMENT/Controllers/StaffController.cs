@@ -87,6 +87,17 @@ namespace CIISS___INVENTORY_MANAGEMENT.Controllers
                         message = "Error: Ruta_Imagen_Usuario && Error: Nombre_Imagen_Usuario";
                     }
                 }
+                else
+                {
+                    if (Obj_IFormFile == null)
+                    {
+                        string Ruta_Imagen_Usuario = "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\User_Images";
+                        string Nombre_Imagen_Usuario = "Image_Error.jpg";
+                        Obj_Class_Entity_Usuario_Alter.Ruta_Imagen_Usuario = Ruta_Imagen_Usuario;
+                        Obj_Class_Entity_Usuario_Alter.Nombre_Imagen_Usuario = Nombre_Imagen_Usuario;
+                        bool Answer = new Class_Business_Usuario().Class_Business_Usuario_Registrar_Imagen(Obj_Class_Entity_Usuario_Alter, out message);
+                    }
+                }
             }
             return Json(new { successful_operation = successful_operation, iD_Auto_Generated = Obj_Class_Entity_Usuario_Alter.ID_Usuario, message = message });
         }

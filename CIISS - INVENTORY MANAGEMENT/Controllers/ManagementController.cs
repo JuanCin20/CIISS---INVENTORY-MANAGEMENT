@@ -205,6 +205,17 @@ namespace CIISS___INVENTORY_MANAGEMENT.Controllers
                         message = "Error: Ruta_Imagen_Insumo && Error: Nombre_Imagen_Insumo";
                     }
                 }
+                else
+                {
+                    if (Obj_IFormFile == null)
+                    {
+                        string Ruta_Imagen_Insumo = "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\Supply_Images";
+                        string Nombre_Imagen_Insumo = "Image_Error.jpg";
+                        Obj_Class_Entity_Insumo_Alter.Ruta_Imagen_Insumo = Ruta_Imagen_Insumo;
+                        Obj_Class_Entity_Insumo_Alter.Nombre_Imagen_Insumo = Nombre_Imagen_Insumo;
+                        bool Answer = new Class_Business_Insumo().Class_Business_Insumo_Registrar_Imagen(Obj_Class_Entity_Insumo_Alter, out message);
+                    }
+                }
             }
             return Json(new { successful_operation = successful_operation, iD_Auto_Generated = Obj_Class_Entity_Insumo_Alter.ID_Insumo, message = message });
         }
