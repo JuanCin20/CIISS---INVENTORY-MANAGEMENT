@@ -120,6 +120,10 @@
               "target": "Package",
               "version": "[2.1.5, )"
             },
+            "jQuery.UI.Combined": {
+              "target": "Package",
+              "version": "[1.13.3, )"
+            },
             "jquery.datatables": {
               "target": "Package",
               "version": "[1.10.15, )"

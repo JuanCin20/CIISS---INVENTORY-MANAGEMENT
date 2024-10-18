@@ -40528,6 +40528,694 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_Loading_Overlay_v2.1.5\Scripts\loadingoverlay.min.js.map))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\accordion.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/accordion.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\accordion.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\all.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/all.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\all.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\autocomplete.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/autocomplete.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\autocomplete.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\base.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/base.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\base.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\button.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/button.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\button.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\core.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/core.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\core.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\datepicker.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/datepicker.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\datepicker.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\dialog.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/dialog.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\dialog.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\draggable.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/draggable.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\draggable.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_222222_256x240.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/images/ui-icons_222222_256x240.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_222222_256x240.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_2e83ff_256x240.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/images/ui-icons_2e83ff_256x240.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_2e83ff_256x240.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_444444_256x240.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/images/ui-icons_444444_256x240.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_444444_256x240.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_454545_256x240.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/images/ui-icons_454545_256x240.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_454545_256x240.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_555555_256x240.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/images/ui-icons_555555_256x240.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_555555_256x240.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_777620_256x240.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/images/ui-icons_777620_256x240.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_777620_256x240.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_777777_256x240.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/images/ui-icons_777777_256x240.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_777777_256x240.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_888888_256x240.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/images/ui-icons_888888_256x240.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_888888_256x240.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_cc0000_256x240.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/images/ui-icons_cc0000_256x240.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_cc0000_256x240.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_cd0a0a_256x240.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/images/ui-icons_cd0a0a_256x240.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_cd0a0a_256x240.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_ffffff_256x240.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/images/ui-icons_ffffff_256x240.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\images\ui-icons_ffffff_256x240.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\jquery-ui.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/jquery-ui.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\jquery-ui.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\jquery-ui.min.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/jquery-ui.min.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\jquery-ui.min.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\menu.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/menu.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\menu.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\progressbar.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/progressbar.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\progressbar.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\resizable.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/resizable.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\resizable.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\selectable.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/selectable.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\selectable.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\selectmenu.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/selectmenu.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\selectmenu.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\slider.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/slider.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\slider.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\sortable.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/sortable.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\sortable.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\spinner.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/spinner.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\spinner.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\tabs.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/tabs.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\tabs.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\theme.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/theme.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\theme.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\tooltip.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Content/themes/base/tooltip.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Content\themes\base\tooltip.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Scripts\jquery-ui-1-13.3.js))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Scripts/jquery-ui-1-13.3.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Scripts\jquery-ui-1-13.3.js))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Scripts\jquery-ui-1.13.3.min.js))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/JQuery_UI_Combined_v1.13.3/Scripts/jquery-ui-1.13.3.min.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_UI_Combined_v1.13.3\Scripts\jquery-ui-1.13.3.min.js))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\JQuery_v3.7.1\Scripts\jquery-3.7.1-vsdoc.js))">
       <SourceType>Package</SourceType>
       <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
@@ -47184,12 +47872,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\Toastr_v2.1.1\scripts\toastr.min.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Supply_Images\1.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Supply_Images\Image_Error.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
-      <RelativePath>Supply_Images/1.png</RelativePath>
+      <RelativePath>Supply_Images/Image_Error.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -47198,7 +47886,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Supply_Images\1.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Supply_Images\Image_Error.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\User_Images\1.jpeg))">
       <SourceType>Package</SourceType>

@@ -17,6 +17,7 @@
           "bootstrap": "5.3.3",
           "jQuery": "3.7.1",
           "jQuery.LoadingOverlay": "2.1.5",
+          "jQuery.UI.Combined": "1.13.3",
           "jquery.datatables": "1.10.15",
           "toastr": "2.1.1"
         },
@@ -606,6 +607,11 @@
         }
       },
       "jQuery.LoadingOverlay/2.1.5": {
+        "dependencies": {
+          "jQuery": "3.7.1"
+        }
+      },
+      "jQuery.UI.Combined/1.13.3": {
         "dependencies": {
           "jQuery": "3.7.1"
         }
@@ -2431,6 +2437,13 @@
       "sha512": "sha512-/W3aBl7mdr2GfqkMEkCiBxsGlTv64sVVP6x0NQptcUC4jshAt8FNNGanLdNqCz5YtgR4bSzUZc99/yA+zXOFcA==",
       "path": "jquery.loadingoverlay/2.1.5",
       "hashPath": "jquery.loadingoverlay.2.1.5.nupkg.sha512"
+    },
+    "jQuery.UI.Combined/1.13.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6hQe0oXt6SarPmnEUNF9HNxHTWQxOwLL/CCZQJBrPkP7tuEom1dsxz5Laz+gQwG9Y0cRdDGNmdxmQMcwzhEITw==",
+      "path": "jquery.ui.combined/1.13.3",
+      "hashPath": "jquery.ui.combined.1.13.3.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authorization/8.0.0": {
       "type": "package",

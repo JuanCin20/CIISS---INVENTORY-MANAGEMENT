@@ -21,7 +21,7 @@
                         <div class="row">
                             <div class="col-sm-9">
                                 <h6>N° Transacciones</h6>
-                                <h6 id="Value_01">0</h6>
+                                <h6 id="Tabla_Movimiento_Inventario">0</h6>
                             </div>
                             <div class="col-sm-3">
                                 <i class="fa-solid fa-boxes-packing fa-2x"></i>
@@ -36,7 +36,7 @@
                         <div class="row">
                             <div class="col-sm-9">
                                 <h6>N° Categorías</h6>
-                                <h6 id="Value_02">0</h6>
+                                <h6 id="Tabla_Categoria_Insumo">0</h6>
                             </div>
                             <div class="col-sm-3">
                                 <i class="fa-solid fa-table fa-2x"></i>
@@ -51,7 +51,7 @@
                         <div class="row">
                             <div class="col-sm-9">
                                 <h6>N° Proveedores</h6>
-                                <h6 id="Value_03">0</h6>
+                                <h6 id="Tabla_Proveedor_Insumo">0</h6>
                             </div>
                             <div class="col-sm-3">
                                 <i class="fa-solid fa-book-bookmark fa-2x"></i>
@@ -66,7 +66,7 @@
                         <div class="row">
                             <div class="col-sm-9">
                                 <h6>N° Insumos</h6>
-                                <h6 id="Value_04">0</h6>
+                                <h6 id="Tabla_Insumo">0</h6>
                             </div>
                             <div class="col-sm-3">
                                 <i class="fa-solid fa-boxes-stacked fa-2x"></i>
@@ -87,19 +87,22 @@
                         <div class="col-sm-2">
                             <div class="mb-2">
                                 <label class="form-label">Fecha Inicial:</label>
-                                <input class="form-control" type="text" id="Initial_Date" name="Initial_Date">
+                                <input class="form-control" type="text" id="Initial_Fecha_Movimiento_Inventario"
+                                    name="Initial_Fecha_Movimiento_Inventario">
                             </div>
                         </div>
                         <div class="col-sm-2">
                             <div class="mb-2">
                                 <label class="form-label">Fecha Final:</label>
-                                <input class="form-control" type="text" id="Final_Date" name="Final_Date">
+                                <input class="form-control" type="text" id="Final_Fecha_Movimiento_Inventario"
+                                    name="Final_Fecha_Movimiento_Inventario">
                             </div>
                         </div>
                         <div class="col-sm-2">
                             <div class="mb-2">
                                 <label class="form-label">ID Transacción:</label>
-                                <input class="form-control" type="text" id="ID_Transaction" name="ID_Transaction">
+                                <input class="form-control" type="text" id="ID_Movimiento_Inventario"
+                                    name="ID_Movimiento_Inventario" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-sm-2">
@@ -122,13 +125,14 @@
                         <table id="Table" clas="display cell-border" style="width: 100%;">
                             <thead>
                                 <tr>
-                                    <th>Fecha</th>
-                                    <th>Empleado</th>
-                                    <th>Insumo</th>
-                                    <th>Precio</th>
-                                    <th>Cantidad</th>
-                                    <th>Total</th>
-                                    <th>ID</th>
+                                    <th>ID:</th>
+                                    <th>Tipo:</th>
+                                    <th>Insumo:</th>
+                                    <th>Cantidad:</th>
+                                    <th>Precio:</th>
+                                    <th>Total:</th>
+                                    <th>Fecha:</th>
+                                    <th>Empleado:</th>
                                 </tr>
                             </thead>
                             <tbody>

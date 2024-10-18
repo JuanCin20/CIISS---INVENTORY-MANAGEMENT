@@ -512,14 +512,53 @@ END;
 ----UPDATE Tabla_Insumo SET Ruta_Imagen_Insumo = @Ruta_Imagen_Insumo, Nombre_Imagen_Insumo = @Nombre_Imagen_Insumo WHERE ID_Insumo = @ID_Insumo;
 GO
 	CREATE
+	OR ALTER PROCEDURE SP_TRANSACTION_REPORT (
+		@Initial_Fecha_Movimiento_Inventario VARCHAR(10),
+		@Final_Fecha_Movimiento_Inventario VARCHAR(10),
+		@ID_Movimiento_Inventario VARCHAR(50)
+	) AS BEGIN
+SET
+	DATEFORMAT DMY;
+
+SELECT
+	TMI.ID_Movimiento_Inventario,
+	TMI.Tipo_Movimiento_Inventario,
+	TI.Nombre_Insumo,
+	TMI.Cantidad_Movimiento_Inventario,
+	TI.Precio_Insumo,
+	(
+		TMI.Cantidad_Movimiento_Inventario * TI.Precio_Insumo
+	) [Total_Transaction],
+	CONVERT(
+		VARCHAR(10),
+		TMI.Fecha_Movimiento_Inventario,
+		103
+	) [Fecha_Movimiento_Inventario],
+	CONCAT (TU.Nombre_Usuario, ' ', TU.Apellido_Usuario) [Usuario_Transaction]
+FROM
+	Tabla_Movimiento_Inventario TMI
+	INNER JOIN Tabla_Insumo TI ON TMI.ID_Insumo = TI.ID_Insumo
+	INNER JOIN Tabla_Usuario TU ON TMI.ID_Usuario = TU.ID_Usuario
+WHERE
+	CONVERT(DATE, TMI.Fecha_Movimiento_Inventario) BETWEEN @Initial_Fecha_Movimiento_Inventario
+	AND @Final_Fecha_Movimiento_Inventario
+	AND TMI.ID_Movimiento_Inventario = IIF(
+		@ID_Movimiento_Inventario = '',
+		TMI.ID_Movimiento_Inventario,
+		@ID_Movimiento_Inventario
+	)
+END;
+
+GO
+	CREATE
 	OR ALTER PROCEDURE SP_DASHBOARD_REPORT AS BEGIN
 SELECT
 	(
 		SELECT
-			ISNULL(SUM(Cantidad_Movimiento_Inventario), 0)
+			COUNT(*)
 		FROM
 			Tabla_Movimiento_Inventario
-	) [Cantidad_Movimiento_Inventario],
+	) [Tabla_Movimiento_Inventario],
 	(
 		SELECT
 			COUNT(*)
@@ -541,3 +580,4 @@ SELECT
 END;
 
 ----EXEC SP_DASHBOARD_REPORT;
+GO

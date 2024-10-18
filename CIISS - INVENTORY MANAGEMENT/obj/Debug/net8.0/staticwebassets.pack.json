@@ -177,8 +177,8 @@
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\Supply_Images\\1.png",
-      "PackagePath": "staticwebassets\\Supply_Images\\1.png"
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\Supply_Images\\Image_Error.jpg",
+      "PackagePath": "staticwebassets\\Supply_Images\\Image_Error.jpg"
     },
     {
       "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\User_Images\\1.jpeg",
@@ -9927,6 +9927,178 @@
     {
       "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_Loading_Overlay_v2.1.5\\Scripts\\loadingoverlay.min.js.map",
       "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_Loading_Overlay_v2.1.5\\Scripts\\loadingoverlay.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\accordion.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\accordion.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\all.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\all.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\autocomplete.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\autocomplete.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\base.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\base.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\button.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\button.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\core.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\core.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\datepicker.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\datepicker.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\dialog.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\dialog.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\draggable.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\draggable.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-bg_flat_0_aaaaaa_40x100.png",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-bg_flat_0_aaaaaa_40x100.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-bg_flat_75_ffffff_40x100.png",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-bg_flat_75_ffffff_40x100.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-bg_glass_55_fbf9ee_1x400.png",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-bg_glass_55_fbf9ee_1x400.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-bg_glass_65_ffffff_1x400.png",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-bg_glass_65_ffffff_1x400.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-bg_glass_75_dadada_1x400.png",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-bg_glass_75_dadada_1x400.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-bg_glass_75_e6e6e6_1x400.png",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-bg_glass_75_e6e6e6_1x400.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-bg_glass_95_fef1ec_1x400.png",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-bg_glass_95_fef1ec_1x400.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-bg_highlight-soft_75_cccccc_1x100.png",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-bg_highlight-soft_75_cccccc_1x100.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_222222_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_222222_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_2e83ff_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_2e83ff_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_444444_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_444444_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_454545_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_454545_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_555555_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_555555_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_777620_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_777620_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_777777_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_777777_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_888888_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_888888_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_cc0000_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_cc0000_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_cd0a0a_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_cd0a0a_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_ffffff_256x240.png",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\images\\ui-icons_ffffff_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\jquery-ui.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\jquery-ui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\menu.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\menu.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\progressbar.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\progressbar.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\resizable.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\resizable.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\selectable.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\selectable.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\selectmenu.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\selectmenu.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\slider.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\slider.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\sortable.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\sortable.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\spinner.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\spinner.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\tabs.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\tabs.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\theme.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\theme.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\tooltip.css",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Content\\themes\\base\\tooltip.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Scripts\\jquery-ui-1-13.3.js",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Scripts\\jquery-ui-1-13.3.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Scripts\\jquery-ui-1.13.3.min.js",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\JQuery_UI_Combined_v1.13.3\\Scripts\\jquery-ui-1.13.3.min.js"
     },
     {
       "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\JQuery_Validation_v1.19.5\\Gruntfile.js",

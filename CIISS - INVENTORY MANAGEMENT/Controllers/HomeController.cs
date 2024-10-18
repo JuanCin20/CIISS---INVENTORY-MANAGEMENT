@@ -26,9 +26,19 @@ namespace CIISS___INVENTORY_MANAGEMENT.Controllers
         }
 
         [HttpGet]
-        public JsonResult Home_Controller_See_Dashboard()
+        public JsonResult Home_Controller_Dashboard_Listar(string Initial_Fecha_Movimiento_Inventario, string Final_Fecha_Movimiento_Inventario, string ID_Movimiento_Inventario)
         {
-            Class_Entity_Dashboard Obj_Class_Entity_Dashboard = new Class_Business_Dashboard().Class_Business_See_Dashboard();
+            object data;
+
+            data = new Class_Business_Dashboard().Class_Business_Dashboard_Listar(Initial_Fecha_Movimiento_Inventario, Final_Fecha_Movimiento_Inventario, ID_Movimiento_Inventario);
+
+            return Json(new { data = data });
+        }
+
+        [HttpGet]
+        public JsonResult Home_Controller_Dashboard_Card()
+        {
+            Class_Entity_Dashboard Obj_Class_Entity_Dashboard = new Class_Business_Dashboard().Class_Business_Dashboard_Card();
 
             return Json(new { result = Obj_Class_Entity_Dashboard });
         }

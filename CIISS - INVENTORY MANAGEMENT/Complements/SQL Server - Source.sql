@@ -85,7 +85,7 @@ GO
 		--Precio por Unidad de Medida
 		Stock_Insumo INT NOT NULL,
 		Estado_Insumo BIT NOT NULL,
-		Fecha_Ingreso_Insumo DATETIME DEFAULT GETDATE() NOT NULL,
+		Fecha_Entrada_Insumo DATETIME DEFAULT GETDATE() NOT NULL,
 		Fecha_Vencimiento_Insumo DATE NOT NULL,
 		Ruta_Imagen_Insumo VARCHAR (255) NULL,
 		Nombre_Imagen_Insumo VARCHAR (255) NULL
@@ -1478,5 +1478,66 @@ VALUES
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	);
+
+GO
+INSERT INTO
+	Tabla_Movimiento_Inventario (
+		ID_Insumo,
+		Tipo_Movimiento_Inventario,
+		Cantidad_Movimiento_Inventario,
+		ID_Usuario
+	)
+VALUES
+	(1, 'Entrada', '100', 1),
+	(2, 'Entrada', '100', 1),
+	(3, 'Entrada', '100', 1),
+	(4, 'Entrada', '100', 1),
+	(5, 'Entrada', '100', 1),
+	(6, 'Entrada', '100', 1),
+	(7, 'Entrada', '100', 1),
+	(8, 'Entrada', '100', 1),
+	(9, 'Entrada', '100', 1),
+	(10, 'Entrada', '100', 1),
+	(11, 'Entrada', '100', 1),
+	(12, 'Entrada', '100', 1),
+	(13, 'Entrada', '100', 1),
+	(14, 'Entrada', '100', 1),
+	(15, 'Entrada', '100', 1),
+	(16, 'Entrada', '100', 1),
+	(17, 'Entrada', '100', 1),
+	(18, 'Entrada', '100', 1),
+	(19, 'Entrada', '100', 1),
+	(20, 'Entrada', '100', 1),
+	(21, 'Entrada', '100', 1),
+	(22, 'Entrada', '100', 1),
+	(23, 'Entrada', '100', 1),
+	(24, 'Entrada', '100', 1),
+	(25, 'Entrada', '100', 1),
+	(26, 'Entrada', '100', 1),
+	(27, 'Entrada', '100', 1),
+	(28, 'Entrada', '100', 1),
+	(29, 'Entrada', '100', 1),
+	(30, 'Entrada', '100', 1),
+	(31, 'Entrada', '100', 1),
+	(32, 'Entrada', '100', 1),
+	(33, 'Entrada', '100', 1),
+	(34, 'Entrada', '100', 1),
+	(35, 'Entrada', '100', 1),
+	(36, 'Entrada', '100', 1),
+	(37, 'Entrada', '100', 1),
+	(38, 'Entrada', '100', 1),
+	(39, 'Entrada', '100', 1),
+	(40, 'Entrada', '100', 1),
+	(41, 'Entrada', '100', 1),
+	(42, 'Entrada', '100', 1),
+	(43, 'Entrada', '100', 1),
+	(44, 'Entrada', '100', 1),
+	(45, 'Entrada', '100', 1),
+	(46, 'Entrada', '100', 1),
+	(47, 'Entrada', '100', 1),
+	(48, 'Entrada', '100', 1),
+	(49, 'Entrada', '100', 1),
+	(50, 'Entrada', '100', 1),
+	(51, 'Entrada', '100', 1);
 
 GO
