@@ -337,8 +337,25 @@ function Procesar() {
             Usuario.iD_Usuario = data.iD_Auto_Generated;
             Table_Usuario.row.add(Usuario).draw(false);
             $("#Form_Modal").modal("hide");
-            // !!!
-            window.location.reload();
+            Table_Usuario.ajax.load();
+            toastr.options = {
+              closeButton: true,
+              debug: false,
+              newestOnTop: true,
+              progressBar: true,
+              positionClass: "toast-bottom-center",
+              preventDuplicates: false,
+              onclick: null,
+              showDuration: "300",
+              hideDuration: "1000",
+              timeOut: "5000",
+              extendedTimeOut: "1000",
+              showEasing: "swing",
+              hideEasing: "linear",
+              showMethod: "fadeIn",
+              hideMethod: "fadeOut",
+            };
+            toastr["success"]("El Usuario ha sido Registrado", "Éxito:");
           } else {
             toastr.options = {
               closeButton: true,
@@ -397,8 +414,25 @@ function Procesar() {
               Table_Usuario.row(Selected_Row).data(Usuario).draw(false);
               Selected_Row = null;
               $("#Form_Modal").modal("hide");
-              // !!!
-              window.location.reload();
+              Table_Usuario.ajax.load();
+              toastr.options = {
+                closeButton: true,
+                debug: false,
+                newestOnTop: true,
+                progressBar: true,
+                positionClass: "toast-bottom-center",
+                preventDuplicates: false,
+                onclick: null,
+                showDuration: "300",
+                hideDuration: "1000",
+                timeOut: "5000",
+                extendedTimeOut: "1000",
+                showEasing: "swing",
+                hideEasing: "linear",
+                showMethod: "fadeIn",
+                hideMethod: "fadeOut",
+              };
+              toastr["info"]("El Usuario ha sido Modificado", "Información:");
             } else {
               toastr.options = {
                 closeButton: true,

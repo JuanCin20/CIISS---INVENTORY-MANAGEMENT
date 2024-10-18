@@ -515,7 +515,7 @@ GO
 	OR ALTER PROCEDURE SP_TRANSACTION_REPORT (
 		@Initial_Fecha_Movimiento_Inventario VARCHAR(10),
 		@Final_Fecha_Movimiento_Inventario VARCHAR(10),
-		@ID_Movimiento_Inventario VARCHAR(50)
+		@ID_Movimiento_Inventario INT
 	) AS BEGIN
 SET
 	DATEFORMAT DMY;
@@ -543,7 +543,7 @@ WHERE
 	CONVERT(DATE, TMI.Fecha_Movimiento_Inventario) BETWEEN @Initial_Fecha_Movimiento_Inventario
 	AND @Final_Fecha_Movimiento_Inventario
 	AND TMI.ID_Movimiento_Inventario = IIF(
-		@ID_Movimiento_Inventario = '',
+		@ID_Movimiento_Inventario = 0,
 		TMI.ID_Movimiento_Inventario,
 		@ID_Movimiento_Inventario
 	)
@@ -579,5 +579,4 @@ SELECT
 	) [Tabla_Insumo]
 END;
 
-----EXEC SP_DASHBOARD_REPORT;
-GO
+----EXECUTE SP_DASHBOARD_REPORT;

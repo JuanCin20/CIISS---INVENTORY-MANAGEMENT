@@ -8,7 +8,7 @@ namespace BUSINESS___LAYER
     {
         private Class_Data_Dashboard Obj_Class_Data_Dashboard = new Class_Data_Dashboard();
 
-        public List<Class_Entity_Dashboard> Class_Business_Dashboard_Listar(string Initial_Fecha_Movimiento_Inventario, string Final_Fecha_Movimiento_Inventario, string ID_Movimiento_Inventario)
+        public List<Class_Entity_Dashboard> Class_Business_Dashboard_Listar(string Initial_Fecha_Movimiento_Inventario, string Final_Fecha_Movimiento_Inventario, int ID_Movimiento_Inventario)
         {
             return Obj_Class_Data_Dashboard.Class_Data_Dashboard_Listar(Initial_Fecha_Movimiento_Inventario, Final_Fecha_Movimiento_Inventario, ID_Movimiento_Inventario);
         }

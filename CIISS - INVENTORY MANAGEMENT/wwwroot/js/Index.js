@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  var Table_Dashboard;
+
   $("#Initial_Fecha_Movimiento_Inventario")
     .datepicker({ dateFormat: "dd/mm/yy" })
     .datepicker("setDate", new Date());
@@ -7,7 +9,7 @@ $(document).ready(function () {
     .datepicker("setDate", new Date());
 
   jQuery.ajax({
-    // ? url: "@Url.Action("Home_Controller_Dashboard_Card","Home")",
+    // ? url: "@Url.Action("Home_Controller_Dashboard_Card", "Home")",
     url: "https://localhost:7050/Home/Home_Controller_Dashboard_Card",
     type: "GET",
     dataType: "json",
@@ -23,7 +25,7 @@ $(document).ready(function () {
     },
   });
 
-  // ? var Url = "@Url.Action("Home_Controller_Dashboard_Listar","Home")";
+  // ? var Url = "@Url.Action("Home_Controller_Dashboard_Listar", "Home")",
   var Url =
     "https://localhost:7050/Home/Home_Controller_Dashboard_Listar" +
     "?Initial_Fecha_Movimiento_Inventario=" +
@@ -33,7 +35,8 @@ $(document).ready(function () {
     "&ID_Movimiento_Inventario=" +
     $("#ID_Movimiento_Inventario").val();
 
-  Table = $("#Table").DataTable({
+  Table_Dashboard = $("#Table_Dashboard").DataTable({
+    searching: false,
     responsive: true,
     ordering: false,
     language: {
@@ -57,6 +60,7 @@ $(document).ready(function () {
   });
 
   $("#Search_Button").on("click", function () {
+    // ? var New_Url = "@Url.Action("Home_Controller_Dashboard_Listar", "Home")",
     var New_Url =
       "https://localhost:7050/Home/Home_Controller_Dashboard_Listar" +
       "?Initial_Fecha_Movimiento_Inventario=" +
@@ -66,6 +70,6 @@ $(document).ready(function () {
       "&ID_Movimiento_Inventario=" +
       $("#ID_Movimiento_Inventario").val();
 
-    Table.ajax.url(New_Url).load();
+    Table_Dashboard.ajax.url(New_Url).load();
   });
 });

@@ -26,7 +26,7 @@ namespace CIISS___INVENTORY_MANAGEMENT.Controllers
         }
 
         [HttpGet]
-        public JsonResult Home_Controller_Dashboard_Listar(string Initial_Fecha_Movimiento_Inventario, string Final_Fecha_Movimiento_Inventario, string ID_Movimiento_Inventario)
+        public JsonResult Home_Controller_Dashboard_Listar(string Initial_Fecha_Movimiento_Inventario, string Final_Fecha_Movimiento_Inventario, int ID_Movimiento_Inventario)
         {
             object data;
 
