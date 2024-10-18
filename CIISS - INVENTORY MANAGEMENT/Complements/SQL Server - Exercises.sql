@@ -27,7 +27,11 @@ SELECT
 	TI.Precio_Insumo,
 	TI.Stock_Insumo,
 	TI.Estado_Insumo,
-	TI.Fecha_Vencimiento_Insumo,
+	CONVERT(
+		VARCHAR(10),
+		TI.Fecha_Vencimiento_Insumo,
+		103
+	) [Fecha_Vencimiento_Insumo],
 	TI.Ruta_Imagen_Insumo,
 	TI.Nombre_Imagen_Insumo
 FROM

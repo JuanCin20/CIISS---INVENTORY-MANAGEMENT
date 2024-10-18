@@ -68,14 +68,7 @@ $(document).ready(function () {
       { data: "unidad_Medida_Insumo" },
       { data: "precio_Insumo" },
       { data: "stock_Insumo" },
-      {
-        data: "fecha_Vencimiento_Insumo",
-        render: function (fecha_Vencimiento_Insumo) {
-          var fecha_Vencimiento_Insumo_SubString =
-            fecha_Vencimiento_Insumo.substring(0, 10);
-          return fecha_Vencimiento_Insumo_SubString;
-        },
-      },
+      { data: "fecha_Vencimiento_Insumo" },
       {
         data: "estado_Insumo",
         render: function (estado_Insumo) {
@@ -179,7 +172,9 @@ function Open_Form_Modal(data) {
     $("#Precio_Insumo").val("");
     $("#Stock_Insumo").val("");
     $("#Estado_Insumo").val(0);
-    $("#Fecha_Vencimiento_Insumo").val("");
+    $("#Fecha_Vencimiento_Insumo")
+      .datepicker({ dateFormat: "dd/mm/yy" })
+      .datepicker("setDate", "");
     $("#Imagen_Insumo").removeAttr("src");
   } else {
     if (data != null) {
@@ -203,21 +198,6 @@ function Open_Form_Modal(data) {
       $("#Fecha_Vencimiento_Insumo").removeClass("is-invalid");
       $("#Imagen_Insumo_Input").removeClass("is-valid");
       $("#Imagen_Insumo_Input").removeClass("is-invalid");
-      var fecha_Vencimiento_Insumo_SubString =
-        data.fecha_Vencimiento_Insumo.substring(0, 10);
-      if ($.trim(fecha_Vencimiento_Insumo_SubString).length == 10) {
-        var Day = fecha_Vencimiento_Insumo_SubString.substring(0, 2);
-        var Month = fecha_Vencimiento_Insumo_SubString.substring(3, 5);
-        var Year = fecha_Vencimiento_Insumo_SubString.substring(6, 10);
-        var Final_Date = Year + "-" + Month + "-" + Day;
-      } else {
-        if ($.trim(fecha_Vencimiento_Insumo_SubString).length == 9) {
-          var Day = "0" + fecha_Vencimiento_Insumo_SubString.substring(0, 1);
-          var Month = fecha_Vencimiento_Insumo_SubString.substring(2, 4);
-          var Year = fecha_Vencimiento_Insumo_SubString.substring(5, 9);
-          var Final_Date = Year + "-" + Month + "-" + Day;
-        }
-      }
       $("#ID_Insumo").val(data.iD_Insumo);
       $("#Categoria_Insumo").val(
         data.object_ID_Categoria_Insumo.iD_Categoria_Insumo
@@ -233,7 +213,9 @@ function Open_Form_Modal(data) {
       $("#Estado_Insumo").val(
         data.estado_Insumo == true ? "Available" : "Not_Available"
       );
-      $("#Fecha_Vencimiento_Insumo").val(Final_Date);
+      $("#Fecha_Vencimiento_Insumo")
+        .datepicker({ dateFormat: "dd/mm/yy" })
+        .datepicker("setDate", data.fecha_Vencimiento_Insumo);
       jQuery.ajax({
         // ? url: "@Url.Action("Management_Controller_Insumo_Imagen", "Management")",
         url: "https://localhost:7050/Management/Management_Controller_Insumo_Imagen",
@@ -582,25 +564,24 @@ function Procesar() {
               Table_Insumo.row(Selected_Row).data(Insumo).draw(false);
               Selected_Row = null;
               $("#Form_Modal").modal("hide");
-              Table_Insumo.ajax.reload();
-              toastr.options = {
-                closeButton: true,
-                debug: false,
-                newestOnTop: true,
-                progressBar: true,
-                positionClass: "toast-bottom-center",
-                preventDuplicates: false,
-                onclick: null,
-                showDuration: "300",
-                hideDuration: "1000",
-                timeOut: "5000",
-                extendedTimeOut: "1000",
-                showEasing: "swing",
-                hideEasing: "linear",
-                showMethod: "fadeIn",
-                hideMethod: "fadeOut",
-              };
-              toastr["info"]("El Insumo ha sido Modificado", "Información:");
+              // toastr.options = {
+              //   closeButton: true,
+              //   debug: false,
+              //   newestOnTop: true,
+              //   progressBar: true,
+              //   positionClass: "toast-bottom-center",
+              //   preventDuplicates: false,
+              //   onclick: null,
+              //   showDuration: "300",
+              //   hideDuration: "1000",
+              //   timeOut: "5000",
+              //   extendedTimeOut: "1000",
+              //   showEasing: "swing",
+              //   hideEasing: "linear",
+              //   showMethod: "fadeIn",
+              //   hideMethod: "fadeOut",
+              // };
+              // toastr["info"]("El Insumo ha sido Modificado", "Información:");
             } else {
               toastr.options = {
                 closeButton: true,
@@ -637,6 +618,7 @@ function Procesar() {
             });
           },
         });
+        $("#Table_Insumo").DataTable().ajax.reload(null, false);
       }
     }
   }

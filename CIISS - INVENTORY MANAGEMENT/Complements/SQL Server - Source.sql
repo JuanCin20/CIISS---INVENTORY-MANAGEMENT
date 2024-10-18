@@ -824,7 +824,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -837,7 +837,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -850,7 +850,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -863,7 +863,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -876,7 +876,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -889,7 +889,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -902,7 +902,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -915,7 +915,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -928,7 +928,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -941,7 +941,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -954,7 +954,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -967,7 +967,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -980,7 +980,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -993,7 +993,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1006,7 +1006,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1019,7 +1019,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1032,7 +1032,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1045,7 +1045,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1058,7 +1058,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1071,7 +1071,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1084,7 +1084,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1097,7 +1097,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1110,7 +1110,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1123,7 +1123,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1136,7 +1136,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1149,7 +1149,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1162,7 +1162,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1175,7 +1175,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1188,7 +1188,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1201,7 +1201,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1214,7 +1214,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1227,7 +1227,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1240,7 +1240,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1253,7 +1253,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1266,7 +1266,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1279,7 +1279,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1292,7 +1292,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1305,7 +1305,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1318,7 +1318,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1331,7 +1331,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1344,7 +1344,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1357,7 +1357,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1370,7 +1370,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1383,7 +1383,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1396,7 +1396,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1409,7 +1409,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1422,7 +1422,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1435,7 +1435,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1448,7 +1448,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1461,7 +1461,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	),
@@ -1474,7 +1474,7 @@ VALUES
 		20.00,
 		100,
 		1,
-		'2025-08-06',
+		'2025-06-08',
 		'C:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\wwwroot\Supply_Images',
 		'Image_Error.jpg'
 	);
