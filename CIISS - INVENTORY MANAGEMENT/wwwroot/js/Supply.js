@@ -505,8 +505,25 @@ function Procesar() {
             Insumo.iD_Insumo = data.iD_Auto_Generated;
             Table_Insumo.row.add(Insumo).draw(false);
             $("#Form_Modal").modal("hide");
-            // !!!
-            window.location.reload();
+            Table_Insumo.ajax.reload();
+            toastr.options = {
+              closeButton: true,
+              debug: false,
+              newestOnTop: true,
+              progressBar: true,
+              positionClass: "toast-bottom-center",
+              preventDuplicates: false,
+              onclick: null,
+              showDuration: "300",
+              hideDuration: "1000",
+              timeOut: "5000",
+              extendedTimeOut: "1000",
+              showEasing: "swing",
+              hideEasing: "linear",
+              showMethod: "fadeIn",
+              hideMethod: "fadeOut",
+            };
+            toastr["success"]("El Insumo ha sido Registrado", "Éxito:");
           } else {
             toastr.options = {
               closeButton: true,
@@ -565,8 +582,25 @@ function Procesar() {
               Table_Insumo.row(Selected_Row).data(Insumo).draw(false);
               Selected_Row = null;
               $("#Form_Modal").modal("hide");
-              // !!!
-              window.location.reload();
+              Table_Insumo.ajax.reload();
+              toastr.options = {
+                closeButton: true,
+                debug: false,
+                newestOnTop: true,
+                progressBar: true,
+                positionClass: "toast-bottom-center",
+                preventDuplicates: false,
+                onclick: null,
+                showDuration: "300",
+                hideDuration: "1000",
+                timeOut: "5000",
+                extendedTimeOut: "1000",
+                showEasing: "swing",
+                hideEasing: "linear",
+                showMethod: "fadeIn",
+                hideMethod: "fadeOut",
+              };
+              toastr["info"]("El Insumo ha sido Modificado", "Información:");
             } else {
               toastr.options = {
                 closeButton: true,

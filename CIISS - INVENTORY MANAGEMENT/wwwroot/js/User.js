@@ -337,7 +337,7 @@ function Procesar() {
             Usuario.iD_Usuario = data.iD_Auto_Generated;
             Table_Usuario.row.add(Usuario).draw(false);
             $("#Form_Modal").modal("hide");
-            Table_Usuario.ajax.load();
+            Table_Usuario.ajax.reload();
             toastr.options = {
               closeButton: true,
               debug: false,
@@ -414,7 +414,7 @@ function Procesar() {
               Table_Usuario.row(Selected_Row).data(Usuario).draw(false);
               Selected_Row = null;
               $("#Form_Modal").modal("hide");
-              Table_Usuario.ajax.load();
+              Table_Usuario.ajax.reload();
               toastr.options = {
                 closeButton: true,
                 debug: false,
