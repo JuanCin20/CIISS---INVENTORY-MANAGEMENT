@@ -25,28 +25,40 @@
                                 </div>
                                 <div class="card-body">
                                     <form id="Form_Log_In" class="needs-validation"
-                                        action="@Url.Action("Access_Controller_Log_In", "Access")" method="GET"
-                                        novalidate>
+                                          action="@Url.Action("Access_Controller_Log_In", "Access")" method="GET"
+                                          novalidate>
                                         <div class="form-floating mb-3">
                                             <input class="form-control" id="E_Mail_Usuario" name="E_Mail_Usuario"
-                                                type="text" placeholder="name@gmail.com" autocomplete="off" />
-                                            <label for="E_Mail_Usuario">Correo Electrónico</label>
+                                                   type="text" placeholder="name@gmail.com" autocomplete="off" />
+                                            <label for="E_Mail_Usuario">Correo Electrónico:</label>
                                         </div>
                                         <div class="form-floating mb-3">
                                             <input class="form-control" id="Password_Usuario" name="Password_Usuario"
-                                                type="password" placeholder="•••••" autocomplete="off" />
-                                            <label for="Password_Usuario">Contraseña</label>
+                                                   type="password" placeholder="•••••" autocomplete="off" />
+                                            <label for="Password_Usuario">Contraseña:</label>
                                         </div>
+                                        @{
+                                            if (ViewBag.Error != null)
+                                            {
+                                                <div class="alert alert-danger d-flex align-items-center" role="alert">
+                                                    <i class="fa-solid fa-triangle-exclamation"></i>&nbsp;@ViewBag.Error
+                                                </div>
+                                            }
+                                        }
                                         <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                            <a asp-area="" asp-controller="Access" asp-action="#"
-                                                class="small">¿Olvidaste tu Contraseña?</a>
+                                            <a asp-area="" asp-controller="Access" asp-action="Reset_Password"
+                                               class="small">¿Olvidaste tu Contraseña?</a>
                                             <button type="submit" class="btn btn-primary">Acceder</button>
                                         </div>
                                     </form>
                                 </div>
                                 <div class="card-footer text-center py-3">
-                                    <div class="small">Con el Apollo de: <a href="https://www.papajohns.com.pe">Papa
-                                            John's Pizza</a></div>
+                                    <div class="small">
+                                        Con el Apollo de: <a href="https://www.papajohns.com.pe">
+                                            Papa
+                                            John's Pizza
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -105,8 +117,10 @@
                                     </p>
 
                                     <ul>
-                                        <li>Información de la Pizzería: Pizzería Michelina, Santa Anita, 959748008,
-                                            Pizza@gmail.com</li>
+                                        <li>
+                                            Información de la Pizzería: Pizzería Michelina, Santa Anita, 959748008,
+                                            Pizza@gmail.com
+                                        </li>
                                         <li>
                                             Datos de Inventario: Información sobre los productos, ingredientes,
                                             proveedores, cantidades, fechas
@@ -148,8 +162,10 @@
                                             herramientas de gestión y ofrecer
                                             una mejor experiencia.
                                         </li>
-                                        <li>Facturación y Pago: Gestionar el proceso de facturación y cobro por los
-                                            servicios prestados.</li>
+                                        <li>
+                                            Facturación y Pago: Gestionar el proceso de facturación y cobro por los
+                                            servicios prestados.
+                                        </li>
                                     </ul>
                                 </div>
 
@@ -266,10 +282,11 @@
     </div>
     <script src="~/lib/Real_Use/Bootstrap_v5.3.3/Scripts/bootstrap.bundle.min.js" asp-append-version="true"></script>
     <script src="~/lib/Real_Use/JQuery_v3.7.1/Scripts/jquery-3.7.1.min.js" asp-append-version="true"></script>
+    <script src="~/lib/Real_Use/Fontawesome_v6.6.0/js/all.js" asp-append-version="true"></script>
     <script src="~/lib/Real_Use/JQuery_Validation_v1.19.5/dist/jquery.validate.min.js"
-        asp-append-version="true"></script>
+            asp-append-version="true"></script>
     <script src="~/lib/Real_Use/JQuery_Validation_v1.19.5/dist/additional-methods.min.js"
-        asp-append-version="true"></script>
+            asp-append-version="true"></script>
     <script src="~/js/Log_In.js" asp-append-version="true"></script>
 </body>
 

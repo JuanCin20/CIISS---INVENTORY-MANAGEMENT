@@ -5,9 +5,11 @@ using ENTITY___LAYER;
 using BUSINESS___LAYER;
 using System.Data;
 using ClosedXML.Excel;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CIISS___INVENTORY_MANAGEMENT.Controllers
 {
+    // [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
