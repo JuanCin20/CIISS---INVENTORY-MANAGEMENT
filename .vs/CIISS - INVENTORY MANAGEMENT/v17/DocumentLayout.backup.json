@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AEC24837-3B92-41E1-A6FA-5063DE1C549D}|CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT.csproj|c:\\users\\hp\\documentos\\ciiss - inventory management\\ciiss - inventory management\\ciiss - inventory management\\views\\management\\supply.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AEC24837-3B92-41E1-A6FA-5063DE1C549D}|CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT.csproj|solutionrelative:ciiss - inventory management\\views\\management\\supply.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEC24837-3B92-41E1-A6FA-5063DE1C549D}|CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT.csproj|c:\\users\\hp\\documentos\\ciiss - inventory management\\ciiss - inventory management\\ciiss - inventory management\\controllers\\managementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEC24837-3B92-41E1-A6FA-5063DE1C549D}|CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT.csproj|solutionrelative:ciiss - inventory management\\controllers\\managementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E378C2C9-B1EF-4BD0-B733-52F4A0421E65}|BUSINESS - LAYER\\BUSINESS - LAYER.csproj|c:\\users\\hp\\documentos\\ciiss - inventory management\\ciiss - inventory management\\business - layer\\class_business_insumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E378C2C9-B1EF-4BD0-B733-52F4A0421E65}|BUSINESS - LAYER\\BUSINESS - LAYER.csproj|solutionrelative:business - layer\\class_business_insumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B307247-A93E-41EA-AAD7-4418D85149F4}|DATA - LAYER\\DATA - LAYER.csproj|c:\\users\\hp\\documentos\\ciiss - inventory management\\ciiss - inventory management\\data - layer\\class_data_insumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B307247-A93E-41EA-AAD7-4418D85149F4}|DATA - LAYER\\DATA - LAYER.csproj|solutionrelative:data - layer\\class_data_insumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AEC24837-3B92-41E1-A6FA-5063DE1C549D}|CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT.csproj|c:\\users\\hp\\documentos\\ciiss - inventory management\\ciiss - inventory management\\ciiss - inventory management\\views\\access\\log_in.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AEC24837-3B92-41E1-A6FA-5063DE1C549D}|CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT.csproj|solutionrelative:ciiss - inventory management\\views\\access\\log_in.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,53 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Supply.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\Views\\Management\\Supply.cshtml",
-              "RelativeDocumentMoniker": "CIISS - INVENTORY MANAGEMENT\\Views\\Management\\Supply.cshtml",
-              "ToolTip": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\Views\\Management\\Supply.cshtml",
-              "RelativeToolTip": "CIISS - INVENTORY MANAGEMENT\\Views\\Management\\Supply.cshtml",
-              "ViewState": "AgIAANoCAAAAAAAAAAAAAGwCAAAgAAAAAAAAAA==",
+              "Title": "Log_In.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\Views\\Access\\Log_In.cshtml",
+              "RelativeDocumentMoniker": "CIISS - INVENTORY MANAGEMENT\\Views\\Access\\Log_In.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\Views\\Access\\Log_In.cshtml",
+              "RelativeToolTip": "CIISS - INVENTORY MANAGEMENT\\Views\\Access\\Log_In.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T19:35:20.182Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ManagementController.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\Controllers\\ManagementController.cs",
-              "RelativeDocumentMoniker": "CIISS - INVENTORY MANAGEMENT\\Controllers\\ManagementController.cs",
-              "ToolTip": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\Controllers\\ManagementController.cs",
-              "RelativeToolTip": "CIISS - INVENTORY MANAGEMENT\\Controllers\\ManagementController.cs",
-              "ViewState": "AgIAAC0BAAAAAAAAAAAuwDkBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T19:35:02.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Class_Business_Insumo.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\BUSINESS - LAYER\\Class_Business_Insumo.cs",
-              "RelativeDocumentMoniker": "BUSINESS - LAYER\\Class_Business_Insumo.cs",
-              "ToolTip": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\BUSINESS - LAYER\\Class_Business_Insumo.cs",
-              "RelativeToolTip": "BUSINESS - LAYER\\Class_Business_Insumo.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAApwJ8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T19:34:47.709Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Class_Data_Insumo.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\DATA - LAYER\\Class_Data_Insumo.cs",
-              "RelativeDocumentMoniker": "DATA - LAYER\\Class_Data_Insumo.cs",
-              "ToolTip": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\DATA - LAYER\\Class_Data_Insumo.cs",
-              "RelativeToolTip": "DATA - LAYER\\Class_Data_Insumo.cs",
-              "ViewState": "AgIAAMkAAAAAAAAAAIAwwN8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T19:34:44.958Z",
+              "WhenOpened": "2024-10-18T23:52:27.308Z",
               "EditorCaption": ""
             }
           ]

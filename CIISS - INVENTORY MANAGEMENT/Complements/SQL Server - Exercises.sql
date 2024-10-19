@@ -584,3 +584,5 @@ SELECT
 END;
 
 ----EXECUTE SP_DASHBOARD_REPORT;
+
+----UPDATE Tabla_Usuario SET Password_Usuario = @New_Password_Usuario, Reestablecer_Password_Usuario = 0 WHERE ID_Usuario = @ID_Usuario

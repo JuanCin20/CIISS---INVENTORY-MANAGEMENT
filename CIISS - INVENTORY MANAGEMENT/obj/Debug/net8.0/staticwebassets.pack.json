@@ -177,10 +177,6 @@
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\Supply_Images\\1.png",
-      "PackagePath": "staticwebassets\\Supply_Images\\1.png"
-    },
-    {
       "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\Supply_Images\\Image_Error.jpg",
       "PackagePath": "staticwebassets\\Supply_Images\\Image_Error.jpg"
     },
@@ -227,6 +223,10 @@
     {
       "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\js\\Index.js",
       "PackagePath": "staticwebassets\\js\\Index.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\js\\Log_In.js",
+      "PackagePath": "staticwebassets\\js\\Log_In.js"
     },
     {
       "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\js\\Supplier.js",
@@ -419,6 +419,54 @@
     {
       "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\Bootstrap_v5.3.3\\Scripts\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\Real_Use\\Bootstrap_v5.3.3\\Scripts\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\.nupkg.metadata",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\.nupkg.metadata"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\.signature.p7s",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\.signature.p7s"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\closedxml.0.104.1.nupkg",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\closedxml.0.104.1.nupkg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\closedxml.0.104.1.nupkg.sha512",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\closedxml.0.104.1.nupkg.sha512"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\closedxml.nuspec",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\closedxml.nuspec"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\lib\\netstandard2.0\\ClosedXML.dll",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\lib\\netstandard2.0\\ClosedXML.dll"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\lib\\netstandard2.0\\ClosedXML.pdb",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\lib\\netstandard2.0\\ClosedXML.pdb"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\lib\\netstandard2.0\\ClosedXML.xml",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\lib\\netstandard2.0\\ClosedXML.xml"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\lib\\netstandard2.1\\ClosedXML.dll",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\lib\\netstandard2.1\\ClosedXML.dll"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\lib\\netstandard2.1\\ClosedXML.pdb",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\lib\\netstandard2.1\\ClosedXML.pdb"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\lib\\netstandard2.1\\ClosedXML.xml",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\lib\\netstandard2.1\\ClosedXML.xml"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\nuget-logo.png",
+      "PackagePath": "staticwebassets\\lib\\Real_Use\\ClosedXML_v0.104.1\\0.104.1\\nuget-logo.png"
     },
     {
       "Id": "C:\\Users\\HP\\Documentos\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\CIISS - INVENTORY MANAGEMENT\\wwwroot\\lib\\Real_Use\\Fontawesome_v6.6.0\\LICENSE.txt",

@@ -98,6 +98,60 @@ namespace DATA___LAYER
             return ID_Auto_Generated;
         }
 
+        public bool Class_Data_Usuario_Change_Password(int ID_Usuario, string New_Password_Usuario, out string Message)
+        {
+            bool Result = false;
+            Message = string.Empty;
+            try
+            {
+                using (SqlConnection Obj_SqlConnection = new SqlConnection(Class_Data_Connection.Connection_String))
+                {
+                    SqlCommand Obj_SqlCommand = new SqlCommand("UPDATE Tabla_Usuario SET Password_Usuario = @New_Password_Usuario, Reestablecer_Password_Usuario = 0 WHERE ID_Usuario = @ID_Usuario", Obj_SqlConnection);
+                    Obj_SqlCommand.Parameters.AddWithValue("@New_Password_Usuario", New_Password_Usuario);
+                    Obj_SqlCommand.Parameters.AddWithValue("@ID_Usuario", ID_Usuario);
+                    Obj_SqlCommand.CommandType = CommandType.Text;
+
+                    Obj_SqlConnection.Open();
+
+                    Result = Obj_SqlCommand.ExecuteNonQuery() > 0 ? true : false;
+                }
+            }
+            catch (Exception Error)
+            {
+                Console.WriteLine(Error.Message);
+                Message = Error.Message;
+                Result = false;
+            }
+            return Result;
+        }
+
+        public bool Class_Data_Usuario_Reset_Password(int ID_Usuario, string Password_Usuario, out string Message)
+        {
+            bool Result = false;
+            Message = string.Empty;
+            try
+            {
+                using (SqlConnection Obj_SqlConnection = new SqlConnection(Class_Data_Connection.Connection_String))
+                {
+                    SqlCommand Obj_SqlCommand = new SqlCommand("UPDATE Tabla_Usuario SET Password_Usuario = @Password_Usuario, Reestablecer_Password_Usuario = 1 WHERE ID_Usuario = @ID_Usuario", Obj_SqlConnection);
+                    Obj_SqlCommand.Parameters.AddWithValue("@Password_Usuario", Password_Usuario);
+                    Obj_SqlCommand.Parameters.AddWithValue("@ID_Usuario", ID_Usuario);
+                    Obj_SqlCommand.CommandType = CommandType.Text;
+
+                    Obj_SqlConnection.Open();
+
+                    Result = Obj_SqlCommand.ExecuteNonQuery() > 0 ? true : false;
+                }
+            }
+            catch (Exception Error)
+            {
+                Console.WriteLine(Error.Message);
+                Message = Error.Message;
+                Result = false;
+            }
+            return Result;
+        }
+
         public bool Class_Data_Usuario_Editar(Class_Entity_Usuario Obj_Class_Entity_Usuario, out string Message)
         {
             bool Result = false;

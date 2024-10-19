@@ -800,6 +800,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\Index.js))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\Log_In.js))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>js/Log_In.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\Log_In.js))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\site.js))">
       <SourceType>Package</SourceType>
       <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
@@ -2479,6 +2495,198 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\Bootstrap_v5.3.3\Scripts\bootstrap.min.js.map))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\.nupkg.metadata))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/ClosedXML_v0.104.1/0.104.1/.nupkg.metadata</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\.nupkg.metadata))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\.signature.p7s))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/ClosedXML_v0.104.1/0.104.1/.signature.p7s</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\.signature.p7s))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\closedxml.0.104.1.nupkg))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/ClosedXML_v0.104.1/0.104.1/closedxml.0.104.1.nupkg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\closedxml.0.104.1.nupkg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\closedxml.0.104.1.nupkg.sha512))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/ClosedXML_v0.104.1/0.104.1/closedxml.0.104.1.nupkg.sha512</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\closedxml.0.104.1.nupkg.sha512))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\closedxml.nuspec))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/ClosedXML_v0.104.1/0.104.1/closedxml.nuspec</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\closedxml.nuspec))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\lib\netstandard2.0\ClosedXML.dll))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/ClosedXML_v0.104.1/0.104.1/lib/netstandard2.0/ClosedXML.dll</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\lib\netstandard2.0\ClosedXML.dll))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\lib\netstandard2.0\ClosedXML.pdb))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/ClosedXML_v0.104.1/0.104.1/lib/netstandard2.0/ClosedXML.pdb</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\lib\netstandard2.0\ClosedXML.pdb))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\lib\netstandard2.0\ClosedXML.xml))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/ClosedXML_v0.104.1/0.104.1/lib/netstandard2.0/ClosedXML.xml</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\lib\netstandard2.0\ClosedXML.xml))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\lib\netstandard2.1\ClosedXML.dll))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/ClosedXML_v0.104.1/0.104.1/lib/netstandard2.1/ClosedXML.dll</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\lib\netstandard2.1\ClosedXML.dll))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\lib\netstandard2.1\ClosedXML.pdb))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/ClosedXML_v0.104.1/0.104.1/lib/netstandard2.1/ClosedXML.pdb</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\lib\netstandard2.1\ClosedXML.pdb))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\lib\netstandard2.1\ClosedXML.xml))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/ClosedXML_v0.104.1/0.104.1/lib/netstandard2.1/ClosedXML.xml</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\lib\netstandard2.1\ClosedXML.xml))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\nuget-logo.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
+      <RelativePath>lib/Real_Use/ClosedXML_v0.104.1/0.104.1/nuget-logo.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\ClosedXML_v0.104.1\0.104.1\nuget-logo.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\Fontawesome_v6.6.0\css\all.css))">
       <SourceType>Package</SourceType>
@@ -47871,22 +48079,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\Real_Use\Toastr_v2.1.1\scripts\toastr.min.js))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Supply_Images\1.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>CIISS - INVENTORY MANAGEMENT</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/CIISS - INVENTORY MANAGEMENT</BasePath>
-      <RelativePath>Supply_Images/1.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Supply_Images\1.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Supply_Images\Image_Error.jpg))">
       <SourceType>Package</SourceType>

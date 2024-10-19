@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = c:\Users\HP\Documentos\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT\CIISS - INVENTORY MANAGEMENT
 build_property._RazorSourceGeneratorDebug = 
 
+[c:/Users/HP/Documentos/CIISS - INVENTORY MANAGEMENT/CIISS - INVENTORY MANAGEMENT/CIISS - INVENTORY MANAGEMENT/Views/Access/Log_In.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXExvZ19Jbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [c:/Users/HP/Documentos/CIISS - INVENTORY MANAGEMENT/CIISS - INVENTORY MANAGEMENT/CIISS - INVENTORY MANAGEMENT/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
